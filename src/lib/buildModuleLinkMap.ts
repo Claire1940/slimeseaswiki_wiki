@@ -20,40 +20,40 @@ const MODULE_FIELDS: Record<string, { field: string; nameKey: string }> = {
   lucidBlocksStorageAndInventory: { field: 'solutions', nameKey: 'name' },
   lucidBlocksQualiaAndBaseBuilding: { field: 'cards', nameKey: 'name' },
   lucidBlocksWorldRegions: { field: 'regions', nameKey: 'name' },
-  lucidBlocksCreaturesAndEnemies: { field: 'creatures', nameKey: 'name' },
-  lucidBlocksMobilityGear: { field: 'items', nameKey: 'name' },
-  lucidBlocksFarmingAndGrowth: { field: 'sections', nameKey: 'name' },
-  lucidBlocksBestEarlyUnlocks: { field: 'priorities', nameKey: 'name' },
-  lucidBlocksAchievementTracker: { field: 'groups', nameKey: 'name' },
-  lucidBlocksSingleplayerAndPlatformFAQ: { field: 'faqs', nameKey: 'question' },
-  lucidBlocksSteamDeckAndController: { field: 'faqs', nameKey: 'question' },
-  lucidBlocksSettingsAndAccessibility: { field: 'settings', nameKey: 'name' },
-  lucidBlocksUpdatesAndPatchNotes: { field: 'entries', nameKey: 'title' },
-  lucidBlocksCrashFixAndTroubleshooting: { field: 'steps', nameKey: 'title' },
+  lucidBlocksCreaturesAndEnemies: { field: 'creatures', nameKey: 'mastery' },
+  lucidBlocksMobilityGear: { field: 'items', nameKey: 'stage' },
+  lucidBlocksFarmingAndGrowth: { field: 'bosses', nameKey: 'boss' },
+  lucidBlocksBestEarlyUnlocks: { field: 'steps', nameKey: 'heading' },
+  lucidBlocksAchievementTracker: { field: 'routes', nameKey: 'stop' },
+  lucidBlocksSingleplayerAndPlatformFAQ: { field: 'skills', nameKey: 'skill' },
+  lucidBlocksSteamDeckAndController: { field: 'items', nameKey: 'cardTitle' },
+  lucidBlocksSettingsAndAccessibility: { field: 'items', nameKey: 'item' },
+  lucidBlocksUpdatesAndPatchNotes: { field: 'presets', nameKey: 'panelTitle' },
+  lucidBlocksCrashFixAndTroubleshooting: { field: 'targets', nameKey: 'target' },
 }
 
 // Extra semantic keywords per module to boost matching for h2 titles
 // These supplement the module title text when matching against articles
 const MODULE_EXTRA_KEYWORDS: Record<string, string[]> = {
-  lucidBlocksBeginnerGuide: ['guide', 'mastering', 'progression', 'crafting', 'starter'],
-  lucidBlocksApotheosisCrafting: ['apotheosis', 'fusion', 'essence'],
-  lucidBlocksToolsAndWeapons: ['crafting recipes', 'frost pick', 'osmium', 'azrael', 'faith wand'],
-  lucidBlocksStorageAndInventory: ['chest', 'cache cube', 'cabinet', 'storage'],
-  lucidBlocksQualiaAndBaseBuilding: ['qualia', 'clonaqualia', 'personal dimensions'],
-  lucidBlocksWorldRegions: ['tiamana', 'leyline', 'biomes', 'regions'],
-  lucidBlocksCreaturesAndEnemies: ['survival', 'combat', 'surreal creatures'],
-  lucidBlocksMobilityGear: ['bee glider', 'hookshot', 'glider', 'movement'],
-  lucidBlocksFarmingAndGrowth: ['seed', 'farming', 'growth', 'material', 'progression', 'crafting'],
-  lucidBlocksBestEarlyUnlocks: ['early', 'osmium', 'frost pick', 'starter', 'progression'],
-  lucidBlocksAchievementTracker: ['achievement', 'tiamana', 'leyline'],
-  lucidBlocksSingleplayerAndPlatformFAQ: ['multiplayer', 'platform', 'co op'],
-  lucidBlocksSteamDeckAndController: ['steam deck', 'controller', 'proton'],
-  lucidBlocksSettingsAndAccessibility: ['full screen', 'controls', 'display'],
-  lucidBlocksUpdatesAndPatchNotes: ['update', 'patch', 'fix'],
-  lucidBlocksCrashFixAndTroubleshooting: ['crash', 'vulkan', 'troubleshooting', 'full screen', 'controls', 'gameplay'],
+  lucidBlocksBeginnerGuide: ['codes', 'redeem', 'active codes', 'expired codes', 'reroll', 'gems'],
+  lucidBlocksApotheosisCrafting: ['trello', 'discord', 'roblox group', 'x feed', 'community links'],
+  lucidBlocksToolsAndWeapons: ['wiki', 'races', 'worlds', 'bosses', 'items', 'skills'],
+  lucidBlocksStorageAndInventory: ['beginner guide', 'starter', 'progression', 'weapon mastery', 'witch tower'],
+  lucidBlocksQualiaAndBaseBuilding: ['race tier list', 'best race', 'reroll', 'dragonborn', 'lunarian', 'djinn'],
+  lucidBlocksWorldRegions: ['best weapons', 'weapon tier', 'katana', 'cursed edge', 'weapon locations'],
+  lucidBlocksCreaturesAndEnemies: ['weapon mastery', 'katana', 'greatsword', 'scythe', 'berserker', 'skill path'],
+  lucidBlocksMobilityGear: ['world progression', 'islands', 'leveling', 'route', 'crimson ruins', 'witch tower'],
+  lucidBlocksFarmingAndGrowth: ['boss drops', 'demon lord rima', 'king sinbad', 'ogre lord', 'farming guide', 'pity'],
+  lucidBlocksBestEarlyUnlocks: ['pets', 'drake egg', 'baby azure drake', 'hatch', 'pet location', 'mount'],
+  lucidBlocksAchievementTracker: ['merchant locations', 'forest route', 'desert route', 'spawned merchant', 'waypoint'],
+  lucidBlocksSingleplayerAndPlatformFAQ: ['skills guide', 'dash', 'flashblade surge', 'thousand slashes', 'death grasp', 'void surge'],
+  lucidBlocksSteamDeckAndController: ['pvp guide', 'duel', 'scythe build', 'katana build', 'greatsword build', 'combat meta'],
+  lucidBlocksSettingsAndAccessibility: ['items', 'materials', 'crafting materials', 'item locations', 'material drops', 'loot'],
+  lucidBlocksUpdatesAndPatchNotes: ['damage calculator', 'race preset', 'weapon preset', 'compare snapshot', 'build planner'],
+  lucidBlocksCrashFixAndTroubleshooting: ['reroll probability', 'race reroll', 'odds', 'dragonborn', 'shadowborn', 'legendary'],
 }
 
-const FILLER_WORDS = ['lucid', 'blocks', '2026', '2025', 'complete', 'the', 'and', 'for', 'how', 'with', 'our', 'this', 'your', 'all', 'from', 'learn', 'master']
+const FILLER_WORDS = ['slime', 'seas', '2026', '2025', 'complete', 'the', 'and', 'for', 'how', 'with', 'our', 'this', 'your', 'all', 'from', 'learn', 'master']
 
 function normalize(text: string): string {
   return text
@@ -77,9 +77,9 @@ function matchScore(queryText: string, article: ArticleWithType, extraKeywords?:
 
   let score = 0
 
-  // Exact phrase match in title (stripped of "Lucid Blocks")
-  const strippedQuery = normalizedQuery.replace(/lucid blocks?\s*/g, '').trim()
-  const strippedTitle = normalizedTitle.replace(/lucid blocks?\s*/g, '').trim()
+  // Exact phrase match in title (stripped of "Slime Seas")
+  const strippedQuery = normalizedQuery.replace(/slime seas?\s*/g, '').trim()
+  const strippedTitle = normalizedTitle.replace(/slime seas?\s*/g, '').trim()
   if (strippedQuery.length > 3 && strippedTitle.includes(strippedQuery)) {
     score += 100
   }

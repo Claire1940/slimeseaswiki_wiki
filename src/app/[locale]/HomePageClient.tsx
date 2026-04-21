@@ -1150,7 +1150,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       <section id="slime-seas-bosses-and-drops" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksFarmingAndGrowth.title}</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksFarmingAndGrowth']} locale={locale}>{t.modules.lucidBlocksFarmingAndGrowth.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksFarmingAndGrowth.intro}</p>
           </div>
 
@@ -1171,7 +1171,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               <tbody>
                 {module9Bosses.map((boss: any, index: number) => (
                   <tr key={index} className="border-t border-border align-top">
-                    <td className="px-4 py-4 font-semibold">{boss.boss || boss.name || '-'}</td>
+                    <td className="px-4 py-4 font-semibold">
+                      <LinkedTitle linkData={moduleLinkMap[`lucidBlocksFarmingAndGrowth::bosses::${index}`]} locale={locale}>
+                        {boss.boss || boss.name || '-'}
+                      </LinkedTitle>
+                    </td>
                     <td className="px-4 py-4 text-muted-foreground">{boss.zone || '-'}</td>
                     <td className="px-4 py-4 text-muted-foreground">{boss.location || '-'}</td>
                     <td className="px-4 py-4 text-muted-foreground">{boss.levelRequirement || boss.level_requirement || '-'}</td>
@@ -1189,7 +1193,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             {module9Bosses.map((boss: any, index: number) => (
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl">
                 <div className="flex items-center justify-between gap-2 mb-3">
-                  <h3 className="font-bold text-lg text-[hsl(var(--nav-theme-light))]">{boss.boss || boss.name || '-'}</h3>
+                  <h3 className="font-bold text-lg text-[hsl(var(--nav-theme-light))]">
+                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksFarmingAndGrowth::bosses::${index}`]} locale={locale}>
+                      {boss.boss || boss.name || '-'}
+                    </LinkedTitle>
+                  </h3>
                   <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.12)] border border-[hsl(var(--nav-theme)/0.35)]">
                     {boss.zone || 'Zone'}
                   </span>
@@ -1218,7 +1226,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       <section id="slime-seas-pets-guide" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksBestEarlyUnlocks.title}</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksBestEarlyUnlocks']} locale={locale}>{t.modules.lucidBlocksBestEarlyUnlocks.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksBestEarlyUnlocks.intro}</p>
           </div>
           <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -1230,7 +1238,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
                   </span>
                   <Star className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
                 </div>
-                <h3 className="font-bold mb-2">{step.heading}</h3>
+                <h3 className="font-bold mb-2">
+                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksBestEarlyUnlocks::steps::${index}`]} locale={locale}>
+                    {step.heading}
+                  </LinkedTitle>
+                </h3>
                 <p className="text-muted-foreground text-sm">{step.body}</p>
               </div>
             ))}
@@ -1251,7 +1263,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       <section id="slime-seas-merchant-locations" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksAchievementTracker.title}</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksAchievementTracker']} locale={locale}>{t.modules.lucidBlocksAchievementTracker.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksAchievementTracker.intro}</p>
           </div>
           <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -1259,7 +1271,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
                 <div className="flex items-center gap-2 mb-3">
                   <ClipboardCheck className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <h3 className="font-bold">{route.stop || route.name || 'Slime Seas Route Stop'}</h3>
+                  <h3 className="font-bold">
+                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksAchievementTracker::routes::${index}`]} locale={locale}>
+                      {route.stop || route.name || 'Slime Seas Route Stop'}
+                    </LinkedTitle>
+                  </h3>
                 </div>
                 <div className="space-y-3">
                   <div className="p-3 bg-white/5 border border-border rounded-lg">
@@ -1294,7 +1310,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       <section id="slime-seas-skills-guide" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.title}</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksSingleplayerAndPlatformFAQ']} locale={locale}>{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.intro}</p>
           </div>
           <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -1305,7 +1321,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
                   <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.15)] border border-[hsl(var(--nav-theme-light)/0.4)] text-[hsl(var(--nav-theme-light))]">{skill.group || 'Slime Seas Mastery'}</span>
                   <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{skill.unlock || 'Core Unlock'}</span>
                 </div>
-                <h3 className="font-bold text-lg mb-2">{skill.skill || skill.question || 'Slime Seas Skill'}</h3>
+                <h3 className="font-bold text-lg mb-2">
+                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksSingleplayerAndPlatformFAQ::skills::${index}`]} locale={locale}>
+                    {skill.skill || skill.question || 'Slime Seas Skill'}
+                  </LinkedTitle>
+                </h3>
                 <p className="text-sm mb-2"><span className="text-muted-foreground">Use Case: </span>{skill.useCase || skill.use_case || '-'}</p>
                 <p className="text-muted-foreground text-sm">{skill.summary || skill.answer || '-'}</p>
               </div>
@@ -1331,7 +1351,9 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               {t.modules.lucidBlocksSteamDeckAndController.eyebrow || 'Slime Seas PvP Meta'}
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold">
-              {t.modules.lucidBlocksSteamDeckAndController.title}
+              <LinkedTitle linkData={moduleLinkMap['lucidBlocksSteamDeckAndController']} locale={locale}>
+                {t.modules.lucidBlocksSteamDeckAndController.title}
+              </LinkedTitle>
             </h2>
             <p className="mt-3 text-lg text-muted-foreground max-w-4xl mx-auto">
               {t.modules.lucidBlocksSteamDeckAndController.subtitle || 'Slime Seas PvP builds, race pairings, and duel flow'}
@@ -1362,7 +1384,9 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
                     </div>
                     <div>
                       <h3 className="text-xl font-bold">
-                        {card.cardTitle || card.card_title || `Slime Seas PvP Card ${index + 1}`}
+                        <LinkedTitle linkData={moduleLinkMap[`lucidBlocksSteamDeckAndController::items::${index}`]} locale={locale}>
+                          {card.cardTitle || card.card_title || `Slime Seas PvP Card ${index + 1}`}
+                        </LinkedTitle>
                       </h3>
                       <p className="text-sm text-muted-foreground mt-1">{card.summary || '-'}</p>
                     </div>
@@ -1433,7 +1457,9 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               {t.modules.lucidBlocksSettingsAndAccessibility.eyebrow || 'Slime Seas Loot Table'}
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold">
-              {t.modules.lucidBlocksSettingsAndAccessibility.title}
+              <LinkedTitle linkData={moduleLinkMap['lucidBlocksSettingsAndAccessibility']} locale={locale}>
+                {t.modules.lucidBlocksSettingsAndAccessibility.title}
+              </LinkedTitle>
             </h2>
             <p className="mt-3 text-lg text-muted-foreground max-w-4xl mx-auto">
               {t.modules.lucidBlocksSettingsAndAccessibility.subtitle || 'Slime Seas key items, materials, and first chase drops'}
@@ -1462,7 +1488,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
                 <tbody>
                   {module14Items.map((row: any, index: number) => (
                     <tr key={index} className="border-b border-border/60 align-top">
-                      <td className="px-4 py-4 font-semibold">{row.item || '-'}</td>
+                      <td className="px-4 py-4 font-semibold">
+                        <LinkedTitle linkData={moduleLinkMap[`lucidBlocksSettingsAndAccessibility::items::${index}`]} locale={locale}>
+                          {row.item || '-'}
+                        </LinkedTitle>
+                      </td>
                       <td className="px-4 py-4">{row.type || '-'}</td>
                       <td className="px-4 py-4">{row.rarity || '-'}</td>
                       <td className="px-4 py-4">{row.source || '-'}</td>
@@ -1482,7 +1512,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             {module14Items.map((row: any, index: number) => (
               <article key={index} className="rounded-2xl border border-border bg-white/[0.03] p-5">
                 <div className="flex items-center justify-between gap-3 mb-3">
-                  <h3 className="font-bold text-lg">{row.item || '-'}</h3>
+                  <h3 className="font-bold text-lg">
+                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksSettingsAndAccessibility::items::${index}`]} locale={locale}>
+                      {row.item || '-'}
+                    </LinkedTitle>
+                  </h3>
                   <span className="text-xs px-2 py-1 rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)]">
                     {row.rarity || '-'}
                   </span>
@@ -1513,7 +1547,9 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               {t.modules.lucidBlocksUpdatesAndPatchNotes.eyebrow || 'Slime Seas Damage Tools'}
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold">
-              {t.modules.lucidBlocksUpdatesAndPatchNotes.title}
+              <LinkedTitle linkData={moduleLinkMap['lucidBlocksUpdatesAndPatchNotes']} locale={locale}>
+                {t.modules.lucidBlocksUpdatesAndPatchNotes.title}
+              </LinkedTitle>
             </h2>
             <p className="mt-3 text-lg text-muted-foreground max-w-4xl mx-auto">
               {t.modules.lucidBlocksUpdatesAndPatchNotes.subtitle || 'Slime Seas quick damage checks and item comparisons'}
@@ -1594,7 +1630,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
 
                 return (
                   <article key={index} className="rounded-2xl border border-border bg-white/[0.03] p-5">
-                    <h3 className="text-xl font-bold mb-4">{panel.panelTitle || panel.panel_title || `Slime Seas Preset ${index + 1}`}</h3>
+                    <h3 className="text-xl font-bold mb-4">
+                      <LinkedTitle linkData={moduleLinkMap[`lucidBlocksUpdatesAndPatchNotes::presets::${index}`]} locale={locale}>
+                        {panel.panelTitle || panel.panel_title || `Slime Seas Preset ${index + 1}`}
+                      </LinkedTitle>
+                    </h3>
                     <div className="space-y-3">
                       {rows.map((row: any, rowIndex: number) => (
                         <div key={rowIndex} className="rounded-xl border border-border bg-white/5 p-3">
@@ -1632,7 +1672,9 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               {t.modules.lucidBlocksCrashFixAndTroubleshooting.eyebrow || 'Slime Seas Reroll Odds'}
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold">
-              {t.modules.lucidBlocksCrashFixAndTroubleshooting.title}
+              <LinkedTitle linkData={moduleLinkMap['lucidBlocksCrashFixAndTroubleshooting']} locale={locale}>
+                {t.modules.lucidBlocksCrashFixAndTroubleshooting.title}
+              </LinkedTitle>
             </h2>
             <p className="mt-3 text-lg text-muted-foreground max-w-4xl mx-auto">
               {t.modules.lucidBlocksCrashFixAndTroubleshooting.subtitle || 'Slime Seas target-race odds for rerolls and code stockpiles'}
@@ -1703,7 +1745,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
                   }`}
                 >
                   <div className="flex items-center justify-between gap-3">
-                    <h3 className="font-bold text-lg">{target.target || target.name || `Slime Seas Target ${index + 1}`}</h3>
+                    <h3 className="font-bold text-lg">
+                      <LinkedTitle linkData={moduleLinkMap[`lucidBlocksCrashFixAndTroubleshooting::targets::${index}`]} locale={locale}>
+                        {target.target || target.name || `Slime Seas Target ${index + 1}`}
+                      </LinkedTitle>
+                    </h3>
                     <span className="text-xs px-2 py-1 rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)]">
                       {target.rarity || '-'}
                     </span>
