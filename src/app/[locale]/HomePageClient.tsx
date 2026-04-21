@@ -50,7 +50,11 @@ function LinkedTitle({
   className?: string
   locale: string
 }) {
-  if (linkData && /^https?:\/\//.test(linkData.url)) {
+  if (!linkData?.url) {
+    return <>{children}</>
+  }
+
+  if (/^https?:\/\//.test(linkData.url)) {
     const href = linkData.url
     return (
       <a
@@ -65,8 +69,20 @@ function LinkedTitle({
     )
   }
 
-  void locale
-  return <>{children}</>
+  const normalizedPath = linkData.url.startsWith('/') ? linkData.url : `/${linkData.url}`
+  const localizedHref = normalizedPath.startsWith(`/${locale}/`) || normalizedPath === `/${locale}`
+    ? normalizedPath
+    : `/${locale}${normalizedPath}`
+
+  return (
+    <a
+      href={localizedHref}
+      className={`${className || ''} hover:text-[hsl(var(--nav-theme-light))] hover:underline decoration-[hsl(var(--nav-theme-light))/0.4] underline-offset-4 transition-colors`}
+      title={linkData.title}
+    >
+      {children}
+    </a>
+  )
 }
 
 interface HomePageClientProps {
