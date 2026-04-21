@@ -21,7 +21,6 @@ import {
   Star,
   TrendingUp,
 } from 'lucide-react'
-import Link from 'next/link'
 import { useMessages } from 'next-intl'
 import { VideoFeature } from '@/components/home/VideoFeature'
 import { LatestGuidesAccordion } from '@/components/home/LatestGuidesAccordion'
@@ -54,18 +53,22 @@ function LinkedTitle({
   className?: string
   locale: string
 }) {
-  if (linkData) {
-    const href = locale === 'en' ? linkData.url : `/${locale}${linkData.url}`
+  if (linkData && /^https?:\/\//.test(linkData.url)) {
+    const href = linkData.url
     return (
-      <Link
+      <a
         href={href}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`${className || ''} hover:text-[hsl(var(--nav-theme-light))] hover:underline decoration-[hsl(var(--nav-theme-light))/0.4] underline-offset-4 transition-colors`}
         title={linkData.title}
       >
         {children}
-      </Link>
+      </a>
     )
   }
+
+  void locale
   return <>{children}</>
 }
 
@@ -298,41 +301,261 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {t.tools.cards.map((card: any, index: number) => {
-              // 映射卡片索引到 section ID
-              const sectionIds = [
-                'beginner-guide', 'apotheosis-crafting', 'tools-weapons', 'storage-inventory',
-                'qualia-base-building', 'world-regions', 'creatures-enemies', 'mobility-gear',
-                'farming-growth', 'best-early-unlocks', 'achievement-tracker', 'singleplayer-faq',
-                'steam-deck-controller', 'settings-accessibility', 'updates-patch-notes', 'crash-fix'
-              ]
-              const sectionId = sectionIds[index]
+            <a
+              href="#slime-seas-codes"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-codes')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '0ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[0].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[0].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[0].description}</p>
+            </a>
 
-              return (
-                <button
-                  key={index}
-                  onClick={() => scrollToSection(sectionId)}
-                  className="scroll-reveal group p-6 rounded-xl border border-border
-                             bg-card hover:border-[hsl(var(--nav-theme)/0.5)]
-                             transition-all duration-300 cursor-pointer text-left
-                             hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  <div className="w-12 h-12 rounded-lg mb-4
-                                  bg-[hsl(var(--nav-theme)/0.1)]
-                                  flex items-center justify-center
-                                  group-hover:bg-[hsl(var(--nav-theme)/0.2)]
-                                  transition-colors">
-                    <DynamicIcon
-                      name={card.icon}
-                      className="w-6 h-6 text-[hsl(var(--nav-theme-light))]"
-                    />
-                  </div>
-                  <h3 className="font-semibold mb-2">{card.title}</h3>
-                  <p className="text-sm text-muted-foreground">{card.description}</p>
-                </button>
-              )
-            })}
+            <a
+              href="#slime-seas-trello-and-discord"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-trello-and-discord')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '50ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[1].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[1].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[1].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-wiki"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-wiki')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '100ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[2].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[2].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[2].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-beginner-guide"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-beginner-guide')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '150ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[3].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[3].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[3].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-race-tier-list"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-race-tier-list')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '200ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[4].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[4].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[4].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-best-weapons"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-best-weapons')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '250ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[5].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[5].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[5].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-weapon-mastery-guide"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-weapon-mastery-guide')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '300ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[6].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[6].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[6].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-world-progression-guide"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-world-progression-guide')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '350ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[7].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[7].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[7].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-bosses-and-drops"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-bosses-and-drops')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '400ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[8].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[8].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[8].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-pets-guide"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-pets-guide')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '450ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[9].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[9].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[9].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-merchant-locations"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-merchant-locations')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '500ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[10].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[10].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[10].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-skills-guide"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-skills-guide')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '550ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[11].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[11].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[11].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-pvp-guide"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-pvp-guide')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '600ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[12].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[12].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[12].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-items-and-materials"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-items-and-materials')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '650ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[13].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[13].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[13].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-damage-calculator"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-damage-calculator')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '700ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[14].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[14].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[14].description}</p>
+            </a>
+
+            <a
+              href="#slime-seas-reroll-probability"
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection('slime-seas-reroll-probability')
+              }}
+              className="scroll-reveal group block p-6 rounded-xl border border-border bg-card hover:border-[hsl(var(--nav-theme)/0.5)] transition-all duration-300 cursor-pointer text-left hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]"
+              style={{ animationDelay: '750ms' }}
+            >
+              <div className="w-12 h-12 rounded-lg mb-4 bg-[hsl(var(--nav-theme)/0.1)] flex items-center justify-center group-hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                <DynamicIcon name={t.tools.cards[15].icon} className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
+              </div>
+              <h3 className="font-semibold mb-2">{t.tools.cards[15].title}</h3>
+              <p className="text-sm text-muted-foreground">{t.tools.cards[15].description}</p>
+            </a>
           </div>
         </div>
       </section>
@@ -341,7 +564,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       <AdBanner type="banner-300x250" adKey={process.env.NEXT_PUBLIC_AD_BANNER_300X250} />
 
       {/* Module 1: Beginner Guide */}
-      <section id="beginner-guide" className="scroll-mt-24 px-4 py-20">
+      <section id="slime-seas-codes" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -395,7 +618,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       <AdBanner type="banner-468x60" adKey={process.env.NEXT_PUBLIC_AD_BANNER_468X60} />
 
       {/* Module 2: Apotheosis Crafting */}
-      <section id="apotheosis-crafting" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+      <section id="slime-seas-trello-and-discord" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksApotheosisCrafting']} locale={locale}>{t.modules.lucidBlocksApotheosisCrafting.title}</LinkedTitle></h2>
@@ -424,7 +647,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 3: Tools and Weapons */}
-      <section id="tools-weapons" className="scroll-mt-24 px-4 py-20">
+      <section id="slime-seas-wiki" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksToolsAndWeapons']} locale={locale}>{t.modules.lucidBlocksToolsAndWeapons.title}</LinkedTitle></h2>
@@ -450,7 +673,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 4: Storage and Inventory */}
-      <section id="storage-inventory" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+      <section id="slime-seas-beginner-guide" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksStorageAndInventory']} locale={locale}>{t.modules.lucidBlocksStorageAndInventory.title}</LinkedTitle></h2>
@@ -489,7 +712,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 5: Qualia and Base Building */}
-      <section id="qualia-base-building" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+      <section id="slime-seas-race-tier-list" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksQualiaAndBaseBuilding']} locale={locale}>{t.modules.lucidBlocksQualiaAndBaseBuilding.title}</LinkedTitle></h2>
@@ -519,7 +742,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 6: World Regions */}
-      <section id="world-regions" className="scroll-mt-24 px-4 py-20">
+      <section id="slime-seas-best-weapons" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksWorldRegions']} locale={locale}>{t.modules.lucidBlocksWorldRegions.title}</LinkedTitle></h2>
@@ -545,7 +768,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 7: Creatures and Enemies */}
-      <section id="creatures-enemies" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+      <section id="slime-seas-weapon-mastery-guide" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksCreaturesAndEnemies']} locale={locale}>{t.modules.lucidBlocksCreaturesAndEnemies.title}</LinkedTitle></h2>
@@ -570,7 +793,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 8: Mobility Gear */}
-      <section id="mobility-gear" className="scroll-mt-24 px-4 py-20">
+      <section id="slime-seas-world-progression-guide" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksMobilityGear']} locale={locale}>{t.modules.lucidBlocksMobilityGear.title}</LinkedTitle></h2>
@@ -606,7 +829,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       <AdBanner type="banner-320x50" adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50} />
 
       {/* Module 9: Farming and Growth */}
-      <section id="farming-growth" className="scroll-mt-24 px-4 py-20">
+      <section id="slime-seas-bosses-and-drops" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksFarmingAndGrowth']} locale={locale}>{t.modules.lucidBlocksFarmingAndGrowth.title}</LinkedTitle></h2>
@@ -638,7 +861,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 10: Best Early Unlocks */}
-      <section id="best-early-unlocks" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+      <section id="slime-seas-pets-guide" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksBestEarlyUnlocks']} locale={locale}>{t.modules.lucidBlocksBestEarlyUnlocks.title}</LinkedTitle></h2>
@@ -649,7 +872,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
                 <div className="flex items-center gap-2 mb-3">
                   <Star className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <span className={`text-xs px-2 py-1 rounded-full border ${p.priority === "Essential" ? "bg-[hsl(var(--nav-theme)/0.15)] border-[hsl(var(--nav-theme-light)/0.4)] text-[hsl(var(--nav-theme-light))]" : p.priority === "Very High" ? "bg-orange-500/10 border-orange-500/30 text-orange-400" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{p.priority}</span>
+                  <span className={`text-xs px-2 py-1 rounded-full border ${p.priority === "Essential" ? "bg-[hsl(var(--nav-theme)/0.15)] border-[hsl(var(--nav-theme-light)/0.4)] text-[hsl(var(--nav-theme-light))]" : p.priority === "Very High" ? "bg-[hsl(var(--nav-theme)/0.12)] border-[hsl(var(--nav-theme)/0.45)] text-[hsl(var(--nav-theme-light))]" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{p.priority}</span>
                 </div>
                 <h3 className="font-bold mb-2">
                   <LinkedTitle linkData={moduleLinkMap[`lucidBlocksBestEarlyUnlocks::priorities::${index}`]} locale={locale}>
@@ -664,7 +887,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 11: Achievement Tracker */}
-      <section id="achievement-tracker" className="scroll-mt-24 px-4 py-20">
+      <section id="slime-seas-merchant-locations" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksAchievementTracker']} locale={locale}>{t.modules.lucidBlocksAchievementTracker.title}</LinkedTitle></h2>
@@ -696,7 +919,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 12: Singleplayer FAQ */}
-      <section id="singleplayer-faq" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+      <section id="slime-seas-skills-guide" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksSingleplayerAndPlatformFAQ']} locale={locale}>{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.title}</LinkedTitle></h2>
@@ -722,7 +945,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 13: Steam Deck and Controller */}
-      <section id="steam-deck-controller" className="scroll-mt-24 px-4 py-20">
+      <section id="slime-seas-pvp-guide" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -751,7 +974,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 14: Settings and Accessibility */}
-      <section id="settings-accessibility" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+      <section id="slime-seas-items-and-materials" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksSettingsAndAccessibility']} locale={locale}>{t.modules.lucidBlocksSettingsAndAccessibility.title}</LinkedTitle></h2>
@@ -777,7 +1000,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 15: Updates and Patch Notes */}
-      <section id="updates-patch-notes" className="scroll-mt-24 px-4 py-20">
+      <section id="slime-seas-damage-calculator" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksUpdatesAndPatchNotes']} locale={locale}>{t.modules.lucidBlocksUpdatesAndPatchNotes.title}</LinkedTitle></h2>
@@ -806,7 +1029,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       </section>
 
       {/* Module 16: Crash Fix and Troubleshooting */}
-      <section id="crash-fix" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+      <section id="slime-seas-reroll-probability" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksCrashFixAndTroubleshooting']} locale={locale}>{t.modules.lucidBlocksCrashFixAndTroubleshooting.title}</LinkedTitle></h2>
@@ -829,11 +1052,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               </div>
             ))}
           </div>
-          <div className="scroll-reveal p-6 bg-yellow-500/10 border border-yellow-500/30 rounded-xl">
+          <div className="scroll-reveal p-6 bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.3)] rounded-xl">
             <div className="flex items-start gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />
+              <AlertTriangle className="w-6 h-6 text-[hsl(var(--nav-theme-light))] flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-yellow-400 mb-2">Still having issues?</h3>
+                <h3 className="font-bold text-[hsl(var(--nav-theme-light))] mb-2">Still having issues?</h3>
                 <p className="text-sm text-muted-foreground mb-3">Report bugs with your logs through the official channels:</p>
                 <div className="flex flex-wrap gap-3">
                   <a href="https://discord.gg/t2Huv8M5re" target="_blank" rel="noopener noreferrer"
@@ -933,41 +1156,21 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               </ul>
             </div>
 
-            {/* Legal - Internal Routes Only */}
+            {/* Legal */}
             <div>
               <h4 className="font-semibold mb-4">{t.footer.legal}</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link
-                    href="/about"
-                    className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
-                  >
-                    {t.footer.about}
-                  </Link>
+                  <span className="text-muted-foreground">{t.footer.about}</span>
                 </li>
                 <li>
-                  <Link
-                    href="/privacy-policy"
-                    className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
-                  >
-                    {t.footer.privacy}
-                  </Link>
+                  <span className="text-muted-foreground">{t.footer.privacy}</span>
                 </li>
                 <li>
-                  <Link
-                    href="/terms-of-service"
-                    className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
-                  >
-                    {t.footer.terms}
-                  </Link>
+                  <span className="text-muted-foreground">{t.footer.terms}</span>
                 </li>
                 <li>
-                  <Link
-                    href="/copyright"
-                    className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
-                  >
-                    {t.footer.copyrightNotice}
-                  </Link>
+                  <span className="text-muted-foreground">{t.footer.copyrightNotice}</span>
                 </li>
               </ul>
             </div>

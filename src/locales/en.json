@@ -1,20 +1,20 @@
 {
   "seo": {
     "home": {
-      "title": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
-      "description": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
-      "keywords": "Lucid Blocks, Lucid Blocks wiki, crafting, biomes, achievements, survival, Steam",
-      "ogTitle": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
-      "ogDescription": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
-      "twitterTitle": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
-      "twitterDescription": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, and survival tips for the surreal voxel sandbox on Steam."
+      "title": "Slime Seas Wiki - Codes, Races & Weapons",
+      "description": "Slime Seas Wiki with fresh codes, race tier picks, weapon guides, boss routes, islands, and progression help for the fast-growing Roblox anime RPG.",
+      "keywords": "Slime Seas, Roblox, Slime Seas codes, Slime Seas races, Slime Seas weapons, Slime Seas wiki",
+      "ogTitle": "Slime Seas Wiki - Codes, Races & Weapons",
+      "ogDescription": "Slime Seas Wiki with fresh codes, race tier picks, weapon guides, boss routes, islands, and progression help for the fast-growing Roblox anime RPG.",
+      "twitterTitle": "Slime Seas Wiki - Codes, Races & Weapons",
+      "twitterDescription": "Slime Seas Wiki with active codes, race picks, weapon routes, boss guides, and progression tools for Roblox players."
     }
   },
   "nav": {},
   "common": {
     "home": "Home",
     "more": "More",
-    "playNow": "Play on Steam",
+    "playNow": "Play on Roblox",
     "switchLanguage": "Switch Language",
     "switchTheme": "Switch Theme",
     "lightMode": "Light Mode",
@@ -51,696 +51,641 @@
     }
   },
   "gameFeature": {
-    "title": "Lucid Blocks Gameplay",
-    "description": "Explore surreal biomes, fuse items with Apotheosis, and survive strange creatures in this dreamlike voxel sandbox on Steam."
+    "title": "Slime Seas Gameplay",
+    "description": "Explore islands, level mastery, reroll races, fight bosses, and optimize your build route in Slime Seas on Roblox."
   },
   "tools": {
-    "title": "Lucid Blocks",
-    "titleHighlight": "Resources",
-    "subtitle": "Everything you need to explore, craft, and survive in Lucid Blocks",
+    "title": "Slime Seas",
+    "titleHighlight": "Module Navigator",
+    "subtitle": "Jump to every Slime Seas homepage module with one click",
     "cards": [
       {
         "icon": "BookOpen",
-        "title": "Beginner Guide",
-        "description": "First steps, exploration, and early progression"
+        "title": "Slime Seas Codes",
+        "description": "Active and expired code tracking plus redeem flow"
       },
       {
-        "icon": "Sparkles",
-        "title": "Apotheosis Crafting",
-        "description": "Freeform fusion system and early recipes"
-      },
-      {
-        "icon": "Hammer",
-        "title": "Tools and Weapons",
-        "description": "Frost Pick, Azrael, Hookshot, and more"
-      },
-      {
-        "icon": "Package",
-        "title": "Storage and Inventory",
-        "description": "Cache Cubes, Cabinets, and Qualia storage"
-      },
-      {
-        "icon": "Home",
-        "title": "Qualia and Base Building",
-        "description": "Personal Qualia and home base setup"
+        "icon": "Users",
+        "title": "Slime Seas Trello and Discord",
+        "description": "Official Trello, Discord, Roblox Group, and X links"
       },
       {
         "icon": "Eye",
-        "title": "World Regions",
-        "description": "Fog Meadow, Essence Morass, and more"
-      },
-      {
-        "icon": "AlertTriangle",
-        "title": "Creatures and Enemies",
-        "description": "Manikins, spiders, and how to survive"
-      },
-      {
-        "icon": "ArrowRight",
-        "title": "Mobility Gear",
-        "description": "Hookshot, Glider Glove, Bee Glider"
-      },
-      {
-        "icon": "TrendingUp",
-        "title": "Farming and Growth",
-        "description": "Seed progression and material farming"
-      },
-      {
-        "icon": "Star",
-        "title": "Best Early Unlocks",
-        "description": "Priority upgrades for the first hour"
+        "title": "Slime Seas Wiki",
+        "description": "Database entry points for races, worlds, bosses, and items"
       },
       {
         "icon": "ClipboardCheck",
-        "title": "Achievement Tracker",
-        "description": "All 19 Steam achievements and conditions"
+        "title": "Slime Seas Beginner Guide",
+        "description": "First-route checklist from Starting Forest to Witch Tower"
+      },
+      {
+        "icon": "Star",
+        "title": "Slime Seas Race Tier List",
+        "description": "Race value ranking and reroll decision guide"
+      },
+      {
+        "icon": "Hammer",
+        "title": "Slime Seas Best Weapons",
+        "description": "Early, mid, and late weapon priorities by playstyle"
+      },
+      {
+        "icon": "Sparkles",
+        "title": "Slime Seas Weapon Mastery Guide",
+        "description": "Mastery routes for Katana, Scythe, Greatsword, and Berserker"
+      },
+      {
+        "icon": "ArrowRight",
+        "title": "Slime Seas World Progression Guide",
+        "description": "Island order, power targets, and travel checkpoints"
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "Slime Seas Bosses and Drops",
+        "description": "Boss order, drop focus, and encounter prep"
+      },
+      {
+        "icon": "Home",
+        "title": "Slime Seas Pets Guide",
+        "description": "Pet unlock path, hatch priorities, and investment advice"
+      },
+      {
+        "icon": "Package",
+        "title": "Slime Seas Merchant Locations",
+        "description": "Vendor routes, notable stock, and buy timing"
       },
       {
         "icon": "MessageCircle",
-        "title": "Singleplayer FAQ",
-        "description": "Platform, price, co-op, and language questions"
+        "title": "Slime Seas Skills Guide",
+        "description": "Core combat skills, usage windows, and cooldown value"
       },
       {
         "icon": "Gamepad2",
-        "title": "Steam Deck and Controller",
-        "description": "Proton 9.0.4 setup and controller tips"
+        "title": "Slime Seas PvP Guide",
+        "description": "PvP combos, matchup notes, and build tradeoffs"
       },
       {
         "icon": "Settings",
-        "title": "Settings and Accessibility",
-        "description": "Hide hands, Vulkan, and display options"
+        "title": "Slime Seas Items and Materials",
+        "description": "Item source lookup and material farming references"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Slime Seas Damage Calculator",
+        "description": "Damage estimate inputs for race, weapon, and upgrades"
       },
       {
         "icon": "Clock",
-        "title": "Updates and Patch Notes",
-        "description": "Recent fixes and roadmap notes"
-      },
-      {
-        "icon": "Shield",
-        "title": "Crash Fix",
-        "description": "Vulkan check, logs path, and bug reporting"
+        "title": "Slime Seas Reroll Probability",
+        "description": "Reroll odds, expected attempts, and planning snapshots"
       }
     ]
   },
   "modules": {
     "lucidBlocksBeginnerGuide": {
-      "title": "Lucid Blocks Beginner Guide",
+      "title": "Slime Seas Codes",
       "displayType": "steps",
-      "intro": "Start by learning how exploration, fusion, and progression connect. Lucid Blocks rewards experimentation, so early progress comes from gathering unusual materials, testing combinations, and unlocking your personal Qualia.",
+      "intro": "Redeem the latest Slime Seas codes for race rerolls, potion boosts, and chest keys. Use this section to avoid expired entries and claim rewards quickly.",
       "steps": [
         {
-          "title": "Explore Before You Commit",
-          "description": "Walk outward, mine common blocks, and keep any strange drops you find. Early progress is less about fixed quests and more about discovering what materials can become."
+          "title": "HUBISLAND (Active)",
+          "description": "Rewards: 3 Race Rerolls and a 30-minute Superior Gold Potion."
         },
         {
-          "title": "Unlock Your Personal Qualia Early",
-          "description": "Your personal Qualia is one of the most important early milestones. It gives you a reliable place to regroup and build around."
+          "title": "SLIMEPIECE (Active)",
+          "description": "Rewards: 2 Race Rerolls and 30 minutes of Superior EXP."
         },
         {
-          "title": "Use Osmium for Fast Early Progress",
-          "description": "Osmium is one of the most useful early materials. A popular early route is combining Osmium with sticks to make a Frost Pick for fast mining."
+          "title": "FREEBOOSTS (Active)",
+          "description": "Rewards: 30 minutes of Greater Power and 30 minutes of Greater Luck."
         },
         {
-          "title": "Record Good Fusions",
-          "description": "Keep track of successful combinations in your journal. Lucid Blocks has many possible fusion paths, so writing down useful results saves a lot of time."
+          "title": "1MILLIONVISITS (Active)",
+          "description": "Rewards: 3 Fabled Chest Keys and 30 minutes of Greater Luck."
+        },
+        {
+          "title": "Recent Expired Codes",
+          "description": "RELEASE, 1KLIKESWHOO, YAY5000, COMBATCHANGES, and 2500LIKES are currently expired."
+        },
+        {
+          "title": "How to Redeem Slime Seas Codes",
+          "description": "Finish tutorial, open Shop, paste code in the bottom input box, and press Submit."
         }
       ],
       "quickTips": [
-        "Apotheosis does not require a fixed recipe list.",
-        "Infinite world generation means moving higher or deeper can reveal completely different materials.",
-        "Movement tools and utility gear become a major quality-of-life boost once you start unlocking them.",
-        "Getting lost early is normal, but useful tools, storage, and movement options snowball fast once your first good fusions start working."
+        "Check official Discord and X after each update for fresh Slime Seas code drops.",
+        "Copy and paste codes exactly because spacing and capitalization must match.",
+        "Redeem active codes before reroll sessions so race planning is more efficient.",
+        "If a code fails, verify whether it has already moved to the expired list first."
       ]
     },
     "lucidBlocksApotheosisCrafting": {
-      "title": "Lucid Blocks Apotheosis Crafting",
+      "title": "Slime Seas Trello and Discord",
       "displayType": "cards",
-      "intro": "Apotheosis is the game's unrestricted fusion system. Instead of memorizing a traditional recipe book, you combine materials, watch the result, and build your own crafting knowledge over time.",
+      "intro": "These official Slime Seas links are the fastest way to track updates, community strategy, and roadmap notes.",
       "cards": [
         {
-          "name": "Freeform Fusion",
-          "description": "Apotheosis lets you fuse together different items without needing to follow a fixed recipe list."
+          "name": "Official Trello",
+          "description": "Reference board for mastery systems, worlds, bosses, crafting notes, and progression checkpoints. https://trello.com/b/4jTUDPGn/slay-a-slime"
         },
         {
-          "name": "Multiple Useful Outcomes",
-          "description": "Different materials often push toward certain results. Community discoveries show that similar inputs can still lead to practical tools, storage, or combat upgrades."
+          "name": "Official Discord",
+          "description": "Main hub for announcements, code drops, guild recruitment, and live Q&A. https://discord.com/invite/sxQQeTq7k4"
         },
         {
-          "name": "Journal-First Crafting",
-          "description": "The best way to learn Apotheosis is to track your successful combinations. Your journal quickly becomes your own crafting reference."
+          "name": "Official Roblox Group",
+          "description": "Official developer group for game ownership and high-signal updates. https://www.roblox.com/communities/33326928/Slime-Slaying-Online"
         },
         {
-          "name": "Community-Tested Early Fusions",
-          "description": "Popular early examples include Osmium plus Stick for a Frost Pick, Stick plus Tungsten Appendage for Azrael, and Azrael plus Magnetite for the Tendril Rapier."
+          "name": "Official X Feed",
+          "description": "Social update stream for milestones, teaser clips, and patch callouts. https://x.com/SlayASlimeRBX"
         }
       ],
       "milestones": [
-        "Fuse an item",
-        "Fuse a vermin",
-        "Fuse a divine artifact"
+        "Pin Trello for systems lookup",
+        "Join Discord for instant code alerts",
+        "Follow Roblox Group update posts",
+        "Track X announcements for teasers"
       ]
     },
     "lucidBlocksToolsAndWeapons": {
-      "title": "Lucid Blocks Tools and Weapons",
+      "title": "Slime Seas Wiki",
       "displayType": "itemCards",
-      "intro": "Lucid Blocks mixes official utility gear with community-discovered early weapons. The best setup is usually a blend of fast mining, safe traversal, and one dependable combat option.",
+      "intro": "Use these Slime Seas Wiki entry points when you need fast lookup pages for progression-critical systems.",
       "items": [
         {
-          "name": "Frost Pick",
-          "type": "Mining Tool",
-          "description": "A fast and affordable early pick made from Osmium and Stick. Players use it to speed up early material gathering."
+          "name": "Slime Seas Wiki Races",
+          "type": "Database Entry",
+          "description": "Race overview, passive value, and reroll planning. https://www.slimeseas.wiki/wiki/races"
         },
         {
-          "name": "Azrael",
-          "type": "Starter Weapon",
-          "description": "A practical early weapon route crafted from Stick and Tungsten Appendage."
+          "name": "Slime Seas Wiki Worlds",
+          "type": "Database Entry",
+          "description": "World order and progression checkpoints. https://www.slimeseas.wiki/wiki/worlds"
         },
         {
-          "name": "Tendril Rapier",
-          "type": "Upgraded Weapon",
-          "description": "A stronger follow-up made by combining Azrael with Magnetite. It is one of the most useful early-mid combat paths shared by players."
+          "name": "Slime Seas Wiki Bosses",
+          "type": "Database Entry",
+          "description": "Boss routes and key encounter pages. https://www.slimeseas.wiki/wiki/bosses"
         },
         {
-          "name": "Hookshot",
-          "type": "Mobility Tool",
-          "description": "An official traversal item that greatly improves movement and vertical exploration."
+          "name": "Slime Seas Wiki Items",
+          "type": "Database Entry",
+          "description": "Weapons, materials, and source references. https://www.slimeseas.wiki/wiki/items"
         },
         {
-          "name": "Bee Glider",
-          "type": "Mobility Tool",
-          "description": "An official movement item that helps cover space more safely and efficiently."
+          "name": "Slime Seas Wiki Slimes",
+          "type": "Database Entry",
+          "description": "Enemy and farming reference pages. https://www.slimeseas.wiki/wiki/slimes"
         },
         {
-          "name": "Ball Wand",
-          "type": "Utility Weapon",
-          "description": "An official ranged utility item that expands your combat and puzzle options."
-        },
-        {
-          "name": "Scuba Diving Gear",
-          "type": "Traversal Gear",
-          "description": "An official utility item for reaching areas that would otherwise slow down exploration."
-        },
-        {
-          "name": "Explosives",
-          "type": "Utility Damage",
-          "description": "Officially highlighted as part of the core toolset and useful for breaking through threats or obstacles."
+          "name": "Slime Seas Wiki Skills and Mastery",
+          "type": "Database Entry",
+          "description": "Skill unlock progression by stance and mastery level. https://www.slimeseas.wiki/wiki/skills"
         }
       ]
     },
     "lucidBlocksStorageAndInventory": {
-      "title": "Lucid Blocks Storage and Inventory",
+      "title": "Slime Seas Beginner Guide",
       "displayType": "solutionCards",
-      "intro": "Inventory pressure starts early in Lucid Blocks, so building storage should be one of your first goals. Several real player-tested solutions already stand out.",
+      "intro": "Follow this Slime Seas early route to move from Starting Forest into Witch Tower with fewer detours.",
       "solutions": [
         {
-          "name": "Cache Cube",
-          "role": "Chest-Like Storage",
-          "description": "Cache Cubes are one of the earliest practical storage answers and are treated by players as the game's main chest-style container."
+          "name": "Start in Starting Forest",
+          "role": "Step 1",
+          "description": "Farm early enemies, collect Slime Residue, and build your first gear baseline before pushing further."
         },
         {
-          "name": "Cabinet",
-          "role": "Simple Base Storage",
-          "description": "Cabinets are another confirmed storage option. A shared early recipe uses 1 Cut Wood and 1 String."
+          "name": "Lock Core Controls Early",
+          "role": "Step 2",
+          "description": "Stabilize your rhythm with M1 attacks, Q dash, F block, and 1-6 skill usage in short combat loops."
         },
         {
-          "name": "Personal Qualia",
-          "role": "Long-Term Storage Hub",
-          "description": "Once unlocked, your personal Qualia becomes a natural place to organize materials, craft in peace, and expand your base setup."
+          "name": "Push Weapon Mastery First",
+          "role": "Step 3",
+          "description": "Mastery unlocks the real combat kit, so focusing one style early gives faster strength than constant swapping."
         },
         {
-          "name": "Journal Tracking",
-          "role": "Inventory Efficiency",
-          "description": "Recording useful combinations in your journal reduces wasted materials and makes inventory management much easier."
+          "name": "Set Waypoint and Move to Witch Tower",
+          "role": "Step 4",
+          "description": "After first boss readiness, set your waypoint and transition to Witch Tower for higher-power progression."
         }
       ],
       "managementTips": [
-        "Prioritize one dependable storage option before hoarding rare drops.",
-        "Build around your personal Qualia once it becomes available.",
-        "Keep crafting materials, combat tools, and movement gear separated so upgrades are easier to plan.",
-        "Use your journal as part of inventory management, not just crafting discovery."
+        "Use wooden gear benchmarks to set realistic early targets before chasing rare drops.",
+        "Run quests and mastery together so level gains always improve your combat options.",
+        "Prepare around level 15 before entering your first major boss window.",
+        "Use waypoints to cut travel time and increase combat session efficiency."
       ]
     },
     "lucidBlocksQualiaAndBaseBuilding": {
-      "title": "Lucid Blocks Qualia and Base Building",
+      "title": "Slime Seas Race Tier List",
       "displayType": "cards",
-      "intro": "Qualia is one of the most important progression milestones in Lucid Blocks. It gives you a personal space to regroup, store materials, and gradually turn exploration progress into a real home base.",
+      "intro": "Race value in Slime Seas depends on reroll cost, passive impact, and whether your build is PvE farm or PvP pressure focused.",
       "cards": [
         {
-          "name": "Personal Qualia",
-          "description": "Unlocking a Qualia is an early milestone that gives you a more reliable place to return to while exploring the wider world."
+          "name": "S Tier Races",
+          "description": "Best long-term races for high damage scaling, mobility pressure, or all-mode consistency when rerolls are limited."
         },
         {
-          "name": "Storage-First Building",
-          "description": "Many players start using their Qualia as a storage hub before turning it into a larger base with organized crafting and building space."
+          "name": "A Tier Races",
+          "description": "Reliable races with strong passives and practical synergy across questing, bosses, and arena skirmishes."
         },
         {
-          "name": "Creative Home Building",
-          "description": "Lucid Blocks supports creative building, and players are already using Qualia spaces to make houses and personalized layouts."
+          "name": "B Tier Races",
+          "description": "Playable options that are still useful early but usually replaced after enough reroll stock accumulates."
         },
         {
-          "name": "Progression Hub",
-          "description": "A strong base helps you separate exploration loot, crafting materials, seeds, tools, and mobility gear so your next upgrades are easier to plan."
+          "name": "Reroll Hold Rules",
+          "description": "Hold any race with broad utility if your reroll budget is low, then chase narrower upgrades after account stability."
         }
       ],
       "highlights": [
-        "Enter a qualia",
-        "Store materials safely",
-        "Expand from utility to decoration",
-        "Use base space to support crafting and farming"
+        "Prioritize race value per reroll spent",
+        "Keep one stable race for farming sessions",
+        "Reroll aggressively only with reserve stock",
+        "Re-evaluate after each major balance patch"
       ]
     },
     "lucidBlocksWorldRegions": {
-      "title": "Lucid Blocks World Regions",
+      "title": "Slime Seas Best Weapons",
       "displayType": "regionCards",
-      "intro": "Lucid Blocks uses infinite world generation, so players keep discovering new environments and structures. A few named places are already showing up in achievements and community discussions.",
+      "intro": "Weapon priority in Slime Seas should follow your mastery plan and world progression stage rather than rarity alone.",
       "regions": [
         {
-          "name": "Fog Meadow",
-          "type": "Community-Noted Area",
-          "description": "Fog Meadow is already known among players as a tense area associated with hidden threats and dangerous encounters."
+          "name": "Early Game Weapons",
+          "type": "Starter Tier",
+          "description": "Fast-upgrade options that clear early islands without overinvesting in low-value gear paths."
         },
         {
-          "name": "Tiamana Leyline",
-          "type": "Discovery Landmark",
-          "description": "The tiamana leyline is important enough to have its own achievement milestone, making it one of the clearest named world discoveries so far."
+          "name": "Mid Game Weapons",
+          "type": "Progression Tier",
+          "description": "Balanced picks with stable damage growth for boss prep and repeatable farming loops."
         },
         {
-          "name": "Clonaqualia",
-          "type": "Build Space",
-          "description": "Players are already using Clonaqualia as a place to build houses, store materials, and experiment with more permanent layouts."
+          "name": "Late Game Weapons",
+          "type": "Endgame Tier",
+          "description": "High-ceiling choices for optimized builds after mastery and resource routes are established."
         },
         {
-          "name": "Essence Morass",
-          "type": "Farming Area",
-          "description": "Essence Morass is being shared by players as a useful farming location, especially for fighting slimes and gaining experience."
+          "name": "Weapon Swap Rules",
+          "type": "Decision Model",
+          "description": "Switch only when your next weapon improves both damage profile and practical combat flow."
         }
       ]
     },
     "lucidBlocksCreaturesAndEnemies": {
-      "title": "Lucid Blocks Creatures and Enemies",
+      "title": "Slime Seas Weapon Mastery Guide",
       "displayType": "creatureCards",
-      "intro": "Lucid Blocks mixes surreal creatures with real danger. Official descriptions and community posts point to a world full of strange life, hostile threats, and a few standout encounters players remember quickly.",
+      "intro": "Mastery levels are the core of Slime Seas weapon progression, unlocking key skills at fixed breakpoints.",
       "creatures": [
         {
-          "name": "Manikins",
-          "role": "Hostile Enemy",
-          "description": "Manikins are one of the officially named foes in the world and part of the game's surreal threat roster."
+          "name": "Katana Mastery Route",
+          "role": "Primary Style",
+          "description": "Flashblade Surge, Surge Wave, and Thousand Slices create a strong scaling line for clean combos."
         },
         {
-          "name": "Squishy Gels",
-          "role": "Hostile Enemy",
-          "description": "Squishy gels are another officially named enemy type and help define the game's strange biological style."
+          "name": "Scythe Mastery Route",
+          "role": "Primary Style",
+          "description": "Death’s Grasp into Spinning Strike and Void Surge supports control-heavy combat sequences."
         },
         {
-          "name": "Higher-Dimensional Beings",
-          "role": "Hostile Enemy",
-          "description": "These beings are presented as part of the world's more abstract and unsettling enemy lineup."
+          "name": "Greatsword Mastery Route",
+          "role": "Primary Style",
+          "description": "Earth Breaker, Sweeping Slam, and Spiraling Slash emphasize stagger pressure and burst windows."
         },
         {
-          "name": "Colossal Spiders",
-          "role": "Major Threat",
-          "description": "Spiders are one of the most immediately feared enemies in community discussions and are clearly a memorable danger."
+          "name": "Berserker Mastery Route",
+          "role": "Primary Style",
+          "description": "Impaling Thrust and slam chains reward aggressive positioning in short, high-damage trades."
         },
         {
-          "name": "Bubblebear",
-          "role": "Named Creature",
-          "description": "Bubblebear is notable enough to have its own achievement, which makes it one of the clearest named creature encounters in the game."
+          "name": "Mastery 1 / 3 / 5 Benchmarks",
+          "role": "Progression Rule",
+          "description": "Prioritize reaching each breakpoint on one style before splitting resources across multiple weapons."
         },
         {
-          "name": "Cute Vermin",
-          "role": "Interactable Creature",
-          "description": "Vermin are not only part of fusion progression, they can also be renamed, giving them a more personal role than standard enemies."
-        },
-        {
-          "name": "Blasphemous Creature",
-          "role": "Elite Threat",
-          "description": "The blasphemous creature is tied to a dedicated combat achievement, marking it as a significant enemy encounter."
+          "name": "Combo Discipline",
+          "role": "Execution Rule",
+          "description": "Pair mobility and guard timing with mastery skills to convert openings into consistent damage output."
         }
       ]
     },
     "lucidBlocksMobilityGear": {
-      "title": "Lucid Blocks Mobility Gear",
+      "title": "Slime Seas World Progression Guide",
       "displayType": "itemCards",
-      "intro": "Movement upgrades are one of the biggest quality-of-life jumps in Lucid Blocks. Once you unlock your first traversal tools, exploration becomes faster, safer, and much more rewarding.",
+      "intro": "World progression in Slime Seas is smoother when you follow power targets, waypoint setup, and boss timing by island.",
       "items": [
         {
-          "name": "Hookshot",
-          "type": "Traversal Tool",
-          "description": "The hookshot is one of the clearest movement milestones in the game and has its own dedicated achievement."
+          "name": "Starting Forest",
+          "type": "World 1",
+          "description": "Recommended power baseline starts at 0 with early farming on Basic Slime and Wolf Slime routes."
         },
         {
-          "name": "Glider Glove",
-          "type": "Air Mobility",
-          "description": "The glider glove opens up much smoother travel and is another major progression milestone with its own achievement."
+          "name": "Witch Tower",
+          "type": "World 2",
+          "description": "Move here after early quest and mastery setup, with a practical target around 100 recommended power."
         },
         {
-          "name": "Bee Glider",
-          "type": "Traversal Tool",
-          "description": "Bee gliders are officially highlighted as part of the game's movement toolkit for covering space more efficiently."
+          "name": "Waypoint System",
+          "type": "Travel Core",
+          "description": "Always unlock waypoint anchors to remove repeat boat travel and increase combat uptime."
         },
         {
-          "name": "Ball Wand",
-          "type": "Utility Gear",
-          "description": "Ball wands are one of the officially highlighted special tools and expand how you move through or interact with the world."
+          "name": "Quest Loop Pacing",
+          "type": "Progression Core",
+          "description": "Run local quest loops to keep level gain, mastery growth, and drop routes synchronized."
         },
         {
-          "name": "Scuba Diving Gear",
-          "type": "Exploration Gear",
-          "description": "Scuba diving gear is officially listed as part of the core utility set for reaching areas that would otherwise be harder to explore."
+          "name": "Boss Window Timing",
+          "type": "Transition Rule",
+          "description": "Enter each island boss phase when your gear, skills, and sustain tools have stable consistency."
         },
         {
-          "name": "Explosives",
-          "type": "Utility Damage",
-          "description": "Explosives are both officially highlighted and linked to an achievement milestone, making them part of the game's core utility progression."
+          "name": "Return Routing",
+          "type": "Efficiency Rule",
+          "description": "Use unlocked teleport points to split sessions between upgrades, quests, and resource restocks."
         }
       ],
       "unlockMilestones": [
-        "Command a hookshot",
-        "Fly with the glider glove",
-        "Brandish a projectile wand",
-        "Brandish an explosive"
+        "Clear Starting Forest route",
+        "Set first reliable waypoint",
+        "Transition into Witch Tower path",
+        "Stabilize island-to-island progression cycle"
       ]
     },
     "lucidBlocksFarmingAndGrowth": {
-      "title": "Lucid Blocks Farming and Growth",
+      "title": "Slime Seas Bosses and Drops",
       "displayType": "mixedCards",
-      "intro": "Growth is part of real progression in Lucid Blocks. Farming is not only about planting and harvesting, but also about setting up repeatable material routes that keep your tools, weapons, and crafting options flowing.",
+      "intro": "Boss routing becomes efficient when you align fight order with drop goals and your current build stage.",
       "sections": [
         {
-          "name": "Seed Progression",
-          "description": "Planting and fertilizing seeds is a real milestone in the game, and harvesting a fully-grown nut is part of the same growth path."
+          "name": "Boss Route Order",
+          "description": "Clear bosses by world progression instead of skipping ahead so survivability stays consistent."
         },
         {
-          "name": "Material Farming",
-          "description": "A practical early farming loop is creating Mercury Capsules, which spawn small slimes that drop Tendrils and goo for repeatable crafting materials."
+          "name": "Drop Priority",
+          "description": "Target drops that unlock immediate power spikes for your active weapon mastery path."
         },
         {
-          "name": "Tool Sustain",
-          "description": "Resource farming becomes much stronger once you can consistently gather Osmium, glass shards, plants, and slime materials for follow-up crafts."
+          "name": "Fight Preparation",
+          "description": "Carry potion support, maintain mobility discipline, and set a quick reset route before attempts."
         },
         {
-          "name": "Base Routine",
-          "description": "The best farming setup supports more than food. It should feed your storage, movement tools, weapon upgrades, and future fusion experiments."
+          "name": "Repeat Farm Logic",
+          "description": "Re-farm bosses with high-value rewards once your kill speed supports stable repetition."
         }
       ],
       "growthMilestones": [
-        "Fertilize a seed",
-        "Harvest a fully-grown nut",
-        "Create repeatable material loops",
-        "Turn farming into long-term progression"
+        "Clear first major boss route",
+        "Secure first high-value boss drop",
+        "Build a repeatable boss farm loop",
+        "Optimize route by kill speed and downtime"
       ]
     },
     "lucidBlocksBestEarlyUnlocks": {
-      "title": "Lucid Blocks Best Early Unlocks",
+      "title": "Slime Seas Pets Guide",
       "displayType": "priorityCards",
-      "intro": "The strongest early unlocks are the ones that improve safety, storage, and movement. In Lucid Blocks, a few practical upgrades can make the entire rest of the game much smoother.",
+      "intro": "Pets are a practical progression layer in Slime Seas, especially when travel efficiency and utility scaling matter.",
       "priorities": [
         {
-          "name": "Personal Qualia",
+          "name": "Early Pet Unlock",
           "priority": "Essential",
-          "description": "As soon as you get access to your personal Qualia, your run becomes much more stable. It acts as a reliable hub for storage, building, and regrouping."
+          "description": "Secure your first pet path early so utility gains start compounding with world progression."
         },
         {
-          "name": "Frost Pick",
+          "name": "Egg Route Planning",
           "priority": "Very High",
-          "description": "A fast and cheap early mining tool made from Osmium and Stick. It is one of the most useful upgrades for accelerating early resource collection."
+          "description": "Prioritize egg sources tied to your active island loop to avoid low-value detours."
         },
         {
-          "name": "Cache Cube",
+          "name": "Hatch Timing",
           "priority": "Very High",
-          "description": "Storage pressure starts early, so getting your first dependable chest-style container is a major quality-of-life upgrade."
+          "description": "Use hatch windows when you can immediately leverage movement or combat utility upgrades."
         },
         {
-          "name": "Hookshot",
+          "name": "Pet Utility Fit",
           "priority": "High",
-          "description": "The hookshot is one of the clearest movement milestones in the game and quickly makes exploration faster and safer."
+          "description": "Choose pets that strengthen your current farm route rather than collecting by rarity alone."
         },
         {
-          "name": "Glider Glove",
+          "name": "Resource Budgeting",
           "priority": "High",
-          "description": "The glider glove adds another major mobility boost and makes long-distance movement far more efficient."
+          "description": "Balance pet investment with weapon and race progression to prevent upgrade bottlenecks."
         },
         {
-          "name": "Projectile Wand or Bombs",
+          "name": "Upgrade Rotation",
           "priority": "High",
-          "description": "A ranged tool or explosive option gives you a safer answer to dangerous enemies and trial-style encounters."
+          "description": "Rotate pet focus when your route shifts from leveling speed to endgame drop optimization."
         }
       ]
     },
     "lucidBlocksAchievementTracker": {
-      "title": "Lucid Blocks Achievement Tracker",
+      "title": "Slime Seas Merchant Locations",
       "displayType": "achievementGrid",
-      "intro": "Lucid Blocks currently has 19 Steam achievements, and they naturally split into exploration, crafting, mobility, combat, and growth progression.",
+      "intro": "Merchant routing in Slime Seas saves travel time and improves upgrade timing when your inventory plan is clear.",
       "groups": [
         {
-          "name": "Exploration",
+          "name": "Starting Forest Merchant Route",
           "achievements": [
             {
-              "title": "Angel α",
-              "description": "Enter a qualia."
+              "title": "Entrance Vendor",
+              "description": "Use this stop for quick early restocks before long quest loops."
             },
             {
-              "title": "Angel γ",
-              "description": "Discover a tiamana leyline."
+              "title": "Pathside Merchant",
+              "description": "Check this route point for affordable utility restocks mid-run."
             },
             {
-              "title": "Angel δ",
-              "description": "Overcome a tiamana challenge."
+              "title": "Quest Hub Merchant",
+              "description": "Pair with quest turn-ins to cut travel overhead and downtime."
             },
             {
-              "title": "Angel ε",
-              "description": "Hidden achievement."
+              "title": "Checkpoint Supplier",
+              "description": "Use as a repeat stop before boss prep attempts."
             }
           ]
         },
         {
-          "name": "Crafting and Summoning",
+          "name": "Witch Tower Merchant Route",
           "achievements": [
             {
-              "title": "Apotheosis α",
-              "description": "Fuse an item."
+              "title": "Tower Entry Vendor",
+              "description": "First restock point after transition into Witch Tower progression."
             },
             {
-              "title": "Apotheosis β",
-              "description": "Fuse a vermin."
+              "title": "Potion Supplier",
+              "description": "Prioritize sustain-related purchases for repeat fight consistency."
             },
             {
-              "title": "Apotheosis γ",
-              "description": "Fuse a divine artifact."
+              "title": "Material Buyer",
+              "description": "Convert surplus drops into currency for faster upgrade pacing."
             },
             {
-              "title": "Archangel β",
-              "description": "Summon your faith."
+              "title": "Route Reset Merchant",
+              "description": "Use before each repeated route cycle to stay combat-ready."
             }
           ]
         },
         {
-          "name": "Mobility and Utility",
+          "name": "Merchant Planning Rules",
           "achievements": [
             {
-              "title": "Virtue α",
-              "description": "Fly with the glider glove."
+              "title": "Buy by Build Stage",
+              "description": "Purchase around immediate power gains, not broad inventory filling."
             },
             {
-              "title": "Virtue β",
-              "description": "Command a hookshot."
+              "title": "Avoid Overbuying",
+              "description": "Keep currency available for mastery and weapon transitions."
             },
             {
-              "title": "Archangel α",
-              "description": "Brandish a projectile wand."
+              "title": "Track High-Value Restocks",
+              "description": "Return only when stock directly supports your active route."
             },
             {
-              "title": "Archangel γ",
-              "description": "Brandish an explosive."
-            }
-          ]
-        },
-        {
-          "name": "Combat and Creatures",
-          "achievements": [
-            {
-              "title": "Bubblebear Massacre",
-              "description": "Defeat innocent bubblebears."
-            },
-            {
-              "title": "Archangel δ",
-              "description": "Eliminate a blasphemous creature."
-            },
-            {
-              "title": "Angel β",
-              "description": "Die."
-            },
-            {
-              "title": "Dominion γ",
-              "description": "Rename a cute vermin."
-            }
-          ]
-        },
-        {
-          "name": "Growth and Farming",
-          "achievements": [
-            {
-              "title": "Dominion α",
-              "description": "Fertilize a seed."
-            },
-            {
-              "title": "Dominion β",
-              "description": "Harvest a fully-grown nut."
-            },
-            {
-              "title": "Dominion δ",
-              "description": "Hidden achievement."
+              "title": "Chain with Waypoints",
+              "description": "Use teleport paths to combine merchant and farming efficiency."
             }
           ]
         }
       ]
     },
     "lucidBlocksSingleplayerAndPlatformFAQ": {
-      "title": "Lucid Blocks Singleplayer and Platform FAQ",
+      "title": "Slime Seas Skills Guide",
       "displayType": "accordion",
-      "intro": "These are the core platform and access questions players keep asking before buying Lucid Blocks.",
+      "intro": "Core Slime Seas skills define combat rhythm, mobility timing, and boss consistency.",
       "faqs": [
         {
-          "question": "Is Lucid Blocks singleplayer?",
-          "answer": "Yes. Lucid Blocks is a singleplayer game."
+          "question": "How should I use Slime Seas Dash in combat?",
+          "answer": "Use Slime Seas Dash to reset spacing, avoid heavy hits, and reopen skill windows after short combos."
         },
         {
-          "question": "Is multiplayer or co-op planned?",
-          "answer": "No. Multiplayer is not planned for release or future updates."
+          "question": "Which Slime Seas skills should I learn first?",
+          "answer": "Prioritize mobility and reliable damage skills tied to your main mastery weapon before niche options."
         },
         {
-          "question": "Where can I play Lucid Blocks?",
-          "answer": "It is currently available on Steam for Windows."
+          "question": "How do Slime Seas mastery skills unlock?",
+          "answer": "Each weapon mastery route unlocks major skills at fixed level breakpoints, so focused training is fastest."
         },
         {
-          "question": "How much does Lucid Blocks cost?",
-          "answer": "$9.99 on Steam."
+          "question": "When should I switch Slime Seas skill loadouts?",
+          "answer": "Switch loadouts when your world route shifts from leveling to bosses or when your PvP plan changes."
         },
         {
-          "question": "Does Lucid Blocks support controllers?",
-          "answer": "Yes, but controller play is not recommended because the menus are not designed around it."
+          "question": "How do Slime Seas skills affect farming speed?",
+          "answer": "Efficient skill chains reduce downtime between pulls and make repeated material routes significantly faster."
         },
         {
-          "question": "Does Lucid Blocks work on Steam Deck?",
-          "answer": "Yes. Proton 9.0 or 9.0.4 is the commonly recommended setup for Steam Deck."
-        },
-        {
-          "question": "Does Lucid Blocks work on Linux?",
-          "answer": "Yes. Proton 9.0 is reported to work well for Linux and Steam Deck."
-        },
-        {
-          "question": "Will Mac or Android be supported?",
-          "answer": "They may be supported in the future, but they are not current launch platforms."
-        },
-        {
-          "question": "Does Lucid Blocks have translations?",
-          "answer": "No. There are currently no translations planned."
-        },
-        {
-          "question": "Will Lucid Blocks keep getting updates?",
-          "answer": "Yes. Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
+          "question": "What is the best Slime Seas skill pattern for bosses?",
+          "answer": "Open with safe poke skills, hold mobility for danger windows, then commit burst during clear punish timing."
         }
       ]
     },
     "lucidBlocksSteamDeckAndController": {
-      "title": "Lucid Blocks Steam Deck and Controller",
+      "title": "Slime Seas PvP Guide",
       "displayType": "accordion",
-      "intro": "Lucid Blocks can run on Steam Deck, but the default setup may need adjustment. Keyboard and mouse remains the smoother option for menus and general play.",
+      "intro": "Slime Seas PvP performance comes from matchup awareness, spacing control, and disciplined skill sequencing.",
       "faqs": [
         {
-          "question": "Does Lucid Blocks work on Steam Deck?",
-          "answer": "Yes. Proton 9.0 works well, and Proton 9.0.4 is a commonly shared fix for Steam Deck issues."
+          "question": "What is a strong Slime Seas PvP opener?",
+          "answer": "Open with fast gap control, force a defensive reaction, then convert with your highest-confidence combo starter."
         },
         {
-          "question": "What should I do if Steam Deck controls are not working?",
-          "answer": "Force compatibility and switch the game to Proton 9.0.4. The default configuration may not accept controller input correctly."
+          "question": "How important is race choice in Slime Seas PvP?",
+          "answer": "Race passives heavily influence Slime Seas PvP pressure windows, sustain, and punish potential."
         },
         {
-          "question": "Does Lucid Blocks support controllers?",
-          "answer": "Yes, but controller play is not recommended because the game's menus are not designed around it."
+          "question": "Should I build Slime Seas PvP differently from PvE?",
+          "answer": "Yes. Slime Seas PvP builds usually favor burst timing, mobility resets, and anti-pressure tools over pure farm speed."
         },
         {
-          "question": "Is Linux support possible?",
-          "answer": "Yes. Proton 9.0 is reported to work well for Linux and Steam Deck."
+          "question": "How do I improve Slime Seas PvP consistency?",
+          "answer": "Review losses by matchup, tighten defensive timing, and keep your combo plan short enough to execute reliably."
         },
         {
-          "question": "What is the best input setup?",
-          "answer": "Keyboard and mouse is the smoothest option for menu navigation and general moment-to-moment play."
+          "question": "Which Slime Seas PvP habit gives fastest improvement?",
+          "answer": "Track spacing errors first, then fix overcommit patterns that expose you after missed burst attempts."
         }
       ]
     },
     "lucidBlocksSettingsAndAccessibility": {
-      "title": "Lucid Blocks Settings and Accessibility",
+      "title": "Slime Seas Items and Materials",
       "displayType": "settingCards",
-      "intro": "Lucid Blocks already has a few practical settings and compatibility notes that matter immediately when players first launch the game.",
+      "intro": "Use this Slime Seas item reference framework to track drops, material usage, and gear upgrade planning.",
       "settings": [
         {
-          "name": "Display Settings",
-          "type": "Comfort Option",
-          "description": "Display Settings includes an option that lets players hide the on-screen hands."
+          "name": "Weapons and Gear Materials",
+          "type": "Upgrade Core",
+          "description": "Track weapon and gear materials by island so each farming session has a clear upgrade target."
         },
         {
-          "name": "Graphics Compatibility",
-          "type": "System Requirement",
-          "description": "Vulkan support is required for the graphics to render properly. Systems without Vulkan can run into crashes and severe graphical glitches."
+          "name": "Potion Ingredients",
+          "type": "Sustain Core",
+          "description": "Build potion ingredient routes around your active boss or quest loop for stable session throughput."
         },
         {
-          "name": "Input Preference",
-          "type": "Control Setup",
-          "description": "Controller support exists, but keyboard and mouse gives a smoother experience because menus are not built around controller use."
+          "name": "Rare Drop Routing",
+          "type": "Efficiency Core",
+          "description": "Prioritize rare material routes only after your baseline progression path is already stable."
         },
         {
-          "name": "Language Support",
-          "type": "Localization",
-          "description": "The current setup is English-only, and no translations are planned right now."
+          "name": "Inventory Sorting Rules",
+          "type": "Management Core",
+          "description": "Separate high-frequency materials, upgrade-only drops, and marketable items to reduce downtime."
         }
       ]
     },
     "lucidBlocksUpdatesAndPatchNotes": {
-      "title": "Lucid Blocks Updates and Patch Notes",
+      "title": "Slime Seas Damage Calculator",
       "displayType": "timeline",
-      "intro": "Lucid Blocks is already receiving quick post-launch fixes and small usability updates.",
+      "intro": "Use a Slime Seas damage calculator workflow to compare builds before spending rerolls or upgrade materials.",
       "entries": [
         {
-          "title": "Update 2.8.2",
-          "type": "UI Update",
-          "description": "Renamed \"awaken\" to \"exit\" in the main menu."
+          "title": "Input Race and Passive Multipliers",
+          "type": "Step 1",
+          "description": "Start with race-based modifiers so your baseline output reflects real build conditions."
         },
         {
-          "title": "Small Patch for Start-Up Crashes",
-          "type": "Hotfix",
-          "description": "A dedicated patch was released for players whose game was crashing on launch."
+          "title": "Add Weapon and Mastery Skill Values",
+          "type": "Step 2",
+          "description": "Include weapon scaling and mastery skill coefficients to estimate burst and sustained output."
         },
         {
-          "title": "Post-Launch Content Support",
-          "type": "Roadmap Note",
-          "description": "Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
+          "title": "Compare Boss and PvP Profiles",
+          "type": "Step 3",
+          "description": "Run side-by-side damage checks for boss routes and PvP matchups before finalizing your build."
+        },
+        {
+          "title": "Validate with Live Combat Logs",
+          "type": "Step 4",
+          "description": "Cross-check calculator outputs with actual fight sessions and adjust assumptions when needed."
         }
       ]
     },
     "lucidBlocksCrashFixAndTroubleshooting": {
-      "title": "Lucid Blocks Crash Fix and Troubleshooting",
+      "title": "Slime Seas Reroll Probability",
       "displayType": "steps",
-      "intro": "Most immediate launch and crash issues should be checked in a simple order: patch level, graphics support, platform compatibility, and logs.",
+      "intro": "Plan Slime Seas rerolls by probability so race targeting decisions stay efficient and resource-aware.",
       "steps": [
         {
-          "title": "Install the Latest Crash Hotfix",
-          "description": "If the game is crashing on start, update first and test again with the latest start-up crash patch."
+          "title": "Set Target Race and Odds",
+          "description": "Define your target race and expected chance before spending rerolls to avoid impulse decisions."
         },
         {
-          "title": "Check Vulkan Support",
-          "description": "Lucid Blocks requires Vulkan support. Systems without Vulkan can suffer from crashes or major rendering problems."
+          "title": "Estimate Expected Attempts",
+          "description": "Calculate approximate rerolls needed at your target odds to set practical farming goals."
         },
         {
-          "title": "Use Proton 9.0.4 on Steam Deck",
-          "description": "If Steam Deck input or launch behavior is broken, force compatibility and switch to Proton 9.0.4."
+          "title": "Evaluate Success by Budget",
+          "description": "Check hit probability at multiple reroll stock levels to decide whether to commit now or save."
         },
         {
-          "title": "Collect Crash Logs",
-          "description": "Open Windows Run, paste %APPDATA%, go to lucid blocks/logs, and gather the .txt files for troubleshooting."
+          "title": "Compare Keep vs Reroll Value",
+          "description": "Measure current race utility against expected gain from rerolling before locking a decision."
         },
         {
-          "title": "Report the Issue Properly",
-          "description": "Share the logs and device details through the official Discord bug-reports forum or on the Steam community page."
+          "title": "Recalculate After New Codes",
+          "description": "Update probability plans whenever new Slime Seas codes add rerolls to your inventory."
         }
       ]
     }
@@ -748,31 +693,31 @@
   "faq": {
     "title": "Frequently Asked",
     "titleHighlight": "Questions",
-    "subtitle": "Everything you need to know about Lucid Blocks",
+    "subtitle": "Everything you need to know about Slime Seas",
     "questions": [
       {
-        "question": "Is Lucid Blocks a singleplayer game?",
-        "answer": "Yes. Lucid Blocks is a singleplayer-only game with no multiplayer or co-op planned."
+        "question": "Is Slime Seas a Roblox anime RPG?",
+        "answer": "Yes. Slime Seas is a Roblox anime RPG focused on world progression, weapon mastery, boss routes, and PvP-ready builds."
       },
       {
-        "question": "What is the Apotheosis system in Lucid Blocks?",
-        "answer": "Apotheosis is Lucid Blocks' freeform fusion crafting system. Instead of following fixed recipes, you combine materials and discover your own crafting paths."
+        "question": "How do Slime Seas codes help progression?",
+        "answer": "Slime Seas codes provide rerolls, potion boosts, and keys that accelerate race planning and early-to-mid progression."
       },
       {
-        "question": "Where can I play Lucid Blocks?",
-        "answer": "Lucid Blocks is currently available on Steam for Windows. Linux and Steam Deck support is available through Proton 9.0."
+        "question": "Where can I find official Slime Seas updates?",
+        "answer": "Use the official Slime Seas Discord, X account, Trello board, and Roblox Group for announcements and roadmap notes."
       },
       {
-        "question": "How much does Lucid Blocks cost?",
-        "answer": "Lucid Blocks costs $9.99 on Steam."
+        "question": "What should new players focus on first in Slime Seas?",
+        "answer": "New Slime Seas players should lock core controls, focus one weapon mastery route, and follow world checkpoints with waypoint setup."
       },
       {
-        "question": "Does Lucid Blocks support controllers?",
-        "answer": "Yes, but controller play is not recommended because the menus are not designed around it. Keyboard and mouse is the smoother option."
+        "question": "How should I plan Slime Seas race rerolls?",
+        "answer": "Plan Slime Seas rerolls around probability, current race utility, and available reroll stock instead of chasing random outcomes."
       },
       {
-        "question": "Will Lucid Blocks receive updates?",
-        "answer": "Yes. Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
+        "question": "Does Slime Seas include PvP progression?",
+        "answer": "Yes. Slime Seas includes PvP, and build tuning around race passives, mastery skills, and spacing discipline improves consistency."
       }
     ]
   },
@@ -801,121 +746,121 @@
   },
   "pages": {
     "guides": {
-      "title": "Lucid Blocks Guides",
-      "description": "Complete gameplay guides from beginner basics to advanced Apotheosis strategies. Master survival and crafting.",
-      "metaTitle": "Lucid Blocks Guides - Beginner to Advanced Strategies",
-      "metaDescription": "Complete Lucid Blocks guides covering beginner tips, Apotheosis system, survival strategies, and expert tactics for mastering the surreal sandbox.",
+      "title": "Slime Seas Guides",
+      "description": "Complete Slime Seas guides from beginner basics to advanced route planning.",
+      "metaTitle": "Slime Seas Guides - Beginner to Advanced Routes",
+      "metaDescription": "Complete Slime Seas guides covering beginner progression, leveling routes, mastery planning, and late-game optimization.",
       "categoryLabel": "GAME GUIDES",
       "whatIs": "What are Guides?",
-      "whatIsDescription": "Comprehensive guides covering gameplay mechanics, survival strategies, and the Apotheosis crafting system. Learn everything from first steps to advanced techniques.",
+      "whatIsDescription": "Comprehensive Slime Seas guides for progression, combat rhythm, world routing, and practical gameplay decisions.",
       "why": "Why read guides?",
       "whySteps": {
-        "step1Title": "Learn Core Mechanics",
-        "step1Description": "Understand the Apotheosis system and avoid common beginner mistakes",
-        "step2Title": "Fast Progression",
-        "step2Description": "Follow proven paths to survive and thrive in the surreal world",
-        "step3Title": "Master Strategies",
-        "step3Description": "Develop advanced tactics for exploration and crafting"
+        "step1Title": "Learn Core Systems",
+        "step1Description": "Understand codes, mastery, races, and world transitions quickly",
+        "step2Title": "Progress Faster",
+        "step2Description": "Follow route logic that minimizes detours and downtime",
+        "step3Title": "Build Better Habits",
+        "step3Description": "Use repeatable patterns for bosses, farming, and PvP prep"
       },
       "featured": "Featured & Essential",
       "all": "All Guides"
     },
     "crafting": {
-      "title": "Lucid Blocks Crafting",
-      "description": "Master the Apotheosis fusion system with essence mechanics, recipes, and crafting strategies for powerful items.",
-      "metaTitle": "Lucid Blocks Crafting - Apotheosis System & Recipes",
-      "metaDescription": "Master Lucid Blocks Apotheosis crafting system. Learn essence mechanics, fusion recipes, and strategies for creating powerful tools and weapons.",
+      "title": "Slime Seas Crafting",
+      "description": "Crafting and material routes for weapons, potions, and progression upgrades in Slime Seas.",
+      "metaTitle": "Slime Seas Crafting - Materials and Upgrade Paths",
+      "metaDescription": "Learn Slime Seas crafting routes, ingredient priorities, and upgrade planning for efficient progression.",
       "categoryLabel": "CRAFTING SYSTEM",
       "whatIs": "What is Crafting?",
-      "whatIsDescription": "The Apotheosis system is a unique essence-driven fusion mechanic where you combine up to six items to discover new recipes. No fixed crafting menus—experimentation is key.",
+      "whatIsDescription": "Slime Seas crafting guides focused on practical material routes, potion planning, and upgrade sequencing.",
       "why": "Why master crafting?",
       "whySteps": {
-        "step1Title": "Unlock Powerful Items",
-        "step1Description": "Discover essential tools, weapons, and mobility gear through fusion",
-        "step2Title": "Understand Essences",
-        "step2Description": "Learn how item essences combine to create predictable results",
-        "step3Title": "Optimize Resources",
-        "step3Description": "Use dilution mechanics to maximize output from cheap materials"
+        "step1Title": "Unlock Better Gear",
+        "step1Description": "Craft around immediate combat and survival upgrades",
+        "step2Title": "Optimize Materials",
+        "step2Description": "Use route-based farming to reduce wasted resources",
+        "step3Title": "Support Progression",
+        "step3Description": "Tie crafting into world transitions and boss readiness"
       },
       "featured": "Featured & Essential",
       "all": "All Crafting Guides"
     },
     "items": {
-      "title": "Lucid Blocks Items",
-      "description": "Detailed item guides covering tools, weapons, mobility gear, and storage solutions with crafting recipes and usage tips.",
-      "metaTitle": "Lucid Blocks Items - Tools, Weapons & Gear Guide",
-      "metaDescription": "Complete item database for Lucid Blocks including tools, weapons, mobility gear, and storage. Learn how to craft and use every item effectively.",
+      "title": "Slime Seas Items",
+      "description": "Item and material references for weapons, drops, and upgrade planning in Slime Seas.",
+      "metaTitle": "Slime Seas Items - Weapons, Drops, and Materials",
+      "metaDescription": "Browse Slime Seas item references for weapons, materials, drop sources, and practical usage priorities.",
       "categoryLabel": "ITEMS & EQUIPMENT",
       "whatIs": "What are Items?",
-      "whatIsDescription": "Comprehensive guides for tools, weapons, mobility gear, and functional items. Learn crafting recipes, usage strategies, and optimal combinations.",
+      "whatIsDescription": "Guides for item sources, drop routing, and upgrade value so players can prioritize high-impact materials.",
       "why": "Why check item guides?",
       "whySteps": {
-        "step1Title": "Learn Crafting Recipes",
-        "step1Description": "Discover how to craft essential tools and weapons using Apotheosis",
-        "step2Title": "Optimize Equipment",
-        "step2Description": "Choose the best items for your playstyle and progression stage",
-        "step3Title": "Improve Survival",
-        "step3Description": "Equip mobility gear and weapons to navigate the dangerous world"
+        "step1Title": "Find Key Materials",
+        "step1Description": "Locate the items needed for core upgrades quickly",
+        "step2Title": "Plan Upgrade Order",
+        "step2Description": "Spend resources on the highest-value weapon paths first",
+        "step3Title": "Reduce Downtime",
+        "step3Description": "Use clear item routing to keep progression sessions efficient"
       },
       "featured": "Featured & Essential",
       "all": "All Items"
     },
     "biomes": {
-      "title": "Lucid Blocks Biomes",
-      "description": "Explore world regions, environmental features, resource locations, and survival tips for each biome.",
-      "metaTitle": "Lucid Blocks Biomes - World Regions & Exploration",
-      "metaDescription": "Explore Lucid Blocks biomes including Tiamana Leylines, Fog Meadow, and surreal regions. Find resources, avoid dangers, and navigate the infinite world.",
+      "title": "Slime Seas Worlds",
+      "description": "World and island progression references for route planning, travel, and farming.",
+      "metaTitle": "Slime Seas Worlds - Islands and Progression Routes",
+      "metaDescription": "Explore Slime Seas world order, island checkpoints, farming routes, and progression-focused travel planning.",
       "categoryLabel": "WORLD REGIONS",
-      "whatIs": "What are Biomes?",
-      "whatIsDescription": "Guides to different world regions, environmental features, resource distribution, and danger zones. Learn what to expect and how to prepare for each area.",
-      "why": "Why explore biomes?",
+      "whatIs": "What are Worlds?",
+      "whatIsDescription": "World progression guides that connect power targets, quest loops, waypoint strategy, and boss transitions.",
+      "why": "Why study world routes?",
       "whySteps": {
-        "step1Title": "Find Resources",
-        "step1Description": "Locate rare materials and essences specific to each region",
-        "step2Title": "Avoid Dangers",
-        "step2Description": "Understand environmental hazards and hostile creatures",
-        "step3Title": "Plan Exploration",
-        "step3Description": "Prepare the right tools and gear for each biome type"
+        "step1Title": "Move Efficiently",
+        "step1Description": "Use waypoint logic and island order to avoid long detours",
+        "step2Title": "Prepare Better",
+        "step2Description": "Enter each region with appropriate power and loadout",
+        "step3Title": "Farm Smarter",
+        "step3Description": "Route sessions around materials and upgrade breakpoints"
       },
       "featured": "Featured & Essential",
-      "all": "All Biomes"
+      "all": "All Worlds"
     },
     "building": {
-      "title": "Lucid Blocks Building",
-      "description": "Master Qualia personal dimensions, base building, storage management, and creative construction techniques.",
-      "metaTitle": "Lucid Blocks Building - Qualia & Base Construction",
-      "metaDescription": "Master Lucid Blocks building with Qualia personal dimensions, base construction, storage solutions, and creative building techniques.",
-      "categoryLabel": "BUILDING & BASES",
-      "whatIs": "What is Building?",
-      "whatIsDescription": "Guides to the Qualia personal dimension system, base construction, storage management, and creative building. Learn to create your safe haven in the surreal world.",
-      "why": "Why build bases?",
+      "title": "Slime Seas Builds",
+      "description": "Build planning for race synergy, mastery routes, and PvE/PvP performance.",
+      "metaTitle": "Slime Seas Builds - Race and Weapon Synergy",
+      "metaDescription": "Plan Slime Seas builds with race synergy, weapon mastery choices, and role-specific combat priorities.",
+      "categoryLabel": "BUILDS & LOADOUTS",
+      "whatIs": "What are Builds?",
+      "whatIsDescription": "Build guides focused on how race passives, weapon mastery, and skill timing interact in real gameplay.",
+      "why": "Why optimize builds?",
       "whySteps": {
-        "step1Title": "Create Safe Spaces",
-        "step1Description": "Establish secure bases for storage and crafting operations",
-        "step2Title": "Manage Resources",
-        "step2Description": "Organize materials efficiently with storage solutions",
-        "step3Title": "Unlock Qualia",
-        "step3Description": "Access personal pocket dimensions for ultimate convenience"
+        "step1Title": "Increase Damage Consistency",
+        "step1Description": "Use synergy between race passives and weapon scaling",
+        "step2Title": "Improve Survival",
+        "step2Description": "Balance burst windows with mobility and sustain tools",
+        "step3Title": "Adapt by Mode",
+        "step3Description": "Tune builds for leveling, bosses, or PvP separately"
       },
       "featured": "Featured & Essential",
-      "all": "All Building Guides"
+      "all": "All Build Guides"
     },
     "support": {
-      "title": "Lucid Blocks Support",
-      "description": "Technical support, platform compatibility, performance optimization, and troubleshooting for common issues.",
-      "metaTitle": "Lucid Blocks Support - Technical Help & Fixes",
-      "metaDescription": "Get technical support for Lucid Blocks including Steam Deck setup, crash fixes, performance optimization, and platform compatibility guides.",
+      "title": "Slime Seas Support",
+      "description": "Technical help and troubleshooting for setup, performance, and login issues.",
+      "metaTitle": "Slime Seas Support - Setup and Troubleshooting",
+      "metaDescription": "Find Slime Seas support guidance for common errors, performance tuning, and platform-specific setup fixes.",
       "categoryLabel": "TECHNICAL SUPPORT",
       "whatIs": "What is Support?",
-      "whatIsDescription": "Technical guides covering platform compatibility, performance optimization, crash fixes, and common issues. Get help with Steam Deck, multiplayer questions, and settings.",
+      "whatIsDescription": "Support guides for connectivity checks, performance tuning, and reliable issue reporting.",
       "why": "Why check support?",
       "whySteps": {
-        "step1Title": "Fix Technical Issues",
-        "step1Description": "Resolve crashes, performance problems, and compatibility issues",
+        "step1Title": "Resolve Errors Faster",
+        "step1Description": "Use step-based checks before deeper troubleshooting",
         "step2Title": "Optimize Performance",
-        "step2Description": "Configure settings for best experience on your platform",
-        "step3Title": "Platform Compatibility",
-        "step3Description": "Learn about Steam Deck, controller support, and system requirements"
+        "step2Description": "Tune settings for stable fights and smoother farming loops",
+        "step3Title": "Report Better",
+        "step3Description": "Share complete issue details for faster community support"
       },
       "featured": "Featured & Essential",
       "all": "All Support Articles"
