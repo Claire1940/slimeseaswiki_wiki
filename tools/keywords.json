@@ -1,46 +1,68 @@
 {
   "categories": [
     {
-      "category": "Guides",
+      "category": "Guide",
       "keywords": [
-        "lucid blocks guide"
+        "slime seas beginner guide",
+        "slime seas leveling guide",
+        "slime seas progression guide",
+        "slime seas quest guide",
+        "slime seas pvp guide"
       ]
     },
     {
-      "category": "Crafting",
+      "category": "Resources",
       "keywords": [
-        "lucid blocks crafting recipes",
-        "lucid blocks apotheosis"
+        "slime seas trello",
+        "slime seas patch notes",
+        "slime seas release date",
+        "slime seas update",
+        "slime seas reddit"
+      ]
+    },
+    {
+      "category": "Races",
+      "keywords": [
+        "slime seas race tier list",
+        "slime seas best race",
+        "slime seas race reroll",
+        "slime seas race passives"
+      ]
+    },
+    {
+      "category": "Weapons",
+      "keywords": [
+        "slime seas best weapons",
+        "slime seas weapon locations",
+        "slime seas cursed edge",
+        "slime seas katana"
+      ]
+    },
+    {
+      "category": "Pets",
+      "keywords": [
+        "slime seas pets",
+        "slime seas drake egg",
+        "slime seas baby azure drake",
+        "slime seas pet location"
+      ]
+    },
+    {
+      "category": "Bosses",
+      "keywords": [
+        "slime seas bosses",
+        "slime seas boss drops",
+        "slime seas boss locations",
+        "slime seas demon lord rima"
       ]
     },
     {
       "category": "Items",
       "keywords": [
-        "lucid blocks faith wand",
-        "lucid blocks bee glider",
-        "lucid blocks chest",
-        "lucid blocks osmium"
-      ]
-    },
-    {
-      "category": "Biomes",
-      "keywords": [
-        "lucid blocks tiamana leyline"
-      ]
-    },
-    {
-      "category": "Building",
-      "keywords": [
-        "lucid blocks qualia"
-      ]
-    },
-    {
-      "category": "Support",
-      "keywords": [
-        "lucid blocks steam deck",
-        "lucid blocks full screen",
-        "lucid blocks multiplayer",
-        "lucid blocks android"
+        "slime seas items",
+        "slime seas materials",
+        "slime seas item locations",
+        "slime seas crafting materials"
       ]
     }
   ]

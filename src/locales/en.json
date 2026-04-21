@@ -10,7 +10,15 @@
       "twitterDescription": "Slime Seas Wiki with active codes, race picks, weapon routes, boss guides, and progression tools for Roblox players."
     }
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "resources": "Resources",
+    "races": "Races",
+    "weapons": "Weapons",
+    "pets": "Pets",
+    "bosses": "Bosses",
+    "items": "Items"
+  },
   "common": {
     "home": "Home",
     "more": "More",
@@ -1520,125 +1528,145 @@
     "disclaimer": "Unofficial fan-made Slime Seas resource website."
   },
   "pages": {
-    "guides": {
-      "title": "Slime Seas Guides",
-      "description": "Complete Slime Seas guides from beginner basics to advanced route planning.",
-      "metaTitle": "Slime Seas Guides - Beginner to Advanced Routes",
-      "metaDescription": "Complete Slime Seas guides covering beginner progression, leveling routes, mastery planning, and late-game optimization.",
-      "categoryLabel": "GAME GUIDES",
-      "whatIs": "What are Guides?",
-      "whatIsDescription": "Comprehensive Slime Seas guides for progression, combat rhythm, world routing, and practical gameplay decisions.",
-      "why": "Why read guides?",
+    "guide": {
+      "title": "Slime Seas Guide",
+      "description": "Step-by-step Slime Seas routes for leveling, quests, stats, and island progression.",
+      "metaTitle": "Slime Seas Guide - Leveling, Quests, and Progression Routes",
+      "metaDescription": "Read the Slime Seas guide collection for beginner onboarding, farming loops, quest order, stat planning, and endgame progression routes.",
+      "categoryLabel": "GUIDE",
+      "whatIs": "What is the Slime Seas Guide category?",
+      "whatIsDescription": "The Slime Seas Guide category is the main route-planning hub. It collects beginner, leveling, farming, quest, PvP, and stat articles so you can move from first spawn to endgame with a clear order of actions.",
+      "why": "Why read Slime Seas guides?",
       "whySteps": {
-        "step1Title": "Learn Core Systems",
-        "step1Description": "Understand codes, mastery, races, and world transitions quickly",
-        "step2Title": "Progress Faster",
-        "step2Description": "Follow route logic that minimizes detours and downtime",
-        "step3Title": "Build Better Habits",
-        "step3Description": "Use repeatable patterns for bosses, farming, and PvP prep"
+        "step1Title": "Follow a Proven Route",
+        "step1Description": "Use tested island and quest order to avoid dead-end grinding sessions.",
+        "step2Title": "Level With Less Downtime",
+        "step2Description": "Combine leveling loops, mastery gains, and objective tracking in one path.",
+        "step3Title": "Build Better Decision Timing",
+        "step3Description": "Know when to reroll, gear swap, push bosses, or stay on farm routes."
       },
       "featured": "Featured & Essential",
-      "all": "All Guides"
+      "all": "All Slime Seas Guide Articles"
     },
-    "crafting": {
-      "title": "Slime Seas Crafting",
-      "description": "Crafting and material routes for weapons, potions, and progression upgrades in Slime Seas.",
-      "metaTitle": "Slime Seas Crafting - Materials and Upgrade Paths",
-      "metaDescription": "Learn Slime Seas crafting routes, ingredient priorities, and upgrade planning for efficient progression.",
-      "categoryLabel": "CRAFTING SYSTEM",
-      "whatIs": "What is Crafting?",
-      "whatIsDescription": "Slime Seas crafting guides focused on practical material routes, potion planning, and upgrade sequencing.",
-      "why": "Why master crafting?",
+    "resources": {
+      "title": "Slime Seas Resources",
+      "description": "Official links, patch tracking, release updates, and community intelligence for Slime Seas.",
+      "metaTitle": "Slime Seas Resources - Trello, Patch Notes, and Community Updates",
+      "metaDescription": "Track Slime Seas resources including Trello, patch notes, release timing, update logs, and community channels for faster meta awareness.",
+      "categoryLabel": "RESOURCES",
+      "whatIs": "What are Slime Seas Resources?",
+      "whatIsDescription": "The Slime Seas Resources category gathers high-signal external references and update channels. Use it to monitor patch changes, release news, social hubs, and roadmap signals without searching multiple platforms.",
+      "why": "Why monitor Slime Seas resources?",
       "whySteps": {
-        "step1Title": "Unlock Better Gear",
-        "step1Description": "Craft around immediate combat and survival upgrades",
-        "step2Title": "Optimize Materials",
-        "step2Description": "Use route-based farming to reduce wasted resources",
-        "step3Title": "Support Progression",
-        "step3Description": "Tie crafting into world transitions and boss readiness"
+        "step1Title": "Catch Meta Changes Early",
+        "step1Description": "Read patch and update articles before committing to new build investments.",
+        "step2Title": "Use Official Sources Faster",
+        "step2Description": "Jump directly to Trello and trusted channels when mechanics or drops change.",
+        "step3Title": "Plan Around Live Information",
+        "step3Description": "Coordinate farming and reroll decisions around current event and release windows."
       },
       "featured": "Featured & Essential",
-      "all": "All Crafting Guides"
+      "all": "All Slime Seas Resources Articles"
+    },
+    "races": {
+      "title": "Slime Seas Races",
+      "description": "Race tiering, passive analysis, and reroll decisions for every Slime Seas playstyle.",
+      "metaTitle": "Slime Seas Races - Best Race Picks, Passives, and Reroll Strategy",
+      "metaDescription": "Compare Slime Seas races with tier lists, passive breakdowns, and reroll strategy by weapon style, progression stage, and PvP priorities.",
+      "categoryLabel": "RACES",
+      "whatIs": "What is the Slime Seas Races category?",
+      "whatIsDescription": "The Slime Seas Races category focuses on race value. It covers passive effects, rarity tiers, reroll priorities, and weapon synergy so you can choose races with long-term account efficiency.",
+      "why": "Why optimize race choices?",
+      "whySteps": {
+        "step1Title": "Avoid Wasteful Rerolls",
+        "step1Description": "Use tier context to decide when to keep a roll versus spending more rerolls.",
+        "step2Title": "Match Race to Weapon",
+        "step2Description": "Pick passives that scale with your katana, scythe, or greatsword route.",
+        "step3Title": "Scale Into Endgame",
+        "step3Description": "Lock races that remain strong in bossing, farming, and PvP transitions."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Slime Seas Races Articles"
+    },
+    "weapons": {
+      "title": "Slime Seas Weapons",
+      "description": "Weapon rankings, mastery milestones, and acquisition routes for Slime Seas combat builds.",
+      "metaTitle": "Slime Seas Weapons - Best Weapons, Locations, and Mastery Routes",
+      "metaDescription": "Find the best Slime Seas weapons, unlock paths, merchant locations, and mastery advice to improve damage output across leveling and boss content.",
+      "categoryLabel": "WEAPONS",
+      "whatIs": "What is the Slime Seas Weapons category?",
+      "whatIsDescription": "The Slime Seas Weapons category is your combat gear roadmap. It tracks weapon tier value, unlock routes, location guides, and practical mastery decisions for different progression stages.",
+      "why": "Why read Slime Seas weapon guides?",
+      "whySteps": {
+        "step1Title": "Prioritize High-Value Unlocks",
+        "step1Description": "Target weapons with the best power gain per time invested.",
+        "step2Title": "Learn Exact Acquisition Paths",
+        "step2Description": "Use location and requirement guides to reach each weapon faster.",
+        "step3Title": "Scale Damage Through Mastery",
+        "step3Description": "Plan mastery breakpoints around your preferred skill rotation and content type."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Slime Seas Weapons Articles"
+    },
+    "pets": {
+      "title": "Slime Seas Pets",
+      "description": "Pet unlock routes, egg farming, hatch flow, and evolution value in Slime Seas.",
+      "metaTitle": "Slime Seas Pets - Drake Egg Farming, Hatch Steps, and Evolution",
+      "metaDescription": "Learn how Slime Seas pets work with drake egg routes, boss prerequisites, hatch progression, and pet upgrade priorities for stronger account growth.",
+      "categoryLabel": "PETS",
+      "whatIs": "What is the Slime Seas Pets category?",
+      "whatIsDescription": "The Slime Seas Pets category explains companion progression from drop hunting to hatch outcomes. It focuses on where to farm eggs, how to trigger pet systems, and when pet upgrades are worth the effort.",
+      "why": "Why build around Slime Seas pets?",
+      "whySteps": {
+        "step1Title": "Find Egg Sources Reliably",
+        "step1Description": "Use boss and location routing to farm drake eggs without wasted runs.",
+        "step2Title": "Improve Companion Uptime",
+        "step2Description": "Understand hatch and evolution flow so pets stay relevant as power rises.",
+        "step3Title": "Support Long Sessions",
+        "step3Description": "Leverage pet progression for steady combat gains during boss and farm loops."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Slime Seas Pets Articles"
+    },
+    "bosses": {
+      "title": "Slime Seas Bosses",
+      "description": "Boss mechanics, drop tables, and efficient farm plans for Slime Seas endgame loops.",
+      "metaTitle": "Slime Seas Bosses - Boss Guides, Drops, and Farming Strategy",
+      "metaDescription": "Master Slime Seas bosses with encounter mechanics, phase timing, drop priorities, pity systems, and repeatable farming plans for rare rewards.",
+      "categoryLabel": "BOSSES",
+      "whatIs": "What is the Slime Seas Bosses category?",
+      "whatIsDescription": "The Slime Seas Bosses category is dedicated to encounter execution and reward planning. It combines boss mechanics, damage windows, drop-rate strategy, and farm loops for consistent progression gains.",
+      "why": "Why focus on Slime Seas bosses?",
+      "whySteps": {
+        "step1Title": "Clear Encounters Consistently",
+        "step1Description": "Use mechanics and timing guides to reduce failed runs and recovery time.",
+        "step2Title": "Target Rare Drops Efficiently",
+        "step2Description": "Prioritize bosses and loot pools that best fit your current build upgrades.",
+        "step3Title": "Turn Farming Into Progress",
+        "step3Description": "Convert repeated boss runs into predictable gear and material growth."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Slime Seas Bosses Articles"
     },
     "items": {
       "title": "Slime Seas Items",
-      "description": "Item and material references for weapons, drops, and upgrade planning in Slime Seas.",
-      "metaTitle": "Slime Seas Items - Weapons, Drops, and Materials",
-      "metaDescription": "Browse Slime Seas item references for weapons, materials, drop sources, and practical usage priorities.",
-      "categoryLabel": "ITEMS & EQUIPMENT",
-      "whatIs": "What are Items?",
-      "whatIsDescription": "Guides for item sources, drop routing, and upgrade value so players can prioritize high-impact materials.",
-      "why": "Why check item guides?",
+      "description": "Item databases, material drops, and crafting components for Slime Seas progression.",
+      "metaTitle": "Slime Seas Items - Material Drops, Locations, and Crafting Inputs",
+      "metaDescription": "Browse Slime Seas items, material drop guides, and location references to plan crafting, upgrades, and efficient farming priorities.",
+      "categoryLabel": "ITEMS",
+      "whatIs": "What is the Slime Seas Items category?",
+      "whatIsDescription": "The Slime Seas Items category tracks materials, gear pieces, and crafting inputs used across the game. It is built for fast lookup when you need exact sources, routes, and usage priorities.",
+      "why": "Why use Slime Seas item references?",
       "whySteps": {
-        "step1Title": "Find Key Materials",
-        "step1Description": "Locate the items needed for core upgrades quickly",
-        "step2Title": "Plan Upgrade Order",
-        "step2Description": "Spend resources on the highest-value weapon paths first",
-        "step3Title": "Reduce Downtime",
-        "step3Description": "Use clear item routing to keep progression sessions efficient"
+        "step1Title": "Locate Materials Quickly",
+        "step1Description": "Find exact drop and location info for high-impact upgrade resources.",
+        "step2Title": "Plan Crafting Dependencies",
+        "step2Description": "Map required items before starting long farm sessions or boss loops.",
+        "step3Title": "Upgrade With Better Priority",
+        "step3Description": "Spend time on items that unlock immediate combat and progression value."
       },
       "featured": "Featured & Essential",
-      "all": "All Items"
-    },
-    "biomes": {
-      "title": "Slime Seas Worlds",
-      "description": "World and island progression references for route planning, travel, and farming.",
-      "metaTitle": "Slime Seas Worlds - Islands and Progression Routes",
-      "metaDescription": "Explore Slime Seas world order, island checkpoints, farming routes, and progression-focused travel planning.",
-      "categoryLabel": "WORLD REGIONS",
-      "whatIs": "What are Worlds?",
-      "whatIsDescription": "World progression guides that connect power targets, quest loops, waypoint strategy, and boss transitions.",
-      "why": "Why study world routes?",
-      "whySteps": {
-        "step1Title": "Move Efficiently",
-        "step1Description": "Use waypoint logic and island order to avoid long detours",
-        "step2Title": "Prepare Better",
-        "step2Description": "Enter each region with appropriate power and loadout",
-        "step3Title": "Farm Smarter",
-        "step3Description": "Route sessions around materials and upgrade breakpoints"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Worlds"
-    },
-    "building": {
-      "title": "Slime Seas Builds",
-      "description": "Build planning for race synergy, mastery routes, and PvE/PvP performance.",
-      "metaTitle": "Slime Seas Builds - Race and Weapon Synergy",
-      "metaDescription": "Plan Slime Seas builds with race synergy, weapon mastery choices, and role-specific combat priorities.",
-      "categoryLabel": "BUILDS & LOADOUTS",
-      "whatIs": "What are Builds?",
-      "whatIsDescription": "Build guides focused on how race passives, weapon mastery, and skill timing interact in real gameplay.",
-      "why": "Why optimize builds?",
-      "whySteps": {
-        "step1Title": "Increase Damage Consistency",
-        "step1Description": "Use synergy between race passives and weapon scaling",
-        "step2Title": "Improve Survival",
-        "step2Description": "Balance burst windows with mobility and sustain tools",
-        "step3Title": "Adapt by Mode",
-        "step3Description": "Tune builds for leveling, bosses, or PvP separately"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Build Guides"
-    },
-    "support": {
-      "title": "Slime Seas Support",
-      "description": "Technical help and troubleshooting for setup, performance, and login issues.",
-      "metaTitle": "Slime Seas Support - Setup and Troubleshooting",
-      "metaDescription": "Find Slime Seas support guidance for common errors, performance tuning, and platform-specific setup fixes.",
-      "categoryLabel": "TECHNICAL SUPPORT",
-      "whatIs": "What is Support?",
-      "whatIsDescription": "Support guides for connectivity checks, performance tuning, and reliable issue reporting.",
-      "why": "Why check support?",
-      "whySteps": {
-        "step1Title": "Resolve Errors Faster",
-        "step1Description": "Use step-based checks before deeper troubleshooting",
-        "step2Title": "Optimize Performance",
-        "step2Description": "Tune settings for stable fights and smoother farming loops",
-        "step3Title": "Report Better",
-        "step3Description": "Share complete issue details for faster community support"
-      },
-      "featured": "Featured & Essential",
-      "all": "All Support Articles"
+      "all": "All Slime Seas Items Articles"
     }
   }
 }

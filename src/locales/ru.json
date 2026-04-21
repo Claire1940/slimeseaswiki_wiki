@@ -11,12 +11,13 @@
     }
   },
   "nav": {
-    "guides": "Руководства",
-    "crafting": "Крафт",
-    "items": "Предметы",
-    "biomes": "Биомы",
-    "building": "Строительство",
-    "support": "Поддержка"
+    "guide": "Guide",
+    "resources": "Resources",
+    "races": "Races",
+    "weapons": "Weapons",
+    "pets": "Pets",
+    "bosses": "Bosses",
+    "items": "Items"
   },
   "common": {
     "home": "Главная",

@@ -11,12 +11,13 @@
     }
   },
   "nav": {
-    "guides": "Guías",
-    "crafting": "Fabricación",
-    "items": "Objetos",
-    "biomes": "Biomas",
-    "building": "Construcción",
-    "support": "Soporte"
+    "guide": "Guide",
+    "resources": "Resources",
+    "races": "Races",
+    "weapons": "Weapons",
+    "pets": "Pets",
+    "bosses": "Bosses",
+    "items": "Items"
   },
   "common": {
     "home": "Inicio",
