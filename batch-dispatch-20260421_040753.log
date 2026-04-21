@@ -1,0 +1,107 @@
+Batch Codex dispatch
+   Tasks file: /root/.openclaw/skills/game-refactor/tasks/game-refactor-slimeseaswiki-tasks.json
+   Workdir: /root/Documents/GameProjects/slimeseaswiki_wiki
+   Feishu: oc_89cad99bbc944d7f0bd7d39472b3f1dd
+   Tmux session: slimeseaswiki_wiki
+
+Total tasks: 10
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Task [1/10]: game-refactor-part1-basic-config-slimeseaswiki
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Task metadata written: /root/.openclaw/workspace-code-dev/skills/codex-agent/data/sessions/slimeseaswiki_wiki/task-meta.json
+   Task ID: game-refactor-part1-basic-config-slimeseaswiki_20260421_040753_1105052
+   Task: game-refactor-part1-basic-config-slimeseaswiki
+   Target: oc_89cad99bbc944d7f0bd7d39472b3f1dd
+   Prompt file: /root/.openclaw/workspace-code-dev/skills/codex-agent/data/prompts/game-refactor-part1-basic-config-slimeseaswiki_20260421_040753_1105052.md
+Creating tmux session: slimeseaswiki_wiki
+Auto-trusted directories in config.toml: ['/root/Documents/GameProjects/slimeseaswiki_wiki']
+Started codex-agent in tmux session: slimeseaswiki_wiki
+To monitor: tmux -S /tmp/clawdbot-tmux-sockets/codex-code.sock attach -t slimeseaswiki_wiki
+
+Task sent to codex session: slimeseaswiki_wiki
+To watch: tmux -S /tmp/clawdbot-tmux-sockets/codex-code.sock attach -t slimeseaswiki_wiki
+│
+◇  Config warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - plugins.entries.qqbot: plugin not found: qqbot (stale config entry    │
+│    ignored; remove it from plugins config)                               │
+│  - plugins.entries.ddingtalk: plugin not found: ddingtalk (stale config  │
+│    entry ignored; remove it from plugins config)                         │
+│  - plugins.entries.wecom: plugin not found: wecom (stale config entry    │
+│    ignored; remove it from plugins config)                               │
+│  - plugins.entries.adp-openclaw: plugin not found: adp-openclaw (stale   │
+│    config entry ignored; remove it from plugins config)                  │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[35m[plugins][39m [36mfeishu_doc: Registered feishu_doc, feishu_app_scopes[39m
+[35m[plugins][39m [36mfeishu_chat: Registered feishu_chat tool[39m
+[35m[plugins][39m [36mfeishu_wiki: Registered feishu_wiki tool[39m
+[35m[plugins][39m [36mfeishu_drive: Registered feishu_drive tool[39m
+[35m[plugins][39m [36mfeishu_bitable: Registered bitable tools[39m
+[info]: [ 'client ready' ]
+[35m[plugins][39m [36mfeishu_doc: Registered feishu_doc, feishu_app_scopes[39m
+[35m[plugins][39m [36mfeishu_chat: Registered feishu_chat tool[39m
+[35m[plugins][39m [36mfeishu_wiki: Registered feishu_wiki tool[39m
+[35m[plugins][39m [36mfeishu_drive: Registered feishu_drive tool[39m
+[35m[plugins][39m [36mfeishu_bitable: Registered bitable tools[39m
+[35m[plugins][39m [36mfeishu_doc: Registered feishu_doc, feishu_app_scopes[39m
+[35m[plugins][39m [36mfeishu_chat: Registered feishu_chat tool[39m
+[35m[plugins][39m [36mfeishu_wiki: Registered feishu_wiki tool[39m
+[35m[plugins][39m [36mfeishu_drive: Registered feishu_drive tool[39m
+[35m[plugins][39m [36mfeishu_bitable: Registered bitable tools[39m
+[35m[plugins][39m [36mfeishu_doc: Registered feishu_doc, feishu_app_scopes[39m
+[35m[plugins][39m [36mfeishu_chat: Registered feishu_chat tool[39m
+[35m[plugins][39m [36mfeishu_wiki: Registered feishu_wiki tool[39m
+[35m[plugins][39m [36mfeishu_drive: Registered feishu_drive tool[39m
+[35m[plugins][39m [36mfeishu_bitable: Registered bitable tools[39m
+[35m[plugins][39m [36mfeishu_doc: Registered feishu_doc, feishu_app_scopes[39m
+[35m[plugins][39m [36mfeishu_chat: Registered feishu_chat tool[39m
+[35m[plugins][39m [36mfeishu_wiki: Registered feishu_wiki tool[39m
+[35m[plugins][39m [36mfeishu_drive: Registered feishu_drive tool[39m
+[35m[plugins][39m [36mfeishu_bitable: Registered bitable tools[39m
+✅ Sent via Feishu. Message ID: om_x100b515bcca080a0c3f6ae135ce9cae
+   Task ID: game-refactor-part1-basic-config-slimeseaswiki_20260421_040753_1105052
+Waiting for task: game-refactor-part1-basic-config-slimeseaswiki_20260421_040753_1105052 (timeout: 7200s)
+   Still waiting... (60s / 7200s)
+   Still waiting... (120s / 7200s)
+   Still waiting... (180s / 7200s)
+   Still waiting... (240s / 7200s)
+   Still waiting... (300s / 7200s)
+   Still waiting... (360s / 7200s)
+   Still waiting... (420s / 7200s)
+   Still waiting... (480s / 7200s)
+   Still waiting... (540s / 7200s)
+   Still waiting... (600s / 7200s)
+   Still waiting... (660s / 7200s)
+   Still waiting... (720s / 7200s)
+   Still waiting... (780s / 7200s)
+   Still waiting... (840s / 7200s)
+   Still waiting... (900s / 7200s)
+   Still waiting... (960s / 7200s)
+   Still waiting... (1020s / 7200s)
+   Still waiting... (1080s / 7200s)
+   Still waiting... (1140s / 7200s)
+   Still waiting... (1200s / 7200s)
+   Still waiting... (1260s / 7200s)
+   Still waiting... (1320s / 7200s)
+   Still waiting... (1380s / 7200s)
+   Still waiting... (1440s / 7200s)
+   Still waiting... (1500s / 7200s)
+   Still waiting... (1560s / 7200s)
+   Still waiting... (1620s / 7200s)
+   Still waiting... (1680s / 7200s)
+   Still waiting... (1740s / 7200s)
+   Still waiting... (1800s / 7200s)
+   Still waiting... (1860s / 7200s)
+   Still waiting... (1920s / 7200s)
+   Still waiting... (1980s / 7200s)
+   Still waiting... (2040s / 7200s)
+   Still waiting... (2100s / 7200s)
+   Still waiting... (2160s / 7200s)
+   Still waiting... (2220s / 7200s)
+   Still waiting... (2280s / 7200s)
+   Still waiting... (2340s / 7200s)
+   Still waiting... (2400s / 7200s)
+   Still waiting... (2460s / 7200s)
