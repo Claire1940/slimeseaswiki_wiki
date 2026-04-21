@@ -718,15 +718,69 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksQualiaAndBaseBuilding']} locale={locale}>{t.modules.lucidBlocksQualiaAndBaseBuilding.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksQualiaAndBaseBuilding.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {t.modules.lucidBlocksQualiaAndBaseBuilding.cards.map((card: any, index: number) => (
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.15)] border border-[hsl(var(--nav-theme-light)/0.4)] text-[hsl(var(--nav-theme-light))] font-semibold">{card.tier || 'Core'} Tier</span>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{card.rarity || 'Race'}</span>
+                </div>
                 <h3 className="font-bold text-lg mb-2 text-[hsl(var(--nav-theme-light))]">
                   <LinkedTitle linkData={moduleLinkMap[`lucidBlocksQualiaAndBaseBuilding::cards::${index}`]} locale={locale}>
                     {card.name}
                   </LinkedTitle>
                 </h3>
-                <p className="text-muted-foreground text-sm">{card.description}</p>
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground">Effects</p>
+                    <ul className="mt-2 space-y-1">
+                      {(card.effects || []).map((effect: string, effectIndex: number) => (
+                        <li key={effectIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <Check className="w-3.5 h-3.5 text-[hsl(var(--nav-theme-light))] mt-1 flex-shrink-0" />
+                          <span>{effect}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground">Best For</p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {(card.bestFor || []).map((fit: string, fitIndex: number) => (
+                        <span key={fitIndex} className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{fit}</span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground">Highlights</p>
+                    <ul className="mt-2 space-y-1">
+                      {(card.highlights || []).map((highlight: string, highlightIndex: number) => (
+                        <li key={highlightIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <Sparkles className="w-3.5 h-3.5 text-[hsl(var(--nav-theme-light))] mt-1 flex-shrink-0" />
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground">Drawbacks</p>
+                    <ul className="mt-2 space-y-1">
+                      {(card.drawbacks || []).map((drawback: string, drawbackIndex: number) => (
+                        <li key={drawbackIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <AlertTriangle className="w-3.5 h-3.5 text-[hsl(var(--nav-theme-light))] mt-1 flex-shrink-0" />
+                          <span>{drawback}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-4 p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.3)]">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Reroll Advice</p>
+                  <p className="text-sm">{card.rerollAdvice || card.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -748,19 +802,35 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksWorldRegions']} locale={locale}>{t.modules.lucidBlocksWorldRegions.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksWorldRegions.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4">
-            {t.modules.lucidBlocksWorldRegions.regions.map((region: any, index: number) => (
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {t.modules.lucidBlocksWorldRegions.regions.map((weapon: any, index: number) => (
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex items-center gap-3 mb-3">
-                  <Eye className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <h3 className="font-bold">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksWorldRegions::regions::${index}`]} locale={locale}>
-                      {region.name}
-                    </LinkedTitle>
-                  </h3>
-                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{region.type}</span>
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.15)] border border-[hsl(var(--nav-theme-light)/0.4)] text-[hsl(var(--nav-theme-light))] font-semibold">{weapon.tier || 'Core'} Tier</span>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{weapon.rarity || weapon.type || 'Weapon'}</span>
                 </div>
-                <p className="text-muted-foreground text-sm">{region.description}</p>
+                <h3 className="font-bold text-lg mb-3">
+                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksWorldRegions::regions::${index}`]} locale={locale}>
+                    {weapon.name}
+                  </LinkedTitle>
+                </h3>
+                <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <Eye className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{weapon.baseDamage ? `${weapon.baseDamage} DMG` : 'Progression Pick'}</span>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{weapon.attackSpeed || weapon.type || 'Balanced Speed'}</span>
+                </div>
+                <p className="text-sm mb-3">
+                  <span className="text-muted-foreground">Best For: </span>
+                  <span>{weapon.bestFor || weapon.description}</span>
+                </p>
+                <p className="text-muted-foreground text-sm mb-3">
+                  <span className="text-foreground">Access: </span>
+                  {weapon.access || 'Accessible through world progression drops and crafting routes.'}
+                </p>
+                <div className="p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.3)]">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Why Pick</p>
+                  <p className="text-sm">{weapon.whyPick || weapon.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -774,18 +844,69 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksCreaturesAndEnemies']} locale={locale}>{t.modules.lucidBlocksCreaturesAndEnemies.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksCreaturesAndEnemies.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {t.modules.lucidBlocksCreaturesAndEnemies.creatures.map((c: any, index: number) => (
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4">
+            {t.modules.lucidBlocksCreaturesAndEnemies.creatures.map((mastery: any, index: number) => (
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="mb-3">
-                  <span className={`text-xs px-2 py-1 rounded-full border ${["Hostile Enemy","Major Threat","Elite Threat"].includes(c.role) ? "bg-[hsl(var(--nav-theme)/0.15)] border-[hsl(var(--nav-theme-light)/0.4)] text-[hsl(var(--nav-theme-light))]" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{c.role}</span>
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <h3 className="font-bold">
+                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksCreaturesAndEnemies::creatures::${index}`]} locale={locale}>
+                      {mastery.mastery || mastery.name}
+                    </LinkedTitle>
+                  </h3>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{mastery.access || 'Core Path'}</span>
                 </div>
-                <h3 className="font-bold mb-2">
-                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksCreaturesAndEnemies::creatures::${index}`]} locale={locale}>
-                    {c.name}
-                  </LinkedTitle>
-                </h3>
-                <p className="text-muted-foreground text-sm">{c.description}</p>
+                <p className="text-muted-foreground text-sm mb-4">{mastery.role || mastery.description}</p>
+
+                <div className="mb-4">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground">Skill Path</p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {(mastery.skillPath || []).map((step: any, stepIndex: number) => (
+                      <span key={stepIndex} className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">
+                        M{step.mastery}: {step.skill}
+                      </span>
+                    ))}
+                    {!mastery.skillPath && mastery.description ? (
+                      <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">
+                        Core mastery progression available in this route.
+                      </span>
+                    ) : null}
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground">Recommended Weapons</p>
+                  <ul className="mt-2 space-y-1">
+                    {(mastery.recommendedWeapons || []).map((weapon: string, weaponIndex: number) => (
+                      <li key={weaponIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <Check className="w-3.5 h-3.5 text-[hsl(var(--nav-theme-light))] mt-1 flex-shrink-0" />
+                        <span>{weapon}</span>
+                      </li>
+                    ))}
+                    {!mastery.recommendedWeapons && mastery.description ? (
+                      <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <Check className="w-3.5 h-3.5 text-[hsl(var(--nav-theme-light))] mt-1 flex-shrink-0" />
+                        <span>Follow your current progression weapon line before swapping styles.</span>
+                      </li>
+                    ) : null}
+                  </ul>
+                </div>
+
+                <div className="mb-4">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground">Best Races</p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {(mastery.bestRaces || []).map((race: string, raceIndex: number) => (
+                      <span key={raceIndex} className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{race}</span>
+                    ))}
+                    {!mastery.bestRaces ? (
+                      <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">Race synergy varies by your preferred mastery style.</span>
+                    ) : null}
+                  </div>
+                </div>
+
+                <div className="p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.3)]">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Why Pick</p>
+                  <p className="text-sm">{mastery.whyPick || mastery.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -799,19 +920,64 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksMobilityGear']} locale={locale}>{t.modules.lucidBlocksMobilityGear.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksMobilityGear.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          <div className="scroll-reveal space-y-4 mb-8">
             {t.modules.lucidBlocksMobilityGear.items.map((item: any, index: number) => (
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex items-center gap-2 mb-3">
-                  <ArrowRight className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{item.type}</span>
+                <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.15)] border border-[hsl(var(--nav-theme-light)/0.4)] text-[hsl(var(--nav-theme-light))] font-semibold">Step {item.step || index + 1}</span>
+                  <ArrowRight className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{item.unlock || item.type || 'Route checkpoint'}</span>
                 </div>
                 <h3 className="font-bold mb-2">
                   <LinkedTitle linkData={moduleLinkMap[`lucidBlocksMobilityGear::items::${index}`]} locale={locale}>
-                    {item.name}
+                    {item.stage || item.name}
                   </LinkedTitle>
                 </h3>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
+                <p className="text-sm mb-2">
+                  <span className="text-muted-foreground">Target: </span>
+                  <span>{item.target || item.description}</span>
+                </p>
+                <p className="text-sm mb-4">
+                  <span className="text-muted-foreground">Boss or Gate: </span>
+                  <span>{item.bossOrGate || 'Progression gate by world and questline'}</span>
+                </p>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground">Focus</p>
+                    <ul className="mt-2 space-y-1">
+                      {(item.focus || []).map((focusItem: string, focusIndex: number) => (
+                        <li key={focusIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <Check className="w-3.5 h-3.5 text-[hsl(var(--nav-theme-light))] mt-1 flex-shrink-0" />
+                          <span>{focusItem}</span>
+                        </li>
+                      ))}
+                      {!item.focus && item.description ? (
+                        <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <Check className="w-3.5 h-3.5 text-[hsl(var(--nav-theme-light))] mt-1 flex-shrink-0" />
+                          <span>{item.description}</span>
+                        </li>
+                      ) : null}
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground">Key Targets</p>
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      {(item.keyTargets || []).map((target: string, targetIndex: number) => (
+                        <span key={targetIndex} className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{target}</span>
+                      ))}
+                      {!item.keyTargets && item.type ? (
+                        <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{item.type}</span>
+                      ) : null}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-4 p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.3)]">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Leave This Stage When</p>
+                  <p className="text-sm">{item.leaveWhen || 'Core route objectives are stable and your next world transition is ready.'}</p>
+                </div>
               </div>
             ))}
           </div>

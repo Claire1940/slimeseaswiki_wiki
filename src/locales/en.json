@@ -82,22 +82,22 @@
       {
         "icon": "Star",
         "title": "Slime Seas Race Tier List",
-        "description": "Race value ranking and reroll decision guide"
+        "description": "Full race tiers with reroll keep-or-spin decisions by mastery"
       },
       {
         "icon": "Hammer",
         "title": "Slime Seas Best Weapons",
-        "description": "Early, mid, and late weapon priorities by playstyle"
+        "description": "Build-around weapons ranked by damage, access, and progression value"
       },
       {
         "icon": "Sparkles",
         "title": "Slime Seas Weapon Mastery Guide",
-        "description": "Mastery routes for Katana, Scythe, Greatsword, and Berserker"
+        "description": "Mastery 1, 3, and 5 skill routes for Katana, Scythe, Greatsword, and Berserker"
       },
       {
         "icon": "ArrowRight",
         "title": "Slime Seas World Progression Guide",
-        "description": "Island order, power targets, and travel checkpoints"
+        "description": "Step-by-step world timeline from spawn, detours, and late boss prep"
       },
       {
         "icon": "AlertTriangle",
@@ -280,138 +280,545 @@
     },
     "lucidBlocksQualiaAndBaseBuilding": {
       "title": "Slime Seas Race Tier List",
-      "displayType": "cards",
-      "intro": "Race value in Slime Seas depends on reroll cost, passive impact, and whether your build is PvE farm or PvP pressure focused.",
+      "displayType": "tierGrid",
+      "intro": "Races in Slime Seas decide how your build scales with cooldowns, mobility, survivability, and weapon bonuses. Use this tier list to answer the reroll question quickly: lock it, save it, or spin again.",
       "cards": [
         {
-          "name": "S Tier Races",
-          "description": "Best long-term races for high damage scaling, mobility pressure, or all-mode consistency when rerolls are limited."
+          "tier": "S",
+          "name": "Dragonborn",
+          "rarity": "Legendary",
+          "effects": [
+            "+15% Skill Cooldown Speed",
+            "+25% Max Health",
+            "+20% Scythe Damage",
+            "+10% Fire Damage",
+            "+20% Greatsword Damage"
+          ],
+          "bestFor": [
+            "Scythe",
+            "Greatsword",
+            "mid-to-late-game generalist builds"
+          ],
+          "highlights": [
+            "Best overall stat package",
+            "Works across multiple weapon types",
+            "Excellent mid-to-late-game value"
+          ],
+          "drawbacks": [
+            "No lifesteal focus"
+          ],
+          "rerollAdvice": "Top reroll target"
         },
         {
-          "name": "A Tier Races",
-          "description": "Reliable races with strong passives and practical synergy across questing, bosses, and arena skirmishes."
+          "tier": "S",
+          "name": "Lunarian",
+          "rarity": "Fabled",
+          "effects": [
+            "+10% Movement Speed",
+            "+10% Max Health",
+            "+20% Katana Damage",
+            "+10% Fire Damage"
+          ],
+          "bestFor": [
+            "Katana",
+            "fast hybrid builds",
+            "mobility plus survivability"
+          ],
+          "highlights": [
+            "Strong speed and tank mix",
+            "Excellent Katana scaling",
+            "Very smooth all-round feel"
+          ],
+          "drawbacks": [
+            "Less versatile than Dragonborn"
+          ],
+          "rerollAdvice": "Lock in if you want Katana or a fast general build"
         },
         {
-          "name": "B Tier Races",
-          "description": "Playable options that are still useful early but usually replaced after enough reroll stock accumulates."
+          "tier": "A",
+          "name": "Djinn",
+          "rarity": "Fabled",
+          "effects": [
+            "+15% Skill Cooldown Speed",
+            "+20% Scythe Damage",
+            "+25% Dash Distance"
+          ],
+          "bestFor": [
+            "Scythe",
+            "skill-heavy mobility builds",
+            "aggressive movement"
+          ],
+          "highlights": [
+            "Best mobility-focused race",
+            "Excellent for Scythe users",
+            "Great for fast skill rotations"
+          ],
+          "drawbacks": [
+            "No HP boost",
+            "No sustain boost"
+          ],
+          "rerollAdvice": "Great keep for Scythe players"
         },
         {
-          "name": "Reroll Hold Rules",
-          "description": "Hold any race with broad utility if your reroll budget is low, then chase narrower upgrades after account stability."
+          "tier": "A",
+          "name": "Elf",
+          "rarity": "Rare",
+          "effects": [
+            "+10% Skill Cooldown Speed",
+            "+10% Movement Speed",
+            "+10% Katana Damage"
+          ],
+          "bestFor": [
+            "Katana",
+            "cooldown spam",
+            "balanced offense"
+          ],
+          "highlights": [
+            "Very balanced offensive kit",
+            "High spam potential from lower cooldowns",
+            "Reliable Katana scaling"
+          ],
+          "drawbacks": [
+            "Lower numbers than higher tiers"
+          ],
+          "rerollAdvice": "Strong value keep if you do not want to chase Fabled or Legendary"
+        },
+        {
+          "tier": "A",
+          "name": "Shadowborn",
+          "rarity": "Legendary",
+          "effects": [
+            "+5% Life Steal",
+            "+35% Katana Damage",
+            "+40% Dash Distance",
+            "+15% Movement Speed",
+            "-25% Max Health",
+            "-50% Greatsword and Scythe Damage"
+          ],
+          "bestFor": [
+            "Katana only",
+            "high-mobility burst play",
+            "specialized glass-cannon builds"
+          ],
+          "highlights": [
+            "Huge Katana bonus",
+            "Excellent movement package",
+            "Built for aggressive Katana mains"
+          ],
+          "drawbacks": [
+            "Fragile because of the HP penalty",
+            "Terrible for Greatsword and Scythe"
+          ],
+          "rerollAdvice": "Keep only if you are committed to Katana"
+        },
+        {
+          "tier": "B",
+          "name": "Oni",
+          "rarity": "Rare",
+          "effects": [
+            "+15% Max Health",
+            "+20% Greatsword Damage",
+            "-5% Movement Speed"
+          ],
+          "bestFor": [
+            "Greatsword",
+            "bruiser play",
+            "tankier melee routes"
+          ],
+          "highlights": [
+            "Makes your character tankier",
+            "Very solid Greatsword pairing"
+          ],
+          "drawbacks": [
+            "Movement penalty hurts mobility"
+          ],
+          "rerollAdvice": "Good keep for Greatsword players"
+        },
+        {
+          "tier": "B",
+          "name": "Skypiean",
+          "rarity": "Uncommon",
+          "effects": [
+            "+10% Katana Damage",
+            "+10% Movement Speed"
+          ],
+          "bestFor": [
+            "Katana",
+            "early-to-mid-game speed builds"
+          ],
+          "highlights": [
+            "Simple, clean Katana bonus",
+            "Good early movement boost"
+          ],
+          "drawbacks": [
+            "No HP boost",
+            "Lacks broader utility stats"
+          ],
+          "rerollAdvice": "Fine early keep, easy reroll later"
+        },
+        {
+          "tier": "C",
+          "name": "Fishman",
+          "rarity": "Uncommon",
+          "effects": [
+            "+50% Swim Speed",
+            "+10% Greatsword Damage"
+          ],
+          "bestFor": [
+            "water movement",
+            "Greatsword if you lack better rolls"
+          ],
+          "highlights": [
+            "Strong swim mobility",
+            "Small Greatsword bonus"
+          ],
+          "drawbacks": [
+            "Very situational",
+            "No HP focus",
+            "No broad damage package"
+          ],
+          "rerollAdvice": "Use only if your route makes water travel matter"
+        },
+        {
+          "tier": "D",
+          "name": "Human",
+          "rarity": "Common",
+          "effects": [
+            "+5% XP Gain"
+          ],
+          "bestFor": [
+            "very early progression"
+          ],
+          "highlights": [
+            "Small leveling help at the start"
+          ],
+          "drawbacks": [
+            "Outclassed by every other race"
+          ],
+          "rerollAdvice": "Reroll as soon as you can"
         }
       ],
       "highlights": [
-        "Prioritize race value per reroll spent",
-        "Keep one stable race for farming sessions",
-        "Reroll aggressively only with reserve stock",
-        "Re-evaluate after each major balance patch"
+        "Lock Dragonborn when you want the best all-around race value.",
+        "Keep Lunarian for fast Katana routes with durable movement.",
+        "Only hold Shadowborn if your plan is Katana-only burst gameplay.",
+        "Treat Human as a temporary roll and reroll at the first opportunity."
       ]
     },
     "lucidBlocksWorldRegions": {
       "title": "Slime Seas Best Weapons",
-      "displayType": "regionCards",
-      "intro": "Weapon priority in Slime Seas should follow your mastery plan and world progression stage rather than rarity alone.",
+      "displayType": "tierGrid",
+      "intro": "The best Slime Seas weapons are the ones that scale hard, are realistic to obtain, and carry your current progression stage. This grid separates true endgame goals from practical bridge picks.",
       "regions": [
         {
-          "name": "Early Game Weapons",
-          "type": "Starter Tier",
-          "description": "Fast-upgrade options that clear early islands without overinvesting in low-value gear paths."
+          "tier": "S",
+          "name": "Dominion Brand",
+          "rarity": "Mythic",
+          "baseDamage": 1100,
+          "attackSpeed": "1.1s",
+          "bestFor": "Short boss windows and top-end burst",
+          "access": "Dropped by the Demon Lord and requires the Demon Lord Title to equip",
+          "whyPick": "Hardest-hitting option in the current weapon pool and a clear endgame target."
         },
         {
-          "name": "Mid Game Weapons",
-          "type": "Progression Tier",
-          "description": "Balanced picks with stable damage growth for boss prep and repeatable farming loops."
+          "tier": "S",
+          "name": "Slime Sword",
+          "rarity": "Legendary",
+          "baseDamage": 950,
+          "attackSpeed": "0.9s",
+          "bestFor": "Best overall DPS and sustained boss damage",
+          "access": "Craft with Demon Lord Title, Slime Core, Slime Remnants, Tempest Seals, and Sage Pulse Gems",
+          "whyPick": "Safest late-game build-around weapon when you want one strong all-mode option."
         },
         {
-          "name": "Late Game Weapons",
-          "type": "Endgame Tier",
-          "description": "High-ceiling choices for optimized builds after mastery and resource routes are established."
+          "tier": "A",
+          "name": "Void Blade",
+          "rarity": "Legendary",
+          "baseDamage": 680,
+          "attackSpeed": "0.8s",
+          "bestFor": "Fast early endgame damage",
+          "access": "Boss-drop path with strong availability",
+          "whyPick": "Comes online earlier than top-end options while keeping excellent speed."
         },
         {
-          "name": "Weapon Swap Rules",
-          "type": "Decision Model",
-          "description": "Switch only when your next weapon improves both damage profile and practical combat flow."
+          "tier": "A",
+          "name": "Thunder Staff",
+          "rarity": "Rare",
+          "baseDamage": 600,
+          "attackSpeed": "1.5s",
+          "bestFor": "Wide-area mob clearing",
+          "access": "Reliable rare-tier caster option",
+          "whyPick": "Strong magic-side pick when you value reach and room clear over melee pressure."
+        },
+        {
+          "tier": "B",
+          "name": "Frost Dagger",
+          "rarity": "Uncommon",
+          "baseDamage": 290,
+          "attackSpeed": "0.7s",
+          "bestFor": "Fast hits and crowd control",
+          "access": "Common transition weapon path",
+          "whyPick": "Fastest attack speed in this list, making it a clean bridge while farming upgrades."
+        },
+        {
+          "tier": "B",
+          "name": "Iron Slime Hammer",
+          "rarity": "Uncommon",
+          "baseDamage": 310,
+          "attackSpeed": "1.4s",
+          "bestFor": "Early progression and World 1 transition",
+          "access": "High drop availability in early routes",
+          "whyPick": "One of the easiest practical upgrades to replace starter gear."
         }
       ]
     },
     "lucidBlocksCreaturesAndEnemies": {
       "title": "Slime Seas Weapon Mastery Guide",
-      "displayType": "creatureCards",
-      "intro": "Mastery levels are the core of Slime Seas weapon progression, unlocking key skills at fixed breakpoints.",
+      "displayType": "masteryCards",
+      "intro": "Mastery in Slime Seas decides your skill chain, race pairing, and farming rhythm. Choose your lane early to avoid wasting rerolls and materials.",
       "creatures": [
         {
-          "name": "Katana Mastery Route",
-          "role": "Primary Style",
-          "description": "Flashblade Surge, Surge Wave, and Thousand Slices create a strong scaling line for clean combos."
+          "mastery": "Katana",
+          "role": "Top PvE and boss-farming mastery with fast single-target pressure",
+          "access": "Free",
+          "skillPath": [
+            {
+              "mastery": 0,
+              "skill": "Basic Attack"
+            },
+            {
+              "mastery": 1,
+              "skill": "Flashblade Surge"
+            },
+            {
+              "mastery": 3,
+              "skill": "Surge Wave"
+            },
+            {
+              "mastery": 5,
+              "skill": "Thousand Slices"
+            }
+          ],
+          "recommendedWeapons": [
+            "Wooden Katana (Level 2, DMG 6)",
+            "Verdant Katana (Level 7, DMG 14)",
+            "Refined Katana (Level 10, DMG 19)",
+            "Slime Steel Katana (Level 22, DMG 63)",
+            "Desert Katana (Level 23, DMG 70)"
+          ],
+          "bestRaces": [
+            "Shadowborn (+35% Katana)",
+            "Lunarian (+20% Katana)",
+            "Elf (+10% Katana)",
+            "Skypiean (+10% Katana)"
+          ],
+          "whyPick": "Best starting mastery if your goal is fast boss damage and quick-hit combo flow."
         },
         {
-          "name": "Scythe Mastery Route",
-          "role": "Primary Style",
-          "description": "Death’s Grasp into Spinning Strike and Void Surge supports control-heavy combat sequences."
+          "mastery": "Greatsword",
+          "role": "Best beginner route for AoE farming and all-round PvE consistency",
+          "access": "Free",
+          "skillPath": [
+            {
+              "mastery": 0,
+              "skill": "Basic Attack"
+            },
+            {
+              "mastery": 1,
+              "skill": "Earth Breaker"
+            },
+            {
+              "mastery": 3,
+              "skill": "Sweeping Slam"
+            },
+            {
+              "mastery": 5,
+              "skill": "Spiraling Slash"
+            }
+          ],
+          "recommendedWeapons": [
+            "Wooden Greatsword (Level 1, DMG 5)",
+            "Worn Iron Greatsword (Level 3, DMG 8)",
+            "Iron Greatsword (Level 4, DMG 10)",
+            "Refined Greatsword (Level 6, DMG 12)",
+            "Lightsteel Greatsword (Level 7, DMG 15)",
+            "Golden Greatsword (Level 24, DMG 98)"
+          ],
+          "bestRaces": [
+            "Oni (+20% Greatsword)",
+            "Fishman (+10% Greatsword)",
+            "Dragonborn (+20% Greatsword)"
+          ],
+          "whyPick": "Smoothest early-to-midgame lane because weapon availability and AoE both stay strong."
         },
         {
-          "name": "Greatsword Mastery Route",
-          "role": "Primary Style",
-          "description": "Earth Breaker, Sweeping Slam, and Spiraling Slash emphasize stagger pressure and burst windows."
+          "mastery": "Scythe",
+          "role": "PvP control route with grab pressure and mobility-focused skill play",
+          "access": "Free",
+          "skillPath": [
+            {
+              "mastery": 0,
+              "skill": "Basic Attack"
+            },
+            {
+              "mastery": 1,
+              "skill": "Death's Grasp"
+            },
+            {
+              "mastery": 3,
+              "skill": "Spinning Strike"
+            },
+            {
+              "mastery": 5,
+              "skill": "Void Surge"
+            }
+          ],
+          "recommendedWeapons": [
+            "Worn Iron Scythe (Level 21, DMG 50)"
+          ],
+          "bestRaces": [
+            "Djinn (+20% Scythe, +25% Dash Distance)",
+            "Dragonborn (+20% Scythe)"
+          ],
+          "whyPick": "Choose Scythe when you care about control sequences and PvP pressure windows."
         },
         {
-          "name": "Berserker Mastery Route",
-          "role": "Primary Style",
-          "description": "Impaling Thrust and slam chains reward aggressive positioning in short, high-damage trades."
-        },
-        {
-          "name": "Mastery 1 / 3 / 5 Benchmarks",
-          "role": "Progression Rule",
-          "description": "Prioritize reaching each breakpoint on one style before splitting resources across multiple weapons."
-        },
-        {
-          "name": "Combo Discipline",
-          "role": "Execution Rule",
-          "description": "Pair mobility and guard timing with mastery skills to convert openings into consistent damage output."
+          "mastery": "Berserker",
+          "role": "Gamepass Greatsword stance with stronger PvP opening pressure",
+          "access": "Berserker Starterpack gamepass",
+          "skillPath": [
+            {
+              "mastery": 0,
+              "skill": "Basic Attack"
+            },
+            {
+              "mastery": 1,
+              "skill": "Impaling Thrust"
+            },
+            {
+              "mastery": 3,
+              "skill": "Leaping Slam"
+            },
+            {
+              "mastery": 5,
+              "skill": "Colossal Slam"
+            }
+          ],
+          "recommendedWeapons": [
+            "Wooden Greatsword (Level 1, DMG 5)",
+            "Iron Greatsword (Level 4, DMG 10)",
+            "Refined Greatsword (Level 6, DMG 12)",
+            "Crimson Slimesword (Level 30, DMG 100)"
+          ],
+          "bestRaces": [
+            "Oni (+20% Greatsword)",
+            "Fishman (+10% Greatsword)",
+            "Dragonborn (+20% Greatsword)"
+          ],
+          "whyPick": "Worth buying only if Greatsword already fits your style and you want an aggressive opener."
         }
       ]
     },
     "lucidBlocksMobilityGear": {
       "title": "Slime Seas World Progression Guide",
-      "displayType": "itemCards",
-      "intro": "World progression in Slime Seas is smoother when you follow power targets, waypoint setup, and boss timing by island.",
+      "displayType": "timelineCards",
+      "intro": "Slime Seas opens up quickly, but world gates, quest routes, and boss prep are easy to scatter. This timeline gives you one practical route from spawn to late-game farming.",
       "items": [
         {
-          "name": "Starting Forest",
-          "type": "World 1",
-          "description": "Recommended power baseline starts at 0 with early farming on Basic Slime and Wolf Slime routes."
+          "step": 1,
+          "stage": "Starting Forest",
+          "unlock": "Available on spawn",
+          "target": "Reach around level 15 before the first boss push",
+          "focus": [
+            "Learn controls and basic quest loops",
+            "Unlock first mastery skills",
+            "Farm starter materials and first weapon upgrades"
+          ],
+          "bossOrGate": "Demon Lord Rima",
+          "keyTargets": [
+            "Basic Slime",
+            "Wolf Slime",
+            "Slime Residue",
+            "Wooden Katana"
+          ],
+          "leaveWhen": "You can clear early quests cleanly and are ready for your first island move."
         },
         {
-          "name": "Witch Tower",
-          "type": "World 2",
-          "description": "Move here after early quest and mastery setup, with a practical target around 100 recommended power."
+          "step": 2,
+          "stage": "Witch Tower",
+          "unlock": "Progress after early quests and first gear upgrades",
+          "target": "Power 100 checkpoint",
+          "focus": [
+            "Push the first visible power gate",
+            "Clear tower routes without stalling",
+            "Collect the next layer of crafting materials"
+          ],
+          "bossOrGate": "Tower Boss",
+          "keyTargets": [
+            "Potion Ingredients"
+          ],
+          "leaveWhen": "You can hold the 100 power checkpoint comfortably and clear tower loops smoothly."
         },
         {
-          "name": "Waypoint System",
-          "type": "Travel Core",
-          "description": "Always unlock waypoint anchors to remove repeat boat travel and increase combat uptime."
+          "step": 3,
+          "stage": "Crimson Ruins Island",
+          "unlock": "Optional detour once you are around level 30",
+          "target": "Level 50 mini-boss checkpoint",
+          "focus": [
+            "Farm the Crimson Demon mini-boss",
+            "Secure travel upgrades before long routes",
+            "Use stronger early weapons to shorten repeats"
+          ],
+          "bossOrGate": "Crimson Demon",
+          "keyTargets": [
+            "Drake Egg",
+            "Forest Drake mount"
+          ],
+          "leaveWhen": "Your Drake is hatched and travel speed is no longer slowing your core route."
         },
         {
-          "name": "Quest Loop Pacing",
-          "type": "Progression Core",
-          "description": "Run local quest loops to keep level gain, mastery growth, and drop routes synchronized."
+          "step": 4,
+          "stage": "World 5+ Material Route",
+          "unlock": "Midgame questline after the early islands",
+          "target": "World 5+ material routing and 7 Slime Pieces questline",
+          "focus": [
+            "Begin farming Tempest Seals",
+            "Route all 7 Slime Pieces",
+            "Prepare materials for legendary weapon paths"
+          ],
+          "bossOrGate": "7 Slime Pieces progression gate",
+          "keyTargets": [
+            "Tempest Seals",
+            "Slime Pieces"
+          ],
+          "leaveWhen": "You have stable Slime Piece routes and can start Demon Lord and legendary prep."
         },
         {
-          "name": "Boss Window Timing",
-          "type": "Transition Rule",
-          "description": "Enter each island boss phase when your gear, skills, and sustain tools have stable consistency."
-        },
-        {
-          "name": "Return Routing",
-          "type": "Efficiency Rule",
-          "description": "Use unlocked teleport points to split sessions between upgrades, quests, and resource restocks."
+          "step": 5,
+          "stage": "Late-Game Boss Route",
+          "unlock": "Level 40+, Epic-tier weapon, Demon Lord Title, and active guild support",
+          "target": "Late-game boss farming and Ascension materials",
+          "focus": [
+            "Run boss protocol loops with minimal downtime",
+            "Push late-game crafting and prestige systems",
+            "Build toward top-end PvE and PvP loadouts"
+          ],
+          "bossOrGate": "Corrupted Knight and King Sinbad",
+          "keyTargets": [
+            "Slime Core",
+            "Drake pet",
+            "Slime Sword",
+            "Dominion Brand"
+          ],
+          "leaveWhen": "You are farming Ascension Level 8 materials and building complete endgame setups."
         }
       ],
       "unlockMilestones": [
-        "Clear Starting Forest route",
-        "Set first reliable waypoint",
-        "Transition into Witch Tower path",
-        "Stabilize island-to-island progression cycle"
+        "Clear Starting Forest and push your first boss gate",
+        "Hold Witch Tower power checkpoints without route stalls",
+        "Finish Crimson Ruins travel detour with a hatched Drake",
+        "Stabilize World 5+ material loops and Slime Piece routing",
+        "Start late-game boss protocols for Ascension material farming"
       ]
     },
     "lucidBlocksFarmingAndGrowth": {
