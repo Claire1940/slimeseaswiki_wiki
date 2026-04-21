@@ -19,7 +19,6 @@ import {
   Settings,
   Sparkles,
   Star,
-  TrendingUp,
 } from 'lucide-react'
 import { useMessages } from 'next-intl'
 import { VideoFeature } from '@/components/home/VideoFeature'
@@ -154,9 +153,51 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
     ],
   }
 
-  // FAQ accordion states
-  const [faqExpanded, setFaqExpanded] = useState<number | null>(null)
+  // Module accordion state
   const [deckExpanded, setDeckExpanded] = useState<number | null>(null)
+
+  // Locale-safe fallbacks for modules 9-12
+  const module9Bosses =
+    t.modules?.lucidBlocksFarmingAndGrowth?.bosses ||
+    t.modules?.lucidBlocksFarmingAndGrowth?.sections ||
+    []
+  const module9FarmPriorities =
+    t.modules?.lucidBlocksFarmingAndGrowth?.farmPriorities ||
+    t.modules?.lucidBlocksFarmingAndGrowth?.growthMilestones ||
+    []
+  const module10Steps = (
+    t.modules?.lucidBlocksBestEarlyUnlocks?.steps ||
+    t.modules?.lucidBlocksBestEarlyUnlocks?.priorities ||
+    []
+  ).map((item: any, index: number) => ({
+    step: item.step || String(index + 1).padStart(2, '0'),
+    heading: item.heading || item.name || `Slime Seas Step ${index + 1}`,
+    body: item.body || item.description || '',
+  }))
+  const module10ProgressNotes =
+    t.modules?.lucidBlocksBestEarlyUnlocks?.progressNotes || []
+  const module11Routes =
+    t.modules?.lucidBlocksAchievementTracker?.routes ||
+    (t.modules?.lucidBlocksAchievementTracker?.groups || []).map((group: any) => ({
+      stop: group.name || 'Slime Seas Merchant Stop',
+      whatConfirmed: group.achievements?.[0]?.description || '',
+      howToUse: group.achievements?.[1]?.description || '',
+      whyItMatters: group.achievements?.[2]?.description || '',
+    }))
+  const module11RouteChecklist =
+    t.modules?.lucidBlocksAchievementTracker?.routeChecklist ||
+    (t.modules?.lucidBlocksAchievementTracker?.groups || []).map((group: any) => group.name)
+  const module12Skills =
+    t.modules?.lucidBlocksSingleplayerAndPlatformFAQ?.skills ||
+    (t.modules?.lucidBlocksSingleplayerAndPlatformFAQ?.faqs || []).map((faq: any) => ({
+      skill: faq.question || 'Slime Seas Skill',
+      group: 'Slime Seas Mastery',
+      unlock: 'Core Usage',
+      useCase: 'Combat and route consistency',
+      summary: faq.answer || '',
+    }))
+  const module12TrainingNotes =
+    t.modules?.lucidBlocksSingleplayerAndPlatformFAQ?.trainingNotes || []
 
   // Scroll reveal animation
   useEffect(() => {
@@ -994,30 +1035,66 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       {/* 广告位 6: 移动端横幅 320×50 */}
       <AdBanner type="banner-320x50" adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50} />
 
-      {/* Module 9: Farming and Growth */}
+      {/* Module 9: Bosses and Drops */}
       <section id="slime-seas-bosses-and-drops" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksFarmingAndGrowth']} locale={locale}>{t.modules.lucidBlocksFarmingAndGrowth.title}</LinkedTitle></h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksFarmingAndGrowth.title}</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksFarmingAndGrowth.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            {t.modules.lucidBlocksFarmingAndGrowth.sections.map((s: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex items-center gap-2 mb-3">
-                  <TrendingUp className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <h3 className="font-bold">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksFarmingAndGrowth::sections::${index}`]} locale={locale}>
-                      {s.name}
-                    </LinkedTitle>
-                  </h3>
+
+          {/* Desktop table */}
+          <div className="scroll-reveal hidden md:block overflow-x-auto mb-8 rounded-xl border border-border bg-white/5">
+            <table className="w-full min-w-[980px] text-left text-sm">
+              <thead className="bg-[hsl(var(--nav-theme)/0.12)]">
+                <tr>
+                  <th className="px-4 py-3 font-semibold text-[hsl(var(--nav-theme-light))]">Slime Seas Boss</th>
+                  <th className="px-4 py-3 font-semibold text-[hsl(var(--nav-theme-light))]">Zone</th>
+                  <th className="px-4 py-3 font-semibold text-[hsl(var(--nav-theme-light))]">Location</th>
+                  <th className="px-4 py-3 font-semibold text-[hsl(var(--nav-theme-light))]">Level</th>
+                  <th className="px-4 py-3 font-semibold text-[hsl(var(--nav-theme-light))]">HP</th>
+                  <th className="px-4 py-3 font-semibold text-[hsl(var(--nav-theme-light))]">Best For</th>
+                  <th className="px-4 py-3 font-semibold text-[hsl(var(--nav-theme-light))]">Top Drops</th>
+                </tr>
+              </thead>
+              <tbody>
+                {module9Bosses.map((boss: any, index: number) => (
+                  <tr key={index} className="border-t border-border align-top">
+                    <td className="px-4 py-4 font-semibold">{boss.boss || boss.name || '-'}</td>
+                    <td className="px-4 py-4 text-muted-foreground">{boss.zone || '-'}</td>
+                    <td className="px-4 py-4 text-muted-foreground">{boss.location || '-'}</td>
+                    <td className="px-4 py-4 text-muted-foreground">{boss.levelRequirement || boss.level_requirement || '-'}</td>
+                    <td className="px-4 py-4 text-muted-foreground">{boss.hp || '-'}</td>
+                    <td className="px-4 py-4">{boss.bestFor || '-'}</td>
+                    <td className="px-4 py-4 text-muted-foreground">{boss.topDrops || boss.top_drops || '-'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Mobile cards */}
+          <div className="scroll-reveal grid grid-cols-1 gap-4 md:hidden mb-8">
+            {module9Bosses.map((boss: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl">
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <h3 className="font-bold text-lg text-[hsl(var(--nav-theme-light))]">{boss.boss || boss.name || '-'}</h3>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.12)] border border-[hsl(var(--nav-theme)/0.35)]">
+                    {boss.zone || 'Zone'}
+                  </span>
                 </div>
-                <p className="text-muted-foreground text-sm">{s.description}</p>
+                <p className="text-sm text-muted-foreground mb-2"><span className="text-foreground">Location: </span>{boss.location || '-'}</p>
+                <p className="text-sm text-muted-foreground mb-2"><span className="text-foreground">Level: </span>{boss.levelRequirement || boss.level_requirement || '-'}</p>
+                <p className="text-sm text-muted-foreground mb-2"><span className="text-foreground">HP: </span>{boss.hp || '-'}</p>
+                <p className="text-sm text-muted-foreground mb-2"><span className="text-foreground">Best For: </span>{boss.bestFor || '-'}</p>
+                <p className="text-xs text-muted-foreground mb-2"><span className="text-foreground">Top Drops: </span>{boss.topDrops || boss.top_drops || '-'}</p>
+                <p className="text-xs text-muted-foreground">{boss.fightNote || boss.fight_note || ''}</p>
               </div>
             ))}
           </div>
+
           <div className="scroll-reveal flex flex-wrap gap-3 justify-center">
-            {t.modules.lucidBlocksFarmingAndGrowth.growthMilestones.map((m: string, i: number) => (
+            {module9FarmPriorities.map((m: string, i: number) => (
               <span key={i} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm">
                 <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />{m}
               </span>
@@ -1026,85 +1103,110 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
         </div>
       </section>
 
-      {/* Module 10: Best Early Unlocks */}
+      {/* Module 10: Pets Guide */}
       <section id="slime-seas-pets-guide" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksBestEarlyUnlocks']} locale={locale}>{t.modules.lucidBlocksBestEarlyUnlocks.title}</LinkedTitle></h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksBestEarlyUnlocks.title}</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksBestEarlyUnlocks.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {t.modules.lucidBlocksBestEarlyUnlocks.priorities.map((p: any, index: number) => (
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {module10Steps.map((step: any, index: number) => (
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
                 <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[hsl(var(--nav-theme)/0.15)] border border-[hsl(var(--nav-theme)/0.35)] text-sm font-bold text-[hsl(var(--nav-theme-light))]">
+                    {step.step}
+                  </span>
                   <Star className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <span className={`text-xs px-2 py-1 rounded-full border ${p.priority === "Essential" ? "bg-[hsl(var(--nav-theme)/0.15)] border-[hsl(var(--nav-theme-light)/0.4)] text-[hsl(var(--nav-theme-light))]" : p.priority === "Very High" ? "bg-[hsl(var(--nav-theme)/0.12)] border-[hsl(var(--nav-theme)/0.45)] text-[hsl(var(--nav-theme-light))]" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{p.priority}</span>
                 </div>
-                <h3 className="font-bold mb-2">
-                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksBestEarlyUnlocks::priorities::${index}`]} locale={locale}>
-                    {p.name}
-                  </LinkedTitle>
-                </h3>
-                <p className="text-muted-foreground text-sm">{p.description}</p>
+                <h3 className="font-bold mb-2">{step.heading}</h3>
+                <p className="text-muted-foreground text-sm">{step.body}</p>
               </div>
+            ))}
+          </div>
+
+          <div className="scroll-reveal flex flex-wrap gap-3 justify-center">
+            {module10ProgressNotes.map((note: string, index: number) => (
+              <span key={index} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm">
+                <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />
+                {note}
+              </span>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Module 11: Achievement Tracker */}
+      {/* Module 11: Merchant Locations */}
       <section id="slime-seas-merchant-locations" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksAchievementTracker']} locale={locale}>{t.modules.lucidBlocksAchievementTracker.title}</LinkedTitle></h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksAchievementTracker.title}</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksAchievementTracker.intro}</p>
           </div>
-          <div className="scroll-reveal space-y-6">
-            {t.modules.lucidBlocksAchievementTracker.groups.map((group: any, gi: number) => (
-              <div key={gi} className="p-6 bg-white/5 border border-border rounded-xl">
-                <div className="flex items-center gap-2 mb-4">
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {module11Routes.map((route: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex items-center gap-2 mb-3">
                   <ClipboardCheck className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <h3 className="font-bold text-lg">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksAchievementTracker::groups::${gi}`]} locale={locale}>
-                      {group.name}
-                    </LinkedTitle>
-                  </h3>
+                  <h3 className="font-bold">{route.stop || route.name || 'Slime Seas Route Stop'}</h3>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {group.achievements.map((a: any, ai: number) => (
-                    <div key={ai} className="p-3 bg-white/5 border border-border rounded-lg">
-                      <p className="font-semibold text-sm text-[hsl(var(--nav-theme-light))]">{a.title}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{a.description}</p>
-                    </div>
-                  ))}
+                <div className="space-y-3">
+                  <div className="p-3 bg-white/5 border border-border rounded-lg">
+                    <p className="font-semibold text-sm text-[hsl(var(--nav-theme-light))]">What Is Confirmed</p>
+                    <p className="text-xs text-muted-foreground mt-1">{route.whatConfirmed || route.what_is_confirmed || '-'}</p>
+                  </div>
+                  <div className="p-3 bg-white/5 border border-border rounded-lg">
+                    <p className="font-semibold text-sm text-[hsl(var(--nav-theme-light))]">How to Use It</p>
+                    <p className="text-xs text-muted-foreground mt-1">{route.howToUse || route.how_to_use_it || '-'}</p>
+                  </div>
+                  <div className="p-3 bg-white/5 border border-border rounded-lg">
+                    <p className="font-semibold text-sm text-[hsl(var(--nav-theme-light))]">Why It Matters</p>
+                    <p className="text-xs text-muted-foreground mt-1">{route.whyItMatters || route.why_it_matters || '-'}</p>
+                  </div>
                 </div>
               </div>
+            ))}
+          </div>
+
+          <div className="scroll-reveal flex flex-wrap gap-3 justify-center">
+            {module11RouteChecklist.map((item: string, index: number) => (
+              <span key={index} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm">
+                <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />
+                {item}
+              </span>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Module 12: Singleplayer FAQ */}
+      {/* Module 12: Skills Guide */}
       <section id="slime-seas-skills-guide" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksSingleplayerAndPlatformFAQ']} locale={locale}>{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.title}</LinkedTitle></h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.title}</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.intro}</p>
           </div>
-          <div className="scroll-reveal space-y-2">
-            {t.modules.lucidBlocksSingleplayerAndPlatformFAQ.faqs.map((faq: any, index: number) => (
-              <div key={index} className="border border-border rounded-xl overflow-hidden">
-                <button
-                  onClick={() => setFaqExpanded(faqExpanded === index ? null : index)}
-                  className="w-full flex items-center justify-between p-5 text-left hover:bg-white/5 transition-colors"
-                >
-                  <span className="font-semibold">{faq.question}</span>
-                  <ChevronDown className={`w-5 h-5 flex-shrink-0 transition-transform ${faqExpanded === index ? "rotate-180" : ""}`} />
-                </button>
-                {faqExpanded === index && (
-                  <div className="px-5 pb-5 text-muted-foreground text-sm">{faq.answer}</div>
-                )}
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {module12Skills.map((skill: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex flex-wrap items-center gap-2 mb-3">
+                  <MessageCircle className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.15)] border border-[hsl(var(--nav-theme-light)/0.4)] text-[hsl(var(--nav-theme-light))]">{skill.group || 'Slime Seas Mastery'}</span>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{skill.unlock || 'Core Unlock'}</span>
+                </div>
+                <h3 className="font-bold text-lg mb-2">{skill.skill || skill.question || 'Slime Seas Skill'}</h3>
+                <p className="text-sm mb-2"><span className="text-muted-foreground">Use Case: </span>{skill.useCase || skill.use_case || '-'}</p>
+                <p className="text-muted-foreground text-sm">{skill.summary || skill.answer || '-'}</p>
               </div>
+            ))}
+          </div>
+
+          <div className="scroll-reveal flex flex-wrap gap-3 justify-center">
+            {module12TrainingNotes.map((note: string, index: number) => (
+              <span key={index} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm">
+                <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />
+                {note}
+              </span>
             ))}
           </div>
         </div>

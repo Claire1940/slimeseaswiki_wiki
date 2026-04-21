@@ -102,22 +102,22 @@
       {
         "icon": "AlertTriangle",
         "title": "Slime Seas Bosses and Drops",
-        "description": "Boss order, drop focus, and encounter prep"
+        "description": "Four-boss order with level gates, top drops, and farm-first priorities"
       },
       {
         "icon": "Home",
         "title": "Slime Seas Pets Guide",
-        "description": "Pet unlock path, hatch priorities, and investment advice"
+        "description": "Drake Egg farm path, hatch steps, and Forest Drake mount value"
       },
       {
         "icon": "Package",
         "title": "Slime Seas Merchant Locations",
-        "description": "Vendor routes, notable stock, and buy timing"
+        "description": "Forest-to-Desert merchant loop with spawn checks and waypoint resets"
       },
       {
         "icon": "MessageCircle",
         "title": "Slime Seas Skills Guide",
-        "description": "Core combat skills, usage windows, and cooldown value"
+        "description": "Dash plus mastery skills to learn first for cleaner boss and PvP rotations"
       },
       {
         "icon": "Gamepad2",
@@ -823,169 +823,204 @@
     },
     "lucidBlocksFarmingAndGrowth": {
       "title": "Slime Seas Bosses and Drops",
-      "displayType": "mixedCards",
-      "intro": "Boss routing becomes efficient when you align fight order with drop goals and your current build stage.",
-      "sections": [
+      "displayType": "bossTable",
+      "intro": "Use this Slime Seas boss table to route progression by level gates, drop priorities, and practical farming value from your first major boss to the current endgame chase.",
+      "bosses": [
         {
-          "name": "Boss Route Order",
-          "description": "Clear bosses by world progression instead of skipping ahead so survivability stays consistent."
+          "boss": "Demon Lord Rima",
+          "zone": "Zone 1",
+          "location": "Slime Forest - Rima's Spire (Island 3)",
+          "levelRequirement": "65",
+          "hp": "4,000 solo",
+          "topDrops": "Wing Flaps (35.5%), Iron Novice Pants (23.66%), Iron Novice Chestplate (17.75%), Slime Lord Pants (12.42%), Slime Lord Chestplate (8.87%), Slime Katana (1.77%)",
+          "bestFor": "First boss farm and early progression",
+          "fightNote": "Katana-style boss and the easiest major boss to start farming."
         },
         {
-          "name": "Drop Priority",
-          "description": "Target drops that unlock immediate power spikes for your active weapon mastery path."
+          "boss": "King Sinbad",
+          "zone": "Zone 2",
+          "location": "The Dunes - Sinbad's Keep (Island 6)",
+          "levelRequirement": "160",
+          "hp": "15,000 solo",
+          "topDrops": "Sinbad's Tail, Copper Novice Greaves, Copper Novice Chestplate, Thorn Greaves, Thorn Chestplate, Thornblade",
+          "bestFor": "Mid-game progression and Greatsword upgrades",
+          "fightNote": "This arena does not support the common outside-arena setup."
         },
         {
-          "name": "Fight Preparation",
-          "description": "Carry potion support, maintain mobility discipline, and set a quick reset route before attempts."
+          "boss": "Ogre Lord",
+          "zone": "Zone 3",
+          "location": "Goblin Ruins - Ogre Lord's Bastion (Island 9)",
+          "levelRequirement": "255",
+          "hp": "45,000 solo / 90,000 trio",
+          "topDrops": "Ogre Horns (41.58%), Steel Adventurer Pants (27.72%), Steel Adventurer Chestplate (20.79%), Apprentice Plated Greaves (4.85%), Doomblade (0.51%), Gilded Leviathan (0.51%), Monarch's Scythe (0.51%)",
+          "bestFor": "Crafting materials and late mid-game farming",
+          "fightNote": "Best common-drop materials boss; trio raids double total boss HP."
         },
         {
-          "name": "Repeat Farm Logic",
-          "description": "Re-farm bosses with high-value rewards once your kill speed supports stable repetition."
+          "boss": "Monarch Statue",
+          "zone": "Zone 4",
+          "location": "Shadow World",
+          "levelRequirement": "360+",
+          "hp": "160,000 solo / 300,000 trio",
+          "topDrops": "Sigil Fragment (42.02%), Shadow Steel Greaves (28.01%), Shadow Steel Chestplate (21.01%), Igris Helmet (4.2%), Igris Greaves (2.8%), Igris Chestplate (1.4%), Amethyst Avenger (0.17%), Hollow Wraith Blade (0.17%), Necroshade (0.17%)",
+          "bestFor": "End-game progression and rare weapon chasing",
+          "fightNote": "Current endgame boss with the heaviest rare-drop chase."
         }
       ],
-      "growthMilestones": [
-        "Clear first major boss route",
-        "Secure first high-value boss drop",
-        "Build a repeatable boss farm loop",
-        "Optimize route by kill speed and downtime"
+      "farmPriorities": [
+        "Start with Demon Lord Rima for your first stable armor and weapon farm window.",
+        "Use King Sinbad as your bridge to stronger mid-game Greatsword routes.",
+        "Farm Ogre Lord when you need high-volume materials plus late mid-game drops.",
+        "Push Monarch Statue when your build is ready for endgame rare-weapon chasing."
       ]
     },
     "lucidBlocksBestEarlyUnlocks": {
       "title": "Slime Seas Pets Guide",
-      "displayType": "priorityCards",
-      "intro": "Pets are a practical progression layer in Slime Seas, especially when travel efficiency and utility scaling matter.",
-      "priorities": [
+      "displayType": "stepByStep",
+      "intro": "The Slime Seas pet loop is simple and practical: secure the Drake Egg, hatch it through slime kills, and use the Forest Drake as your first high-value travel upgrade.",
+      "steps": [
         {
-          "name": "Early Pet Unlock",
-          "priority": "Essential",
-          "description": "Secure your first pet path early so utility gains start compounding with world progression."
+          "step": "01",
+          "heading": "Farm the Crimson Demon",
+          "body": "Start at Crimson Ruins Island and farm the Crimson Demon mini-boss. The fight is level 50, and most players begin the grind around level 30."
         },
         {
-          "name": "Egg Route Planning",
-          "priority": "Very High",
-          "description": "Prioritize egg sources tied to your active island loop to avoid low-value detours."
+          "step": "02",
+          "heading": "Get the Drake Egg Drop",
+          "body": "The Drake Egg is commonly tracked as a 9% drop from the Crimson Demon. Reposition often because split minions can pressure from multiple angles."
         },
         {
-          "name": "Hatch Timing",
-          "priority": "Very High",
-          "description": "Use hatch windows when you can immediately leverage movement or combat utility upgrades."
+          "step": "03",
+          "heading": "Hatch by Killing Slimes",
+          "body": "After the egg drops, keep clearing slimes through your normal route. The hatch process advances from slime kills, not a separate incubation menu."
         },
         {
-          "name": "Pet Utility Fit",
-          "priority": "High",
-          "description": "Choose pets that strengthen your current farm route rather than collecting by rarity alone."
+          "step": "04",
+          "heading": "Claim the Forest Drake",
+          "body": "The current live pet route culminates in the Forest Drake, which functions as your first practical mount."
         },
         {
-          "name": "Resource Budgeting",
-          "priority": "High",
-          "description": "Balance pet investment with weapon and race progression to prevent upgrade bottlenecks."
+          "step": "05",
+          "heading": "Use the Mount for Routing",
+          "body": "In the current Slime Seas loop, the biggest pet value is travel speed between islands and route checkpoints."
         },
         {
-          "name": "Upgrade Rotation",
-          "priority": "High",
-          "description": "Rotate pet focus when your route shifts from leveling speed to endgame drop optimization."
+          "step": "06",
+          "heading": "Keep It Active for XP Growth",
+          "body": "The pet gains experience as you continue farming. Hatch completion is usually around 1 to 3 hours depending on level, weapon strength, and clear pace."
         }
+      ],
+      "progressNotes": [
+        "Begin the Slime Seas pet grind when your core combat route is already stable.",
+        "Link egg farming to your current leveling path to avoid low-value detours.",
+        "Treat the Forest Drake as a routing upgrade first, then a long-term progression layer.",
+        "Maintain regular slime clears so hatch progress continues without dedicated downtime."
       ]
     },
     "lucidBlocksAchievementTracker": {
       "title": "Slime Seas Merchant Locations",
-      "displayType": "achievementGrid",
-      "intro": "Merchant routing in Slime Seas saves travel time and improves upgrade timing when your inventory plan is clear.",
-      "groups": [
+      "displayType": "routeCards",
+      "intro": "The most practical Slime Seas merchant data is route-based: rotate Forest to Desert coverage, check spawned merchants first, and use island waypoints to shorten every recheck loop.",
+      "routes": [
         {
-          "name": "Starting Forest Merchant Route",
-          "achievements": [
-            {
-              "title": "Entrance Vendor",
-              "description": "Use this stop for quick early restocks before long quest loops."
-            },
-            {
-              "title": "Pathside Merchant",
-              "description": "Check this route point for affordable utility restocks mid-run."
-            },
-            {
-              "title": "Quest Hub Merchant",
-              "description": "Pair with quest turn-ins to cut travel overhead and downtime."
-            },
-            {
-              "title": "Checkpoint Supplier",
-              "description": "Use as a repeat stop before boss prep attempts."
-            }
-          ]
+          "stop": "Forest Route",
+          "whatConfirmed": "Public merchant-location coverage starts in the Forest side of Slime Seas.",
+          "howToUse": "Begin vendor sweeps here when running an early-side route reset.",
+          "whyItMatters": "This stop anchors one confirmed end of the merchant path."
         },
         {
-          "name": "Witch Tower Merchant Route",
-          "achievements": [
-            {
-              "title": "Tower Entry Vendor",
-              "description": "First restock point after transition into Witch Tower progression."
-            },
-            {
-              "title": "Potion Supplier",
-              "description": "Prioritize sustain-related purchases for repeat fight consistency."
-            },
-            {
-              "title": "Material Buyer",
-              "description": "Convert surplus drops into currency for faster upgrade pacing."
-            },
-            {
-              "title": "Route Reset Merchant",
-              "description": "Use before each repeated route cycle to stay combat-ready."
-            }
-          ]
+          "stop": "Desert Route",
+          "whatConfirmed": "Public merchant-location coverage extends through the Desert side.",
+          "howToUse": "Treat this as the far end of your full merchant sweep once later islands unlock.",
+          "whyItMatters": "This stop marks the other confirmed end of the known vendor route."
         },
         {
-          "name": "Merchant Planning Rules",
-          "achievements": [
-            {
-              "title": "Buy by Build Stage",
-              "description": "Purchase around immediate power gains, not broad inventory filling."
-            },
-            {
-              "title": "Avoid Overbuying",
-              "description": "Keep currency available for mastery and weapon transitions."
-            },
-            {
-              "title": "Track High-Value Restocks",
-              "description": "Return only when stock directly supports your active route."
-            },
-            {
-              "title": "Chain with Waypoints",
-              "description": "Use teleport paths to combine merchant and farming efficiency."
-            }
-          ]
+          "stop": "Spawned Merchant Check",
+          "whatConfirmed": "Merchants can spawn live in Slime Seas sessions.",
+          "howToUse": "Check for active spawned merchants before sailing the complete route.",
+          "whyItMatters": "Spawn checks can cut the full vendor loop when timing lines up."
+        },
+        {
+          "stop": "Island Waypoint Loop",
+          "whatConfirmed": "Each island supports waypoint-based return travel.",
+          "howToUse": "Set waypoints on repeat-visit islands, then chain fast merchant checks in sequence.",
+          "whyItMatters": "Waypoints reduce downtime and make merchant revisits efficient."
         }
+      ],
+      "routeChecklist": [
+        "Start from the Forest end and finish at the Desert end when doing full sweeps.",
+        "Run spawned-merchant checks first before committing to long travel loops.",
+        "Pair vendor checks with active quest turn-ins to remove dead travel time.",
+        "Refresh waypoints whenever your Slime Seas progression route changes."
       ]
     },
     "lucidBlocksSingleplayerAndPlatformFAQ": {
       "title": "Slime Seas Skills Guide",
-      "displayType": "accordion",
-      "intro": "Core Slime Seas skills define combat rhythm, mobility timing, and boss consistency.",
-      "faqs": [
+      "displayType": "skillCards",
+      "intro": "Slime Seas skills are mastery-driven. Start with Dash for universal movement, then prioritize mastery 1 and mastery 5 skills that define your PvE and PvP rhythm.",
+      "skills": [
         {
-          "question": "How should I use Slime Seas Dash in combat?",
-          "answer": "Use Slime Seas Dash to reset spacing, avoid heavy hits, and reopen skill windows after short combos."
+          "skill": "Dash",
+          "group": "Universal Movement",
+          "unlock": "Core Movement",
+          "useCase": "Evade, reposition, and reset spacing",
+          "summary": "Dash is the baseline Slime Seas movement skill and the first input habit every player should build for boss dodges and route speed."
         },
         {
-          "question": "Which Slime Seas skills should I learn first?",
-          "answer": "Prioritize mobility and reliable damage skills tied to your main mastery weapon before niche options."
+          "skill": "Flashblade Surge",
+          "group": "Katana",
+          "unlock": "Mastery 1",
+          "useCase": "Fast opener and combo starter",
+          "summary": "Flashblade Surge is a core Katana opener in Slime Seas and sets up fast repeat pressure for PvE chains."
         },
         {
-          "question": "How do Slime Seas mastery skills unlock?",
-          "answer": "Each weapon mastery route unlocks major skills at fixed level breakpoints, so focused training is fastest."
+          "skill": "Thousand Slashes",
+          "group": "Katana",
+          "unlock": "Mastery 5",
+          "useCase": "Boss DPS and safe finisher",
+          "summary": "Thousand Slashes is the signature Katana finisher, widely used for single-target pressure and safe burst windows."
         },
         {
-          "question": "When should I switch Slime Seas skill loadouts?",
-          "answer": "Switch loadouts when your world route shifts from leveling to bosses or when your PvP plan changes."
+          "skill": "Death's Grasp",
+          "group": "Scythe",
+          "unlock": "Mastery 1",
+          "useCase": "Grab and control setup",
+          "summary": "Death's Grasp gives Slime Seas Scythe routes their control identity and starts most pressure chains."
         },
         {
-          "question": "How do Slime Seas skills affect farming speed?",
-          "answer": "Efficient skill chains reduce downtime between pulls and make repeated material routes significantly faster."
+          "skill": "Void Surge",
+          "group": "Scythe",
+          "unlock": "Mastery 5",
+          "useCase": "Control-chain finisher",
+          "summary": "Void Surge closes Scythe chains and is the key mastery finisher for control-heavy PvP sequences."
         },
         {
-          "question": "What is the best Slime Seas skill pattern for bosses?",
-          "answer": "Open with safe poke skills, hold mobility for danger windows, then commit burst during clear punish timing."
+          "skill": "Earth Breaker",
+          "group": "Greatsword",
+          "unlock": "Mastery 1",
+          "useCase": "Early AoE pressure",
+          "summary": "Earth Breaker is the first Greatsword mastery skill and a major reason Slime Seas Greatsword routes feel smooth for farming."
+        },
+        {
+          "skill": "Spiraling Slash",
+          "group": "Greatsword",
+          "unlock": "Mastery 5",
+          "useCase": "AoE clear and route farming",
+          "summary": "Spiraling Slash is Greatsword's signature finisher and supports wide-area clears during repeat material loops."
+        },
+        {
+          "skill": "Impaling Thrust",
+          "group": "Berserker",
+          "unlock": "Mastery 1",
+          "useCase": "Heavy opener",
+          "summary": "Impaling Thrust is the standout Berserker opener in Slime Seas and starts high-pressure burst sequences."
         }
+      ],
+      "trainingNotes": [
+        "Use Slime Seas Dash on cooldown discipline, not panic input, to control spacing.",
+        "Commit to one mastery line early so skill unlocks arrive before route difficulty spikes.",
+        "Build openers and finishers in pairs to keep combo flow consistent under pressure.",
+        "Re-evaluate your skill sequence when shifting from leveling routes to boss or PvP focus."
       ]
     },
     "lucidBlocksSteamDeckAndController": {
