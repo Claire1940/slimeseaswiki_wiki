@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import type { Metadata } from 'next'
 import { buildLanguageAlternates } from '@/lib/i18n-utils'
 import { type Locale } from '@/i18n/routing'
@@ -90,12 +90,12 @@ export default function TermsOfService() {
               and resources related to the Roblox game "Slime Seas". Our services include, but are not limited to:
             </p>
             <ul>
-              <li>Game guides and survival strategies</li>
-              <li>Crafting and Apotheosis fusion guides</li>
-              <li>Biome and world region information</li>
-              <li>Creature and enemy guides</li>
-              <li>Achievement walkthroughs</li>
-              <li>Community discussion and content</li>
+              <li>Codes tracking and redeem guides</li>
+              <li>Race tier analysis and reroll planning</li>
+              <li>Weapon routes, mastery references, and merchant locations</li>
+              <li>Boss mechanics, drops, and farming loops</li>
+              <li>Pet unlock, hatch, and progression guides</li>
+              <li>Community-focused update tracking content</li>
             </ul>
             <p>
               <strong>Important:</strong> Slime Seas Wiki is NOT affiliated with, endorsed by, or associated with

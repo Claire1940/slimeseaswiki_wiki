@@ -1,932 +1,1672 @@
 {
   "seo": {
     "home": {
-      "title": "Wiki de Lucid Blocks - Fabricação, Biomas e Conquistas",
-      "description": "A Wiki de Lucid Blocks abrange fabricação, biomas, criaturas, itens, conquistas, finais e dicas de sobrevivência para a aventura sandbox de voxel surreal no Steam.",
-      "keywords": "Lucid Blocks, Lucid Blocks wiki, fabricação, biomas, conquistas, sobrevivência, Steam",
-      "ogTitle": "Wiki de Lucid Blocks - Fabricação, Biomas e Conquistas",
-      "ogDescription": "A Wiki de Lucid Blocks abrange fabricação, biomas, criaturas, itens, conquistas, finais e dicas de sobrevivência para a aventura sandbox de voxel surreal no Steam.",
-      "twitterTitle": "Wiki de Lucid Blocks - Fabricação, Biomas e Conquistas",
-      "twitterDescription": "A Wiki de Lucid Blocks abrange fabricação, biomas, criaturas, itens, conquistas e dicas de sobrevivência para o sandbox de voxel surreal no Steam."
+      "title": "Slime Seas Wiki - Códigos, Raças e Armas",
+      "description": "Slime Seas Wiki com códigos novos, tier list de raças, guias de armas, rotas de chefes, ilhas e ajuda na progressão para o RPG de anime do Roblox que cresce rapidamente.",
+      "keywords": "Slime Seas, Roblox, códigos Slime Seas, raças Slime Seas, armas Slime Seas, Slime Seas wiki",
+      "ogTitle": "Slime Seas Wiki - Códigos, Raças e Armas",
+      "ogDescription": "Slime Seas Wiki com códigos novos, tier list de raças, guias de armas, rotas de chefes, ilhas e ajuda na progressão para o RPG de anime do Roblox que cresce rapidamente.",
+      "twitterTitle": "Slime Seas Wiki - Códigos, Raças e Armas",
+      "twitterDescription": "Slime Seas Wiki com códigos ativos, escolhas de raças, rotas de armas, guias de chefes e ferramentas de progressão para jogadores de Roblox."
     }
   },
   "nav": {
-    "guide": "Guide",
-    "resources": "Resources",
-    "races": "Races",
-    "weapons": "Weapons",
+    "guide": "Guia",
+    "resources": "Recursos",
+    "races": "Raças",
+    "weapons": "Armas",
     "pets": "Pets",
-    "bosses": "Bosses",
-    "items": "Items"
+    "bosses": "Chefes",
+    "items": "Itens"
   },
   "common": {
     "home": "Início",
     "more": "Mais",
-    "playNow": "Jogue no Steam",
-    "switchLanguage": "Alterar Idioma",
-    "switchTheme": "Alterar Tema",
+    "playNow": "Jogar no Roblox",
+    "switchLanguage": "Mudar Idioma",
+    "switchTheme": "Mudar Tema",
     "lightMode": "Modo Claro",
     "darkMode": "Modo Escuro",
     "notFound": "Página Não Encontrada",
     "notFoundDescription": "A página que você está procurando não existe.",
     "backToHome": "Voltar ao Início",
     "relatedArticles": "Artigos Relacionados",
-    "readMore": "Leia Mais"
+    "readMore": "Ler Mais"
   },
   "hero": {
-    "badge": "__PROTECTED_c0b0161c__ Sandbox de Sobrevivência Voxel",
-    "title": "Lucid Blocks Wiki",
-    "description": "Explore biomas oníricos, combine itens com Apotheosis, construa livremente e sobreviva a criaturas estranhas neste sandbox surreal de mundo aberto no Steam.",
-    "getFreeCodesCTA": "Explore o Guia de Criação",
-    "playOnSteamCTA": "Jogue no Steam",
+    "badge": "RPG de Anime de Mundo Aberto no Roblox",
+    "title": "Slime Seas Wiki",
+    "description": "Acompanhe códigos ativos, melhores raças, posturas de armas, chefes, ilhas e rotas de progressão rápida para Slime Seas, o RPG de anime do Roblox que cresce rapidamente.",
+    "getFreeCodesCTA": "Join Slime Seas Discord",
+    "playOnSteamCTA": "Jogar Slime Seas no Roblox",
     "stats": {
       "stat1": {
-        "value": "1.325",
-        "label": "Jogadores Online"
+        "value": "2.9M+",
+        "label": "Total de Visitas"
       },
       "stat2": {
-        "value": "1.986",
-        "label": "Pico de CCU"
+        "value": "45K+",
+        "label": "Favoritos"
       },
       "stat3": {
-        "value": "97%",
-        "label": "Avaliações Positivas"
+        "value": "91.8%",
+        "label": "Taxa de Aprovação"
       },
       "stat4": {
-        "value": "12 de mar. de 2026",
-        "label": "Data de Lançamento"
+        "value": "16.8K+",
+        "label": "Pico de CCU"
       }
     }
   },
   "gameFeature": {
-    "title": "Jogabilidade de Lucid Blocks",
-    "description": "Explore biomas surreais, funda itens com Apotheosis e sobreviva a criaturas estranhas neste sandbox de voxel onírico no Steam."
+    "title": "Jogabilidade de Slime Seas",
+    "description": "Explore ilhas, suba o nível de maestria, faça reroll de raças, lute contra chefes e otimize sua rota de build em Slime Seas no Roblox."
   },
   "tools": {
-    "title": "Lucid Blocks",
-    "titleHighlight": "Recursos",
-    "subtitle": "Tudo o que você precisa para explorar, criar e sobreviver em Lucid Blocks",
+    "title": "Slime Seas",
+    "titleHighlight": "Navegador de Módulos",
+    "subtitle": "Pule para cada módulo da página inicial de Slime Seas com um clique",
     "cards": [
       {
         "icon": "BookOpen",
-        "title": "Guia para Iniciantes",
-        "description": "Primeiros passos, exploração e progressão inicial"
+        "title": "Códigos Slime Seas",
+        "description": "Rastreamento de códigos ativos e expirados, além do fluxo de resgate"
       },
       {
-        "icon": "Sparkles",
-        "title": "Criação de Apotheosis",
-        "description": "Sistema de fusão livre e receitas iniciais"
-      },
-      {
-        "icon": "Hammer",
-        "title": "Ferramentas e Armas",
-        "description": "Frost Pick, Azrael, __PROTECTED_6a765cb2__ e mais"
-      },
-      {
-        "icon": "Package",
-        "title": "Armazenamento e Inventário",
-        "description": "Cache Cubes, Armários e armazenamento de Qualia"
-      },
-      {
-        "icon": "Home",
-        "title": "Qualia e Construção de Base",
-        "description": "Qualia Pessoal e configuração da base principal"
+        "icon": "Users",
+        "title": "Slime Seas Trello and Discord",
+        "description": "Links oficiais do Trello, Discord, Grupo do Roblox e X"
       },
       {
         "icon": "Eye",
-        "title": "Regiões do Mundo",
-        "description": "Fog Meadow, Essence Morass e mais"
-      },
-      {
-        "icon": "AlertTriangle",
-        "title": "Criaturas e Inimigos",
-        "description": "Manikins, aranhas e como sobreviver"
-      },
-      {
-        "icon": "ArrowRight",
-        "title": "Equipamento de Mobilidade",
-        "description": "__PROTECTED_6a765cb2__, Glider Glove, __PROTECTED_163b9bec__"
-      },
-      {
-        "icon": "TrendingUp",
-        "title": "Cultivo e Crescimento",
-        "description": "Progressão de sementes e coleta de materiais"
-      },
-      {
-        "icon": "Star",
-        "title": "Melhores Desbloqueios Iniciais",
-        "description": "Melhorias prioritárias para a primeira hora"
+        "title": "Slime Seas Wiki",
+        "description": "Pontos de entrada do banco de dados para raças, mundos, chefes e itens"
       },
       {
         "icon": "ClipboardCheck",
-        "title": "Rastreador de Conquistas",
-        "description": "Todas as 19 conquistas e condições de Steam"
+        "title": "Guia de Iniciante Slime Seas",
+        "description": "Checklist da primeira rota, da Floresta Inicial até a Torre da Bruxa"
+      },
+      {
+        "icon": "Star",
+        "title": "Tier List de Raças Slime Seas",
+        "description": "Tier list completa de raças com decisões de manter ou girar por maestria"
+      },
+      {
+        "icon": "Hammer",
+        "title": "Melhores Armas Slime Seas",
+        "description": "Armas para builds classificadas por dano, acesso e valor de progressão"
+      },
+      {
+        "icon": "Sparkles",
+        "title": "Guia de Maestria de Armas Slime Seas",
+        "description": "Rotas de habilidades de maestria 1, 3 e 5 para Katana, Foice, Espada Grande e Berserker"
+      },
+      {
+        "icon": "ArrowRight",
+        "title": "Guia de Progressão de Mundo Slime Seas",
+        "description": "Cronograma passo a passo do mundo desde o spawn, desvios e preparação para chefes avançados"
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "Chefes e Drops de Slime Seas",
+        "description": "Ordem dos quatro chefes com bloqueios de nível, melhores drops e prioridades de farm"
+      },
+      {
+        "icon": "Home",
+        "title": "Guia de Pets Slime Seas",
+        "description": "Caminho de farm do Ovo de Drake, etapas de choco e valor da montaria Drake da Floresta"
+      },
+      {
+        "icon": "Package",
+        "title": "Localizações de Mercadores Slime Seas",
+        "description": "Loop de mercadores da Floresta ao Deserto com verificações de spawn e resets de waypoint"
       },
       {
         "icon": "MessageCircle",
-        "title": "FAQ Singleplayer",
-        "description": "Dúvidas sobre plataforma, preço, cooperativo e idioma"
+        "title": "Guia de Habilidades Slime Seas",
+        "description": "Dash e habilidades de maestria para aprender primeiro para rotações de chefes e PvP mais limpas"
       },
       {
         "icon": "Gamepad2",
-        "title": "Steam Deck e Controle",
-        "description": "Configuração do Proton 9.0.4 e dicas de controle"
+        "title": "Guia de PvP Slime Seas",
+        "description": "Builds de duelo, combinações de raças e fluxo de confronto para o PvP de Slime Seas"
       },
       {
         "icon": "Settings",
-        "title": "Configurações e Acessibilidade",
-        "description": "Ocultar mãos, __PROTECTED_38625270__ e opções de exibição"
+        "title": "Itens e Materiais Slime Seas",
+        "description": "Tabela de drops do início ao fim de jogo para armas e materiais importantes de Slime Seas"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Calculadora de Dano Slime Seas",
+        "description": "Estimativas de dano de raça, arma e encantamento em tempo real para Slime Seas"
       },
       {
         "icon": "Clock",
-        "title": "Atualizações e Notas de Patch",
-        "description": "Correções recentes e notas do roadmap"
-      },
-      {
-        "icon": "Shield",
-        "title": "Correção de Travamentos",
-        "description": "Verificação de __PROTECTED_38625270__, caminho dos logs e relato de bugs"
+        "title": "Probabilidade de Reroll Slime Seas",
+        "description": "Probabilidades de reroll para raças específicas, tentativas esperadas e taxas de acerto de estoque"
       }
     ]
   },
   "modules": {
     "lucidBlocksBeginnerGuide": {
-      "title": "Guia para Iniciantes de Lucid Blocks",
+      "title": "Códigos Slime Seas",
       "displayType": "steps",
-      "intro": "Comece aprendendo como a exploração, a fusão e a progressão se conectam. Lucid Blocks recompensa a experimentação, portanto, o progresso inicial vem da coleta de materiais incomuns, do teste de combinações e do desbloqueio de sua Qualia pessoal.",
+      "intro": "Resgate os códigos mais recentes de Slime Seas para rerolls de raça, bônus de poção e chaves de baú. Use esta seção para evitar entradas expiradas e resgatar recompensas rapidamente.",
       "steps": [
         {
-          "title": "Explore Antes de se Comprometer",
-          "description": "Caminhe para fora, mine blocos comuns e guarde quaisquer itens estranhos que encontrar. O progresso inicial foca menos em missões fixas e mais em descobrir no que os materiais podem se tornar."
+          "title": "HUBISLAND (Ativo)",
+          "description": "Recompensas: 3 Rerolls de Raça e uma Poção de Ouro Superior de 30 minutos."
         },
         {
-          "title": "Desbloqueie sua Qualia Pessoal Cedo",
-          "description": "Sua Qualia pessoal é um dos marcos iniciais mais importantes. Ela oferece um lugar confiável para se reagrupar e construir ao redor."
+          "title": "SLIMEPIECE (Ativo)",
+          "description": "Recompensas: 2 Rerolls de Raça e 30 minutos de EXP Superior."
         },
         {
-          "title": "Use Ósmio para um Progresso Inicial Rápido",
-          "description": "O Ósmio é um dos materiais iniciais mais úteis. Uma rota inicial popular é combinar Ósmio com gravetos para criar uma Picareta de Gelo para mineração rápida."
+          "title": "FREEBOOSTS (Ativo)",
+          "description": "Recompensas: 30 minutos de Poder Maior e 30 minutos de Sorte Maior."
         },
         {
-          "title": "Registre Boas Fusões",
-          "description": "Mantenha um registro das combinações bem-sucedidas em seu diário. Lucid Blocks possui muitos caminhos de fusão possíveis, então anotar resultados úteis economiza muito tempo."
+          "title": "1MILLIONVISITS (Ativo)",
+          "description": "Recompensas: 3 Chaves de Baú Lendário e 30 minutos de Sorte Maior."
+        },
+        {
+          "title": "Códigos Expirados Recentemente",
+          "description": "RELEASE, 1KLIKESWHOO, YAY5000, COMBATCHANGES e 2500LIKES estão expirados no momento."
+        },
+        {
+          "title": "Como Resgatar Códigos Slime Seas",
+          "description": "Termine o tutorial, abra a Loja, cole o código na caixa de entrada inferior e pressione Enviar."
         }
       ],
       "quickTips": [
-        "Apotheosis não requer uma lista de receitas fixa.",
-        "A geração de mundo infinita significa que mover-se para lugares mais altos ou mais profundos pode revelar materiais completamente diferentes.",
-        "Ferramentas de movimento e equipamentos utilitários tornam-se um grande reforço na qualidade de vida assim que você começa a desbloqueá-los.",
-        "Perder-se no início é normal, mas ferramentas úteis, armazenamento e opções de movimento crescem rapidamente assim que suas primeiras boas fusões começam a funcionar."
+        "Verifique o Discord e X oficiais após cada atualização para novos códigos de Slime Seas.",
+        "Copie e cole os códigos exatamente, pois o espaçamento e as letras maiúsculas devem coincidir.",
+        "Resgate códigos ativos antes das sessões de reroll para que o planejamento da raça seja mais eficiente.",
+        "Se um código falhar, verifique primeiro se ele já foi movido para a lista de expirados."
       ]
     },
     "lucidBlocksApotheosisCrafting": {
-      "title": "Criação de Apotheosis em Lucid Blocks",
+      "title": "Trello e Discord de Slime Seas",
       "displayType": "cards",
-      "intro": "Apotheosis é o sistema de fusão irrestrito do jogo. Em vez de memorizar um livro de receitas tradicional, você combina materiais, observa o resultado e constrói seu próprio conhecimento de criação ao longo do tempo.",
+      "intro": "Estes links oficiais de Slime Seas são a maneira mais rápida de acompanhar atualizações, estratégias da comunidade e notas do roteiro de desenvolvimento.",
       "cards": [
         {
-          "name": "Fusão de Forma Livre",
-          "description": "Apotheosis permite fundir diferentes itens sem a necessidade de seguir uma lista de receitas fixa."
+          "name": "Trello Oficial",
+          "description": "Quadro de referência para sistemas de maestria, mundos, chefes, notas de crafting e pontos de controle de progressão."
         },
         {
-          "name": "Múltiplos Resultados Úteis",
-          "description": "Materiais diferentes costumam levar a certos resultados. Descobertas da comunidade mostram que insumos semelhantes ainda podem resultar em ferramentas práticas, armazenamento ou melhorias de combate."
+          "name": "Discord Oficial",
+          "description": "Hub principal para anúncios, drops de códigos, recrutamento de guildas e Q&A ao vivo."
         },
         {
-          "name": "Criação Focada no Diário",
-          "description": "A melhor maneira de aprender Apotheosis é rastrear suas combinações bem-sucedidas. Seu diário rapidamente se torna sua própria referência de criação."
+          "name": "Grupo Oficial do Roblox",
+          "description": "Grupo oficial de desenvolvedores para propriedade do jogo e atualizações de alta relevância."
         },
         {
-          "name": "Fusões Iniciais Testadas pela Comunidade",
-          "description": "Exemplos iniciais populares incluem Ósmio mais Graveto para uma Picareta de Gelo, Graveto mais Apêndice de Tungstênio para Azrael, e Azrael mais Magnetita para a Rapieira de Gavinhas."
+          "name": "Feed Oficial do X",
+          "description": "Fluxo de atualizações sociais para marcos, clipes de prévia e avisos de patches."
         }
       ],
       "milestones": [
-        "Fundir um item",
-        "Fundir um verme",
-        "Fundir um artefato divino"
+        "Fixe o Trello para consulta de sistemas",
+        "Entre no Discord para alertas instantâneos de códigos",
+        "Siga as postagens de atualização do grupo no Roblox",
+        "Acompanhe os anúncios no X para ver prévias"
       ]
     },
     "lucidBlocksToolsAndWeapons": {
-      "title": "Ferramentas e Armas de Lucid Blocks",
+      "title": "Slime Seas Wiki",
       "displayType": "itemCards",
-      "intro": "Lucid Blocks mistura equipamentos utilitários oficiais com armas iniciais descobertas pela comunidade. A melhor configuração geralmente é uma mistura de mineração rápida, travessia segura e uma opção de combate confiável.",
+      "intro": "Use estes pontos de entrada da Slime Seas Wiki quando precisar de páginas de consulta rápida para sistemas críticos de progressão.",
       "items": [
         {
-          "name": "Picareta de Gelo",
-          "type": "Ferramenta de Mineração",
-          "description": "Uma picareta inicial rápida e acessível feita de Ósmio e Graveto. Os jogadores a utilizam para acelerar a coleta inicial de materiais."
+          "name": "Raças da Slime Seas Wiki",
+          "type": "Entrada de Banco de Dados",
+          "description": "Visão geral das raças, valores passivos e planejamento de reroll."
         },
         {
-          "name": "Azrael",
-          "type": "Arma Inicial",
-          "description": "Uma rota prática de arma inicial criada a partir de Graveto e Apêndice de Tungstênio."
+          "name": "Mundos da Slime Seas Wiki",
+          "type": "Entrada de Banco de Dados",
+          "description": "Ordem dos mundos e pontos de controle de progressão."
         },
         {
-          "name": "Rapieira de Gavinhas",
-          "type": "Arma Melhorada",
-          "description": "Uma sequência mais forte feita ao combinar Azrael com Magnetita. É um dos caminhos de combate inicial-médio mais úteis compartilhados pelos jogadores."
+          "name": "Chefes da Slime Seas Wiki",
+          "type": "Entrada de Banco de Dados",
+          "description": "Rotas de chefes e páginas de encontros principais."
         },
         {
-          "name": "__PROTECTED_6a765cb2__",
-          "type": "Ferramenta de Mobilidade",
-          "description": "Um item de travessia oficial que melhora muito o movimento e a exploração vertical."
+          "name": "Itens da Slime Seas Wiki",
+          "type": "Entrada de Banco de Dados",
+          "description": "Armas, materiais e referências de origem."
         },
         {
-          "name": "__PROTECTED_163b9bec__",
-          "type": "Ferramenta de Mobilidade",
-          "description": "Um item de movimento oficial que ajuda a percorrer espaços de forma mais segura e eficiente."
+          "name": "Slimes da Slime Seas Wiki",
+          "type": "Entrada de Banco de Dados",
+          "description": "Páginas de referência de inimigos e farming."
         },
         {
-          "name": "Varinha de Bola",
-          "type": "Arma Utilitária",
-          "description": "Um item utilitário oficial de longo alcance que expande suas opções de combate e quebra-cabeças."
-        },
-        {
-          "name": "Equipamento de Mergulho",
-          "type": "Equipamento de Travessia",
-          "description": "Um item utilitário oficial para alcançar áreas que, de outra forma, retardariam a exploração."
-        },
-        {
-          "name": "Explosivos",
-          "type": "Dano Utilitário",
-          "description": "Oficialmente destacados como parte do conjunto principal de ferramentas e úteis para romper ameaças ou obstáculos."
+          "name": "Habilidades e Maestria da Slime Seas Wiki",
+          "type": "Entrada de Banco de Dados",
+          "description": "Progressão de desbloqueio de habilidades por postura e nível de maestria."
         }
       ]
     },
     "lucidBlocksStorageAndInventory": {
-      "title": "Armazenamento e Inventário de Lucid Blocks",
+      "title": "Guia de Iniciante de Slime Seas",
       "displayType": "solutionCards",
-      "intro": "A pressão no inventário começa cedo em Lucid Blocks, então construir armazenamento deve ser um de seus primeiros objetivos. Várias soluções testadas por jogadores reais já se destacam.",
+      "intro": "Siga esta rota inicial de Slime Seas para ir da Floresta Inicial (Starting Forest) até a Torre da Bruxa (Witch Tower) com menos desvios.",
       "solutions": [
         {
-          "name": "Cubo de Cache",
-          "role": "Armazenamento Estilo Baú",
-          "description": "Os Cubos de Cache são uma das primeiras respostas práticas de armazenamento e são tratados pelos jogadores como o principal recipiente estilo baú do jogo."
+          "name": "Comece na Floresta Inicial (Starting Forest)",
+          "role": "Passo 1",
+          "description": "Farme inimigos iniciais, colete Slime Residue e construa sua primeira base de equipamentos antes de avançar mais."
         },
         {
-          "name": "Armário",
-          "role": "Armazenamento Simples de Base",
-          "description": "Armários são outra opção de armazenamento confirmada. Uma receita inicial compartilhada usa 1 Madeira Cortada e 1 Corda."
+          "name": "Domine os Controles Básicos Cedo",
+          "role": "Passo 2",
+          "description": "Estabilize seu ritmo com ataques M1, esquiva Q (dash), bloqueio F e uso de habilidades 1-6 em ciclos curtos de combate."
         },
         {
-          "name": "Qualia Pessoal",
-          "role": "Central de Armazenamento de Longo Prazo",
-          "description": "Uma vez desbloqueada, sua Qualia pessoal torna-se um lugar natural para organizar materiais, criar em paz e expandir sua base."
+          "name": "Foque na Maestria de Armas Primeiro",
+          "role": "Passo 3",
+          "description": "A maestria desbloqueia o verdadeiro kit de combate, então focar em um estilo cedo garante força mais rápido do que trocas constantes."
         },
         {
-          "name": "Rastreamento pelo Diário",
-          "role": "Eficiência de Inventário",
-          "description": "Registrar combinações úteis em seu diário reduz o desperdício de materiais e facilita muito o gerenciamento do inventário."
+          "name": "Defina o Waypoint e Vá para a Torre da Bruxa (Witch Tower)",
+          "role": "Passo 4",
+          "description": "Após estar pronto para o primeiro chefe, defina seu waypoint e faça a transição para a Torre da Bruxa (Witch Tower) para progressão de maior poder."
         }
       ],
       "managementTips": [
-        "Priorize uma opção de armazenamento confiável antes de acumular itens raros.",
-        "Construa ao redor de sua Qualia pessoal assim que ela estiver disponível.",
-        "Mantenha materiais de criação, ferramentas de combate e equipamentos de movimento separados para que as melhorias sejam mais fáceis de planejar.",
-        "Use seu diário como parte do gerenciamento de inventário, não apenas para descobertas de criação."
+        "Use referências de equipamentos de madeira para definir metas iniciais realistas antes de buscar drops raros.",
+        "Realize missões e maestria juntas para que os ganhos de nível sempre melhorem suas opções de combate.",
+        "Prepare-se por volta do nível 15 antes de entrar na sua primeira janela principal de chefe.",
+        "Use waypoints para reduzir o tempo de viagem e aumentar a eficiência das sessões de combate."
       ]
     },
     "lucidBlocksQualiaAndBaseBuilding": {
-      "title": "Qualia e Construção de Base em Lucid Blocks",
-      "displayType": "cards",
-      "intro": "Qualia é um dos marcos de progressão mais importantes em Lucid Blocks. Ela oferece um espaço pessoal para se reagrupar, armazenar materiais e gradualmente transformar o progresso da exploração em uma base real.",
+      "title": "Tier List de Raças de Slime Seas",
+      "displayType": "tierGrid",
+      "intro": "As raças em Slime Seas decidem como sua build escala com tempos de recarga, mobilidade, sobrevivência e bônus de armas. Use esta tier list para responder rapidamente à pergunta do reroll: travar, salvar ou girar novamente.",
       "cards": [
         {
-          "name": "Qualia Pessoal",
-          "description": "Desbloquear uma Qualia é um marco inicial que oferece um lugar mais confiável para retornar enquanto explora o mundo mais amplo."
+          "tier": "S",
+          "name": "Dragonborn",
+          "rarity": "Lendária",
+          "effects": [
+            "+15% de Velocidade de Recarga de Habilidade",
+            "+25% de Vida Máxima",
+            "+20% de Dano de Foice",
+            "+10% de Dano de Fogo",
+            "+20% de Dano de Espada Grande (Greatsword)"
+          ],
+          "bestFor": [
+            "Foice",
+            "Espada Grande (Greatsword)",
+            "builds generalistas de mid-to-late-game"
+          ],
+          "highlights": [
+            "Melhor conjunto geral de atributos",
+            "Funciona com múltiplos tipos de armas",
+            "Excelente valor de mid-to-late-game"
+          ],
+          "drawbacks": [
+            "Sem foco em roubo de vida (lifesteal)"
+          ],
+          "rerollAdvice": "Melhor alvo para reroll"
         },
         {
-          "name": "Construção Focada em Armazenamento",
-          "description": "Muitos jogadores começam a usar sua Qualia como um centro de armazenamento antes de transformá-la em uma base maior com espaço organizado para criação e construção."
+          "tier": "S",
+          "name": "Lunarian",
+          "rarity": "Fabulosa",
+          "effects": [
+            "+10% de Velocidade de Movimento",
+            "+10% de Vida Máxima",
+            "+20% de Dano de Katana",
+            "+10% de Dano de Fogo"
+          ],
+          "bestFor": [
+            "Katana",
+            "builds híbridas rápidas",
+            "mobilidade e sobrevivência"
+          ],
+          "highlights": [
+            "Forte mistura de velocidade e resistência",
+            "Excelente escalonamento de Katana",
+            "Sensação de jogo muito fluida no geral"
+          ],
+          "drawbacks": [
+            "Menos versátil que Dragonborn"
+          ],
+          "rerollAdvice": "Trave se quiser Katana ou uma build geral rápida"
         },
         {
-          "name": "Construção Criativa de Lares",
-          "description": "Lucid Blocks suporta construção criativa, e os jogadores já estão usando espaços de Qualia para criar casas e layouts personalizados."
+          "tier": "A",
+          "name": "Djinn",
+          "rarity": "Fabulosa",
+          "effects": [
+            "+15% de Velocidade de Recarga de Habilidade",
+            "+20% de Dano de Foice",
+            "+25% de Distância de Esquiva (Dash)"
+          ],
+          "bestFor": [
+            "Foice",
+            "builds de mobilidade focadas em habilidades",
+            "movimentação agressiva"
+          ],
+          "highlights": [
+            "Melhor raça focada em mobilidade",
+            "Excelente para usuários de Foice",
+            "Ótima para rotações rápidas de habilidades"
+          ],
+          "drawbacks": [
+            "Sem bônus de vida (HP)",
+            "Sem bônus de sustentação"
+          ],
+          "rerollAdvice": "Ótimo para manter se for jogador de Foice"
         },
         {
-          "name": "Central de Progressão",
-          "description": "Uma base sólida ajuda a separar saques de exploração, materiais de criação, sementes, ferramentas e equipamentos de mobilidade para que seus próximos upgrades sejam mais fáceis de planejar."
+          "tier": "A",
+          "name": "Elf",
+          "rarity": "Rara",
+          "effects": [
+            "+10% de Velocidade de Recarga de Habilidade",
+            "+10% de Velocidade de Movimento",
+            "+10% de Dano de Katana"
+          ],
+          "bestFor": [
+            "Katana",
+            "spam de habilidades",
+            "ofensiva equilibrada"
+          ],
+          "highlights": [
+            "Kit ofensivo muito equilibrado",
+            "Alto potencial de spam devido aos tempos de recarga baixos",
+            "Escalonamento confiável de Katana"
+          ],
+          "drawbacks": [
+            "Números menores do que os tiers mais altos"
+          ],
+          "rerollAdvice": "Ótimo valor se não quiser buscar Fabulosa ou Lendária"
+        },
+        {
+          "tier": "A",
+          "name": "Shadowborn",
+          "rarity": "Lendária",
+          "effects": [
+            "+5% de Roubo de Vida (Life Steal)",
+            "+35% de Dano de Katana",
+            "+40% de Distância de Esquiva (Dash)",
+            "+15% de Velocidade de Movimento",
+            "-25% de Vida Máxima",
+            "-50% de Dano de Espada Grande (Greatsword) e Foice"
+          ],
+          "bestFor": [
+            "Apenas Katana",
+            "estilo de jogo burst com alta mobilidade",
+            "builds especializadas de glass-cannon"
+          ],
+          "highlights": [
+            "Bônus massivo de Katana",
+            "Excelente pacote de movimento",
+            "Feito para jogadores focados em Katana agressiva"
+          ],
+          "drawbacks": [
+            "Frágil devido à penalidade de vida (HP)",
+            "Terrível para Espada Grande (Greatsword) e Foice"
+          ],
+          "rerollAdvice": "Mantenha apenas se estiver comprometido com a Katana"
+        },
+        {
+          "tier": "B",
+          "name": "Oni",
+          "rarity": "Rara",
+          "effects": [
+            "+15% de Vida Máxima",
+            "+20% de Dano de Espada Grande (Greatsword)",
+            "-5% de Velocidade de Movimento"
+          ],
+          "bestFor": [
+            "Espada Grande (Greatsword)",
+            "estilo bruiser",
+            "rotas corpo a corpo mais resistentes"
+          ],
+          "highlights": [
+            "Torna seu personagem mais resistente",
+            "Combinação muito sólida com Espada Grande (Greatsword)"
+          ],
+          "drawbacks": [
+            "Penalidade de movimento prejudica a mobilidade"
+          ],
+          "rerollAdvice": "Bom para manter se for jogador de Espada Grande (Greatsword)"
+        },
+        {
+          "tier": "B",
+          "name": "Skypiean",
+          "rarity": "Incomum",
+          "effects": [
+            "+10% de Dano de Katana",
+            "+10% de Velocidade de Movimento"
+          ],
+          "bestFor": [
+            "Katana",
+            "builds de velocidade para early-to-mid-game"
+          ],
+          "highlights": [
+            "Bônus de Katana simples e direto",
+            "Bom reforço de movimento inicial"
+          ],
+          "drawbacks": [
+            "Sem bônus de vida (HP)",
+            "Faltam atributos de utilidade mais amplos"
+          ],
+          "rerollAdvice": "Bom para manter no início, fácil de trocar depois"
+        },
+        {
+          "tier": "C",
+          "name": "Fishman",
+          "rarity": "Incomum",
+          "effects": [
+            "+50% de Velocidade de Nado",
+            "+10% de Dano de Espada Grande (Greatsword)"
+          ],
+          "bestFor": [
+            "movimentação na água",
+            "Espada Grande (Greatsword) se não tiver opções melhores"
+          ],
+          "highlights": [
+            "Forte mobilidade de nado",
+            "Pequeno bônus de Espada Grande (Greatsword)"
+          ],
+          "drawbacks": [
+            "Muito situacional",
+            "Sem foco em vida (HP)",
+            "Sem um conjunto amplo de danos"
+          ],
+          "rerollAdvice": "Use apenas se sua rota tornar o movimento na água importante"
+        },
+        {
+          "tier": "D",
+          "name": "Human",
+          "rarity": "Comum",
+          "effects": [
+            "+5% de Ganho de XP"
+          ],
+          "bestFor": [
+            "progressão inicial básica"
+          ],
+          "highlights": [
+            "Pequena ajuda para subir de nível no início"
+          ],
+          "drawbacks": [
+            "Superado por todas as outras raças"
+          ],
+          "rerollAdvice": "Troque assim que puder"
         }
       ],
       "highlights": [
-        "Entrar em uma qualia",
-        "Armazenar materiais com segurança",
-        "Expandir da utilidade para a decoração",
-        "Usar o espaço da base para apoiar a criação e o cultivo"
+        "Trave a raça Dragonborn quando quiser o melhor valor geral.",
+        "Mantenha Lunarian para rotas rápidas de Katana com mobilidade resistente.",
+        "Mantenha Shadowborn apenas se seu plano for um estilo de jogo focado apenas em Katana.",
+        "Trate a raça Human como algo temporário e troque na primeira oportunidade."
       ]
     },
     "lucidBlocksWorldRegions": {
-      "title": "Regiões do Mundo de Lucid Blocks",
-      "displayType": "regionCards",
-      "intro": "Lucid Blocks utiliza geração de mundo infinita, então os jogadores continuam descobrindo novos ambientes e estruturas. Alguns lugares nomeados já estão aparecendo em conquistas e discussões da comunidade.",
+      "title": "Melhores Armas de Slime Seas",
+      "displayType": "tierGrid",
+      "intro": "As melhores armas de Slime Seas são aquelas que escalam bem, são realistas de obter e sustentam seu estágio atual de progressão. Esta grade separa os objetivos finais reais das escolhas práticas de transição.",
       "regions": [
         {
-          "name": "Fog Meadow",
-          "type": "Área Notada pela Comunidade",
-          "description": "Fog Meadow já é conhecida entre os jogadores como uma área tensa associada a ameaças ocultas e encontros perigosos."
+          "tier": "S",
+          "name": "Dominion Brand",
+          "rarity": "Mítica",
+          "baseDamage": 1100,
+          "attackSpeed": "1.1s",
+          "bestFor": "Janelas curtas de chefes e dano explosivo de alto nível",
+          "access": "Dropado pelo Demon Lord e requer o Título de Demon Lord para equipar",
+          "whyPick": "A opção de maior dano no conjunto atual de armas e um alvo claro de endgame."
         },
         {
-          "name": "Linha de Ley Tiamana",
-          "type": "Marco de Descoberta",
-          "description": "A linha de ley tiamana é importante o suficiente para ter seu próprio marco de conquista, tornando-a uma das descobertas de mundo nomeadas mais claras até agora."
+          "tier": "S",
+          "name": "Slime Sword",
+          "rarity": "Lendária",
+          "baseDamage": 950,
+          "attackSpeed": "0.9s",
+          "bestFor": "Melhor DPS geral e dano sustentado contra chefes",
+          "access": "Fabricada com o Título de Demon Lord, Slime Core, Slime Remnants, Tempest Seals e Sage Pulse Gems",
+          "whyPick": "A arma mais segura para focar no late-game quando você quer uma opção forte para todos os modos."
         },
         {
-          "name": "Clonaqualia",
-          "type": "Espaço de Construção",
-          "description": "Os jogadores já estão usando Clonaqualia como um lugar para construir casas, armazenar materiais e experimentar layouts mais permanentes."
+          "tier": "A",
+          "name": "Void Blade",
+          "rarity": "Lendária",
+          "baseDamage": 680,
+          "attackSpeed": "0.8s",
+          "bestFor": "Dano rápido de início de endgame",
+          "access": "Caminho de drop de chefe com boa disponibilidade",
+          "whyPick": "Torna-se viável mais cedo que as opções de topo, mantendo uma velocidade excelente."
         },
         {
-          "name": "Pântano de Essência",
-          "type": "Área de Cultivo",
-          "description": "O Pântano de Essência está sendo compartilhado pelos jogadores como um local de cultivo útil, especialmente para lutar contra slimes e ganhar experiência."
+          "tier": "A",
+          "name": "Thunder Staff",
+          "rarity": "Rara",
+          "baseDamage": 600,
+          "attackSpeed": "1.5s",
+          "bestFor": "Limpeza de mobs em área ampla",
+          "access": "Opção confiável de conjurador de nível raro",
+          "whyPick": "Escolha forte para o lado mágico quando você valoriza o alcance e a limpeza de salas em vez de pressão corpo a corpo."
+        },
+        {
+          "tier": "B",
+          "name": "Frost Dagger",
+          "rarity": "Incomum",
+          "baseDamage": 290,
+          "attackSpeed": "0.7s",
+          "bestFor": "Golpes rápidos e controle de grupo",
+          "access": "Caminho comum de arma de transição",
+          "whyPick": "A velocidade de ataque mais rápida desta lista, tornando-a uma transição limpa enquanto farma melhorias."
+        },
+        {
+          "tier": "B",
+          "name": "Iron Slime Hammer",
+          "rarity": "Incomum",
+          "baseDamage": 310,
+          "attackSpeed": "1.4s",
+          "bestFor": "Progressão inicial e transição do Mundo 1",
+          "access": "Alta disponibilidade de drop em rotas iniciais",
+          "whyPick": "Um dos upgrades práticos mais fáceis para substituir o equipamento inicial."
         }
       ]
     },
     "lucidBlocksCreaturesAndEnemies": {
-      "title": "Criaturas e Inimigos de Lucid Blocks",
-      "displayType": "creatureCards",
-      "intro": "Lucid Blocks mistura criaturas surreais com perigo real. Descrições oficiais e postagens da comunidade apontam para um mundo cheio de vida estranha, ameaças hostis e alguns encontros marcantes que os jogadores lembram rapidamente.",
+      "title": "Guia de Maestria de Armas de Slime Seas",
+      "displayType": "masteryCards",
+      "intro": "A maestria em Slime Seas decide sua cadeia de habilidades, combinação de raças e ritmo de farm. Escolha seu caminho cedo para evitar desperdiçar rerolls e materiais.",
       "creatures": [
         {
-          "name": "Manequins",
-          "role": "Inimigo Hostil",
-          "description": "Os Manequins são um dos inimigos oficialmente nomeados no mundo e fazem parte do elenco de ameaças surreais do jogo."
+          "mastery": "Katana",
+          "role": "Melhor maestria para PvE e farm de chefes com pressão rápida em alvo único",
+          "access": "Grátis",
+          "skillPath": [
+            {
+              "mastery": 0,
+              "skill": "Ataque Básico"
+            },
+            {
+              "mastery": 1,
+              "skill": "Flashblade Surge"
+            },
+            {
+              "mastery": 3,
+              "skill": "Surge Wave"
+            },
+            {
+              "mastery": 5,
+              "skill": "Thousand Slices"
+            }
+          ],
+          "recommendedWeapons": [
+            "Wooden Katana (Nível 2, DMG 6)",
+            "Verdant Katana (Nível 7, DMG 14)",
+            "Refined Katana (Nível 10, DMG 19)",
+            "Slime Steel Katana (Nível 22, DMG 63)",
+            "Desert Katana (Nível 23, DMG 70)"
+          ],
+          "bestRaces": [
+            "Shadowborn (+35% Katana)",
+            "Lunarian (+20% Katana)",
+            "Elf (+10% Katana)",
+            "Skypiean (+10% Katana)"
+          ],
+          "whyPick": "Melhor maestria inicial se seu objetivo for dano rápido em chefes e um fluxo de combo de golpes velozes."
         },
         {
-          "name": "Géis Macios",
-          "role": "Inimigo Hostil",
-          "description": "Géis macios são outro tipo de inimigo oficialmente nomeado e ajudam a definir o estilo biológico estranho do jogo."
+          "mastery": "Greatsword",
+          "role": "Melhor rota para iniciantes para farm em área (AoE) e consistência geral no PvE",
+          "access": "Grátis",
+          "skillPath": [
+            {
+              "mastery": 0,
+              "skill": "Ataque Básico"
+            },
+            {
+              "mastery": 1,
+              "skill": "Earth Breaker"
+            },
+            {
+              "mastery": 3,
+              "skill": "Sweeping Slam"
+            },
+            {
+              "mastery": 5,
+              "skill": "Spiraling Slash"
+            }
+          ],
+          "recommendedWeapons": [
+            "Wooden Greatsword (Nível 1, DMG 5)",
+            "Worn Iron Greatsword (Nível 3, DMG 8)",
+            "Iron Greatsword (Nível 4, DMG 10)",
+            "Refined Greatsword (Nível 6, DMG 12)",
+            "Lightsteel Greatsword (Nível 7, DMG 15)",
+            "Golden Greatsword (Nível 24, DMG 98)"
+          ],
+          "bestRaces": [
+            "Oni (+20% Greatsword)",
+            "Fishman (+10% Greatsword)",
+            "Dragonborn (+20% Greatsword)"
+          ],
+          "whyPick": "O caminho mais suave do early ao midgame, pois a disponibilidade de armas e o AoE permanecem fortes."
         },
         {
-          "name": "Seres de Dimensões Superiores",
-          "role": "Inimigo Hostil",
-          "description": "Esses seres são apresentados como parte da linha de inimigos mais abstrata e perturbadora do mundo."
+          "mastery": "Scythe",
+          "role": "Rota de controle PvP com pressão de agarrão e jogabilidade de habilidades focada em mobilidade",
+          "access": "Grátis",
+          "skillPath": [
+            {
+              "mastery": 0,
+              "skill": "Ataque Básico"
+            },
+            {
+              "mastery": 1,
+              "skill": "Death's Grasp"
+            },
+            {
+              "mastery": 3,
+              "skill": "Spinning Strike"
+            },
+            {
+              "mastery": 5,
+              "skill": "Void Surge"
+            }
+          ],
+          "recommendedWeapons": [
+            "Worn Iron Scythe (Nível 21, DMG 50)"
+          ],
+          "bestRaces": [
+            "Djinn (+20% Scythe, +25% de Distância de Dash)",
+            "Dragonborn (+20% Scythe)"
+          ],
+          "whyPick": "Escolha a Foice quando você se importa com sequências de controle e janelas de pressão no PvP."
         },
         {
-          "name": "Aranhas Colossais",
-          "role": "Grande Ameaça",
-          "description": "As aranhas são um dos inimigos mais temidos imediatamente em discussões da comunidade e são claramente um perigo memorável."
-        },
-        {
-          "name": "__PROTECTED_26ee183b__",
-          "role": "Criatura Nomeada",
-          "description": "__PROTECTED_26ee183b__ é notável o suficiente para ter sua própria conquista, o que o torna um dos encontros com criaturas nomeadas mais claros do jogo."
-        },
-        {
-          "name": "Vermes Fofos",
-          "role": "Criatura Interagível",
-          "description": "Os vermes não fazem apenas parte da progressão de fusão, eles também podem ser renomeados, ganhando um papel mais pessoal do que os inimigos padrão."
-        },
-        {
-          "name": "Criatura Blasfema",
-          "role": "Ameaça de Elite",
-          "description": "A criatura blasfema está ligada a uma conquista de combate dedicada, marcando-a como um encontro de inimigo significativo."
+          "mastery": "Berserker",
+          "role": "Postura de Greatsword de Gamepass com pressão de abertura mais forte no PvP",
+          "access": "Gamepass Berserker Starterpack",
+          "skillPath": [
+            {
+              "mastery": 0,
+              "skill": "Ataque Básico"
+            },
+            {
+              "mastery": 1,
+              "skill": "Impaling Thrust"
+            },
+            {
+              "mastery": 3,
+              "skill": "Leaping Slam"
+            },
+            {
+              "mastery": 5,
+              "skill": "Colossal Slam"
+            }
+          ],
+          "recommendedWeapons": [
+            "Wooden Greatsword (Nível 1, DMG 5)",
+            "Iron Greatsword (Nível 4, DMG 10)",
+            "Refined Greatsword (Nível 6, DMG 12)",
+            "Crimson Slimesword (Nível 30, DMG 100)"
+          ],
+          "bestRaces": [
+            "Oni (+20% Greatsword)",
+            "Fishman (+10% Greatsword)",
+            "Dragonborn (+20% Greatsword)"
+          ],
+          "whyPick": "Vale a pena comprar apenas se a Greatsword já se ajusta ao seu estilo e você quer uma abertura agressiva."
         }
       ]
     },
     "lucidBlocksMobilityGear": {
-      "title": "Equipamento de Mobilidade de Lucid Blocks",
-      "displayType": "itemCards",
-      "intro": "Melhorias de movimento são um dos maiores saltos na qualidade de vida em Lucid Blocks. Depois de desbloquear suas primeiras ferramentas de travessia, a exploração torna-se mais rápida, segura e muito mais recompensadora.",
+      "title": "Guia de Progressão de Mundo de Slime Seas",
+      "displayType": "timelineCards",
+      "intro": "Slime Seas se abre rapidamente, mas portões de mundo, rotas de missões e preparação para chefes são fáceis de se perder. Este cronograma oferece uma rota prática desde o spawn até o farming de fim de jogo.",
       "items": [
         {
-          "name": "__PROTECTED_6a765cb2__",
-          "type": "Ferramenta de Travessia",
-          "description": "O gancho é um dos marcos de movimento mais claros do jogo e possui sua própria conquista dedicada."
+          "step": 1,
+          "stage": "Floresta Inicial",
+          "unlock": "Disponível ao dar spawn",
+          "target": "Alcance por volta do nível 15 antes do primeiro avanço contra o chefe",
+          "focus": [
+            "Aprenda os controles e ciclos básicos de missões",
+            "Desbloqueie as primeiras habilidades de maestria",
+            "Farme materiais iniciais e os primeiros upgrades de armas"
+          ],
+          "bossOrGate": "Demon Lord Rima",
+          "keyTargets": [
+            "Slime Básico",
+            "Slime Lobo",
+            "Resíduo de Slime",
+            "Katana de Madeira"
+          ],
+          "leaveWhen": "Quando você conseguir completar as missões iniciais com facilidade e estiver pronto para sua primeira mudança de ilha."
         },
         {
-          "name": "Luva Planadora",
-          "type": "Mobilidade Aérea",
-          "description": "A luva planadora permite viagens muito mais suaves e é outro marco importante de progressão com sua própria conquista."
+          "step": 2,
+          "stage": "Torre da Bruxa",
+          "unlock": "Progresso após as missões iniciais e primeiros upgrades de equipamento",
+          "target": "Checkpoint de 100 de Poder",
+          "focus": [
+            "Avance pelo primeiro portão de poder visível",
+            "Limpe as rotas da torre sem travar",
+            "Colete a próxima camada de materiais de fabricação"
+          ],
+          "bossOrGate": "Chefe da Torre",
+          "keyTargets": [
+            "Ingredientes de Poção"
+          ],
+          "leaveWhen": "Quando você conseguir manter o checkpoint de 100 de poder confortavelmente e completar os ciclos da torre sem problemas."
         },
         {
-          "name": "__PROTECTED_163b9bec__",
-          "type": "Ferramenta de Travessia",
-          "description": "Os planadores de abelha são oficialmente destacados como parte do kit de ferramentas de movimento do jogo para percorrer espaços de forma mais eficiente."
+          "step": 3,
+          "stage": "Ilha das Ruínas Carmesim",
+          "unlock": "Desvio opcional quando estiver por volta do nível 30",
+          "target": "Checkpoint de mini-chefe de nível 50",
+          "focus": [
+            "Farme o mini-chefe Demônio Carmesim",
+            "Garanta upgrades de viagem antes de rotas longas",
+            "Use armas iniciais mais fortes para encurtar as repetições"
+          ],
+          "bossOrGate": "Demônio Carmesim",
+          "keyTargets": [
+            "Ovo de Drake",
+            "Montaria Drake da Floresta"
+          ],
+          "leaveWhen": "Quando seu Drake chocar e a velocidade de viagem não estiver mais atrasando sua rota principal."
         },
         {
-          "name": "Varinha de Bola",
-          "type": "Equipamento Utilitário",
-          "description": "As varinhas de bola são uma das ferramentas especiais oficialmente destacadas e expandem a forma como você se move ou interage com o mundo."
+          "step": 4,
+          "stage": "Rota de Materiais do Mundo 5+",
+          "unlock": "Linha de missões de meio de jogo após as ilhas iniciais",
+          "target": "Roteamento de materiais do Mundo 5+ e linha de missões das 7 Peças de Slime",
+          "focus": [
+            "Comece a farmar Selos da Tempestade",
+            "Trace a rota para todas as 7 Peças de Slime",
+            "Prepare materiais para caminhos de armas lendárias"
+          ],
+          "bossOrGate": "Portão de progressão das 7 Peças de Slime",
+          "keyTargets": [
+            "Selos da Tempestade",
+            "Peças de Slime"
+          ],
+          "leaveWhen": "Quando você tiver rotas estáveis de Peças de Slime e puder começar a preparação para o Demon Lord e itens lendários."
         },
         {
-          "name": "Equipamento de Mergulho",
-          "type": "Equipamento de Exploração",
-          "description": "O equipamento de mergulho está oficialmente listado como parte do conjunto utilitário principal para alcançar áreas que seriam mais difíceis de explorar."
-        },
-        {
-          "name": "Explosivos",
-          "type": "Dano Utilitário",
-          "description": "Os explosivos são oficialmente destacados e vinculados a um marco de conquista, tornando-os parte da progressão utilitária principal do jogo."
+          "step": 5,
+          "stage": "Rota de Chefes de Fim de Jogo",
+          "unlock": "Nível 40+, arma de tier Épico, Título de Demon Lord e suporte ativo de guilda",
+          "target": "Farming de chefes de fim de jogo e materiais de Ascensão",
+          "focus": [
+            "Execute ciclos de protocolo de chefe com o mínimo de tempo de inatividade",
+            "Avance nos sistemas de fabricação e prestígio de fim de jogo",
+            "Construa conjuntos de PvE e PvP de alto nível"
+          ],
+          "bossOrGate": "Cavaleiro Corrompido e Rei Sinbad",
+          "keyTargets": [
+            "Núcleo de Slime",
+            "Pet Drake",
+            "Espada de Slime",
+            "Marca do Domínio"
+          ],
+          "leaveWhen": "Quando estiver farmando materiais de Nível de Ascensão 8 e construindo setups completos de fim de jogo."
         }
       ],
       "unlockMilestones": [
-        "Comandar um gancho",
-        "Voar com a luva planadora",
-        "Empunhar uma varinha de projéteis",
-        "Empunhar um explosivo"
+        "Limpe a Floresta Inicial e avance pelo seu primeiro portão de chefe",
+        "Mantenha os checkpoints de poder da Torre da Bruxa sem travamentos na rota",
+        "Termine o desvio de viagem das Ruínas Carmesim com um Drake chocado",
+        "Estabilize os ciclos de materiais do Mundo 5+ e o roteamento de Peças de Slime",
+        "Inicie os protocolos de chefes de fim de jogo para farming de materiais de Ascensão"
       ]
     },
     "lucidBlocksFarmingAndGrowth": {
-      "title": "Cultivo e Crescimento em Lucid Blocks",
-      "displayType": "mixedCards",
-      "intro": "O crescimento faz parte da progressão real em Lucid Blocks. O cultivo não se trata apenas de plantar e colher, mas também de estabelecer rotas de materiais repetíveis que mantêm suas ferramentas, armas e opções de criação fluindo.",
-      "sections": [
+      "title": "Chefes e Drops de Slime Seas",
+      "displayType": "bossTable",
+      "intro": "Use esta tabela de chefes de Slime Seas para traçar a progressão por portões de nível, prioridades de drop e valor prático de farming, desde seu primeiro grande chefe até a busca atual de fim de jogo.",
+      "bosses": [
         {
-          "name": "Progressão de Sementes",
-          "description": "Plantar e fertilizar sementes é um marco real no jogo, e colher uma noz totalmente crescida faz parte do mesmo caminho de crescimento."
+          "boss": "Demon Lord Rima",
+          "zone": "Zona 1",
+          "location": "Floresta de Slime - Pináculo de Rima (Ilha 3)",
+          "levelRequirement": "65",
+          "hp": "4.000 solo",
+          "topDrops": "Abas de Asa (35,5%), Calças de Ferro de Noviço (23,66%), Peitoral de Ferro de Noviço (17,75%), Calças do Lorde Slime (12,42%), Peitoral do Lorde Slime (8,87%), Katana de Slime (1,77%)",
+          "bestFor": "Primeiro farm de chefe e progressão inicial",
+          "fightNote": "Chefe estilo Katana e o grande chefe mais fácil para começar a farmar."
         },
         {
-          "name": "Cultivo de Materiais",
-          "description": "Um ciclo prático de cultivo inicial é criar Cápsulas de Mercúrio, que geram pequenos slimes que soltam Gavinhas e gosma para materiais de criação repetíveis."
+          "boss": "King Sinbad",
+          "zone": "Zona 2",
+          "location": "As Dunas - Fortaleza de Sinbad (Ilha 6)",
+          "levelRequirement": "160",
+          "hp": "15.000 solo",
+          "topDrops": "Cauda de Sinbad, Grevas de Cobre de Noviço, Peitoral de Cobre de Noviço, Grevas de Espinhos, Peitoral de Espinhos, Lâmina de Espinhos",
+          "bestFor": "Progressão de meio de jogo e upgrades de Espada Grande",
+          "fightNote": "Esta arena não suporta a configuração comum de fora da arena."
         },
         {
-          "name": "Sustentação de Ferramentas",
-          "description": "O cultivo de recursos torna-se muito mais forte quando você consegue coletar consistentemente Ósmio, fragmentos de vidro, plantas e materiais de slime para criações subsequentes."
+          "boss": "Ogre Lord",
+          "zone": "Zona 3",
+          "location": "Ruínas Goblin - Bastião do Lorde Ogro (Ilha 9)",
+          "levelRequirement": "255",
+          "hp": "45.000 solo / 90.000 trio",
+          "topDrops": "Chifres de Ogro (41,58%), Calças de Aço de Aventureiro (27,72%), Peitoral de Aço de Aventureiro (20,79%), Grevas Platinadas de Aprendiz (4,85%), Lâmina da Perdição (0,51%), Leviatã Dourado (0,51%), Foice do Monarca (0,51%)",
+          "bestFor": "Materiais de fabricação e farming de final de meio de jogo",
+          "fightNote": "Melhor chefe para materiais de drop comum; raids em trio dobram o HP total do chefe."
         },
         {
-          "name": "Rotina da Base",
-          "description": "A melhor configuração de cultivo suporta mais do que apenas comida. Ela deve alimentar seu armazenamento, ferramentas de movimento, melhorias de armas e futuros experimentos de fusão."
+          "boss": "Monarch Statue",
+          "zone": "Zona 4",
+          "location": "Mundo das Sombras",
+          "levelRequirement": "360+",
+          "hp": "160.000 solo / 300.000 trio",
+          "topDrops": "Fragmento de Sigilo (42,02%), Grevas de Aço Sombrio (28,01%), Peitoral de Aço Sombrio (21,01%), Elmo de Igris (4,2%), Grevas de Igris (2,8%), Peitoral de Igris (1,4%), Vingador de Ametista (0,17%), Lâmina do Espectro Vazio (0,17%), Necroshade (0,17%)",
+          "bestFor": "Progressão de fim de jogo e busca por armas raras",
+          "fightNote": "Chefe atual de fim de jogo com a busca mais intensa por drops raros."
         }
       ],
-      "growthMilestones": [
-        "Fertilizar uma semente",
-        "Colher uma noz totalmente crescida",
-        "Criar ciclos de materiais repetíveis",
-        "Transformar o cultivo em progressão de longo prazo"
+      "farmPriorities": [
+        "Comece com o Demon Lord Rima para sua primeira janela estável de farm de armadura e arma.",
+        "Use o Rei Sinbad como sua ponte para rotas mais fortes de Espada Grande no meio do jogo.",
+        "Farme o Lorde Ogro quando precisar de materiais em grande volume e drops de final de meio de jogo.",
+        "Avance para a Estátua do Monarca quando sua build estiver pronta para a busca de armas raras de fim de jogo."
       ]
     },
     "lucidBlocksBestEarlyUnlocks": {
-      "title": "Melhores Desbloqueios Iniciais de Lucid Blocks",
-      "displayType": "priorityCards",
-      "intro": "Os desbloqueios iniciais mais fortes são aqueles que melhoram a segurança, o armazenamento e o movimento. Em Lucid Blocks, algumas melhorias práticas podem tornar todo o resto do jogo muito mais suave.",
-      "priorities": [
+      "title": "Guia de Pets de Slime Seas",
+      "displayType": "stepByStep",
+      "intro": "O ciclo de pets de Slime Seas é simples e prático: garanta o Ovo de Drake, choque-o através de abates de slimes e use o Drake da Floresta como sua primeira melhoria de viagem de alto valor.",
+      "steps": [
         {
-          "name": "Qualia Pessoal",
-          "priority": "Essencial",
-          "description": "Assim que você obtém acesso à sua Qualia pessoal, sua jornada torna-se muito mais estável. Ela atua como um centro confiável para armazenamento, construção e reagrupamento."
+          "step": "01",
+          "heading": "Farme o Demônio Carmesim",
+          "body": "Comece na Ilha das Ruínas Carmesim e farme o mini-chefe Demônio Carmesim. A luta é de nível 50, e a maioria dos jogadores começa o grind por volta do nível 30."
         },
         {
-          "name": "Picareta de Gelo",
-          "priority": "Muito Alta",
-          "description": "Uma ferramenta de mineração inicial rápida e barata feita de Ósmio e Graveto. É uma das melhorias mais úteis para acelerar a coleta inicial de recursos."
+          "step": "02",
+          "heading": "Obtenha o Drop do Ovo de Drake",
+          "body": "O Ovo de Drake é comumente registrado como um drop de 9% do Demônio Carmesim. Reposicione-se com frequência, pois os lacaios divididos podem pressionar de vários ângulos."
         },
         {
-          "name": "Cubo de Cache",
-          "priority": "Muito Alta",
-          "description": "A pressão de armazenamento começa cedo, então obter seu primeiro recipiente confiável estilo baú é uma grande melhoria na qualidade de vida."
+          "step": "03",
+          "heading": "Choque Matando Slimes",
+          "body": "Depois que o ovo dropar, continue eliminando slimes em sua rota normal. O processo de eclosão avança com abates de slimes, não por um menu de incubação separado."
         },
         {
-          "name": "__PROTECTED_6a765cb2__",
-          "priority": "Alta",
-          "description": "O gancho é um dos marcos de movimento mais claros do jogo e rapidamente torna a exploração mais rápida e segura."
+          "step": "04",
+          "heading": "Resgate o Drake da Floresta",
+          "body": "A rota atual de pets culmina no Drake da Floresta, que funciona como sua primeira montaria prática."
         },
         {
-          "name": "Luva Planadora",
-          "priority": "Alta",
-          "description": "A luva planadora adiciona outro grande impulso de mobilidade e torna o movimento de longa distância muito mais eficiente."
+          "step": "05",
+          "heading": "Use a Montaria para Roteamento",
+          "body": "No ciclo atual de Slime Seas, o maior valor do pet é a velocidade de viagem entre ilhas e checkpoints de rota."
         },
         {
-          "name": "Varinha de Projéteis ou Bombas",
-          "priority": "Alta",
-          "description": "Uma ferramenta de longo alcance ou opção explosiva oferece uma resposta mais segura a inimigos perigosos e encontros de estilo desafio."
+          "step": "06",
+          "heading": "Mantenha-o Ativo para Ganho de XP",
+          "body": "O pet ganha experiência conforme você continua farmando. A conclusão da eclosão geralmente leva de 1 a 3 horas, dependendo do nível, força da arma e ritmo de limpeza."
         }
+      ],
+      "progressNotes": [
+        "Comece o grind de pets de Slime Seas quando sua rota principal de combate já estiver estável.",
+        "Vincule o farm de ovos ao seu caminho atual de progressão de nível para evitar desvios de baixo valor.",
+        "Trate o Drake da Floresta primeiro como uma melhoria de rota e, depois, como uma camada de progressão a longo prazo.",
+        "Mantenha limpezas regulares de slimes para que o progresso da eclosão continue sem tempo de inatividade dedicado."
       ]
     },
     "lucidBlocksAchievementTracker": {
-      "title": "Rastreador de Conquistas de Lucid Blocks",
-      "displayType": "achievementGrid",
-      "intro": "Lucid Blocks possui atualmente 19 conquistas no Steam, e elas se dividem naturalmente em exploração, criação, mobilidade, combate e progressão de cultivo.",
-      "groups": [
+      "title": "Localizações de Mercadores em Slime Seas",
+      "displayType": "routeCards",
+      "intro": "Os dados mais práticos de mercadores em Slime Seas são baseados em rotas: alterne a cobertura da Floresta para o Deserto, verifique primeiro os mercadores que surgiram e use os marcos das ilhas para encurtar cada ciclo de rechecagem.",
+      "routes": [
         {
-          "name": "Exploração",
-          "achievements": [
-            {
-              "title": "__PROTECTED_c973d4a3__ α",
-              "description": "Entre em uma qualia."
-            },
-            {
-              "title": "__PROTECTED_c973d4a3__ γ",
-              "description": "Descubra uma linha de ley tiamana."
-            },
-            {
-              "title": "__PROTECTED_c973d4a3__ δ",
-              "description": "Vença um desafio tiamana."
-            },
-            {
-              "title": "__PROTECTED_c973d4a3__ ε",
-              "description": "Conquista oculta."
-            }
-          ]
+          "stop": "Rota da Floresta",
+          "whatConfirmed": "A cobertura pública de localização de mercadores começa no lado da Floresta de Slime Seas.",
+          "howToUse": "Comece as varreduras de vendedores aqui ao executar um reset de rota inicial.",
+          "whyItMatters": "Esta parada ancora uma extremidade confirmada do caminho do mercador."
         },
         {
-          "name": "Criação e Invocação",
-          "achievements": [
-            {
-              "title": "Apotheosis α",
-              "description": "Funda um item."
-            },
-            {
-              "title": "Apotheosis β",
-              "description": "Funda um verme."
-            },
-            {
-              "title": "Apotheosis γ",
-              "description": "Funda um artefato divino."
-            },
-            {
-              "title": "Arcanjo β",
-              "description": "Invoque sua fé."
-            }
-          ]
+          "stop": "Rota do Deserto",
+          "whatConfirmed": "A cobertura pública de localização de mercadores se estende pelo lado do Deserto.",
+          "howToUse": "Trate isso como a extremidade final de sua varredura completa de mercadores assim que as ilhas posteriores forem desbloqueadas.",
+          "whyItMatters": "Esta parada marca a outra extremidade confirmada da rota de vendedores conhecida."
         },
         {
-          "name": "Mobilidade e Utilidade",
-          "achievements": [
-            {
-              "title": "Virtude α",
-              "description": "Voe com a luva planadora."
-            },
-            {
-              "title": "Virtude β",
-              "description": "Comande um gancho."
-            },
-            {
-              "title": "Arcanjo α",
-              "description": "Empunhe uma varinha de projéteis."
-            },
-            {
-              "title": "Arcanjo γ",
-              "description": "Empunhe um explosivo."
-            }
-          ]
+          "stop": "Checagem de Mercador Surgido",
+          "whatConfirmed": "Mercadores podem surgir ao vivo em sessões de Slime Seas.",
+          "howToUse": "Verifique se há mercadores ativos antes de navegar pela rota completa.",
+          "whyItMatters": "As checagens de surgimento podem encurtar o ciclo completo de vendedores quando o tempo coincide."
         },
         {
-          "name": "Combate e Criaturas",
-          "achievements": [
-            {
-              "title": "Massacre de __PROTECTED_26ee183b__",
-              "description": "Derrote bubblebears inocentes."
-            },
-            {
-              "title": "Arcanjo δ",
-              "description": "Elimine uma criatura blasfema."
-            },
-            {
-              "title": "__PROTECTED_c973d4a3__ β",
-              "description": "Morra."
-            },
-            {
-              "title": "Domínio γ",
-              "description": "Renomeie um verme fofo."
-            }
-          ]
-        },
-        {
-          "name": "Crescimento e Cultivo",
-          "achievements": [
-            {
-              "title": "Domínio α",
-              "description": "Fertilize uma semente."
-            },
-            {
-              "title": "Domínio β",
-              "description": "Colha uma noz totalmente crescida."
-            },
-            {
-              "title": "Domínio δ",
-              "description": "Conquista oculta."
-            }
-          ]
+          "stop": "Ciclo de Marcos de Ilha",
+          "whatConfirmed": "Cada ilha suporta viagens de retorno baseadas em marcos.",
+          "howToUse": "Defina marcos em ilhas de visitas repetidas e, em seguida, encadeie verificações rápidas de mercadores em sequência.",
+          "whyItMatters": "Os marcos reduzem o tempo de inatividade e tornam as revisitas aos mercadores eficientes."
         }
+      ],
+      "routeChecklist": [
+        "Comece pela extremidade da Floresta e termine na extremidade do Deserto ao fazer varreduras completas.",
+        "Execute verificações de mercadores surgidos primeiro antes de se comprometer com longos ciclos de viagem.",
+        "Combine as verificações de vendedores com entregas de missões ativas para eliminar o tempo de viagem morto.",
+        "Atualize os marcos sempre que sua rota de progressão em Slime Seas mudar."
       ]
     },
     "lucidBlocksSingleplayerAndPlatformFAQ": {
-      "title": "FAQ de Singleplayer e Plataformas de Lucid Blocks",
-      "displayType": "accordion",
-      "intro": "Estas são as principais perguntas sobre plataformas e acesso que os jogadores costumam fazer antes de comprar Lucid Blocks.",
-      "faqs": [
+      "title": "Guia de Habilidades de Slime Seas",
+      "displayType": "skillCards",
+      "intro": "As habilidades de Slime Seas são baseadas em maestria. Comece com o Dash para movimentação universal e, em seguida, priorize as habilidades de maestria 1 e maestria 5 que definem seu ritmo PvE e PvP.",
+      "skills": [
         {
-          "question": "Lucid Blocks é singleplayer?",
-          "answer": "Sim. Lucid Blocks é um jogo singleplayer."
+          "skill": "Dash",
+          "group": "Movimentação Universal",
+          "unlock": "Movimentação Principal",
+          "useCase": "Esquivar, reposicionar e resetar o espaçamento",
+          "summary": "O Dash é a habilidade de movimento base de Slime Seas e o primeiro hábito de comando que todo jogador deve desenvolver para esquivas de chefes e velocidade de rota."
         },
         {
-          "question": "Multijogador ou cooperativo estão planejados?",
-          "answer": "Não. O modo multijogador não está planejado para o lançamento nem para atualizações futuras."
+          "skill": "Flashblade Surge",
+          "group": "Katana",
+          "unlock": "Maestria 1",
+          "useCase": "Abertura rápida e iniciador de combo",
+          "summary": "Flashblade Surge é uma abertura essencial de Katana em Slime Seas e prepara uma pressão repetida rápida para sequências PvE."
         },
         {
-          "question": "Onde posso jogar Lucid Blocks?",
-          "answer": "Ele está disponível atualmente no Steam para Windows."
+          "skill": "Thousand Slashes",
+          "group": "Katana",
+          "unlock": "Maestria 5",
+          "useCase": "DPS de chefe e finalizador seguro",
+          "summary": "Thousand Slashes é o finalizador de assinatura da Katana, amplamente utilizado para pressão em alvo único e janelas de dano explosivo seguras."
         },
         {
-          "question": "Quanto custa Lucid Blocks?",
-          "answer": "$9,99 no Steam."
+          "skill": "Death's Grasp",
+          "group": "Foice",
+          "unlock": "Maestria 1",
+          "useCase": "Agarre e configuração de controle",
+          "summary": "Death's Grasp dá às rotas de Foice em Slime Seas sua identidade de controle e inicia a maioria das correntes de pressão."
         },
         {
-          "question": "Lucid Blocks suporta controles?",
-          "answer": "Sim, mas jogar no controle não é recomendado porque os menus não foram projetados para isso."
+          "skill": "Void Surge",
+          "group": "Foice",
+          "unlock": "Maestria 5",
+          "useCase": "Finalizador de corrente de controle",
+          "summary": "Void Surge encerra as correntes de Foice e é o finalizador de maestria fundamental para sequências de PvP focadas em controle."
         },
         {
-          "question": "Lucid Blocks funciona no Steam Deck?",
-          "answer": "Sim. O Proton 9.0 ou 9.0.4 é a configuração comumente recomendada para o Steam Deck."
+          "skill": "Earth Breaker",
+          "group": "Espada Grande",
+          "unlock": "Maestria 1",
+          "useCase": "Pressão de área (AoE) inicial",
+          "summary": "Earth Breaker é the primeira habilidade de maestria de Espada Grande e uma das principais razões pelas quais as rotas de Espada Grande em Slime Seas parecem fluidas para farmar."
         },
         {
-          "question": "Lucid Blocks funciona no Linux?",
-          "answer": "Sim. Relatos indicam que o Proton 9.0 funciona bem para Linux e Steam Deck."
+          "skill": "Spiraling Slash",
+          "group": "Espada Grande",
+          "unlock": "Maestria 5",
+          "useCase": "Limpeza de área (AoE) e farm de rota",
+          "summary": "Spiraling Slash é o finalizador de assinatura da Espada Grande e suporta limpezas de área ampla durante ciclos repetidos de materiais."
         },
         {
-          "question": "Haverá suporte para Mac ou Android?",
-          "answer": "Eles podem ser suportados no futuro, mas não são plataformas de lançamento atuais."
-        },
-        {
-          "question": "Lucid Blocks possui traduções?",
-          "answer": "Não. Atualmente não há traduções planejadas."
-        },
-        {
-          "question": "Lucid Blocks continuará recebendo atualizações?",
-          "answer": "Sim. Algumas atualizações de conteúdo estão planejadas após o lançamento, mas não pretendem continuar em um cronograma regular indefinido."
+          "skill": "Impaling Thrust",
+          "group": "Berserker",
+          "unlock": "Maestria 1",
+          "useCase": "Abertura pesada",
+          "summary": "Impaling Thrust é a abertura de destaque do Berserker em Slime Seas e inicia sequências de dano explosivo de alta pressão."
         }
+      ],
+      "trainingNotes": [
+        "Use o Dash de Slime Seas com disciplina de tempo de recarga, não por pânico, para controlar o espaçamento.",
+        "Comprometa-se com uma linha de maestria cedo para que os desbloqueios de habilidades cheguem antes dos picos de dificuldade da rota.",
+        "Construa aberturas e finalizadores em pares para manter o fluxo do combo consistente sob pressão.",
+        "Reavalie sua sequência de habilidades ao mudar de rotas de nivelamento para foco em chefes ou PvP."
       ]
     },
     "lucidBlocksSteamDeckAndController": {
-      "title": "Steam Deck e Controle em Lucid Blocks",
-      "displayType": "accordion",
-      "intro": "Lucid Blocks pode rodar no Steam Deck, mas a configuração padrão pode precisar de ajustes. Teclado e mouse continuam sendo a opção mais fluida para menus e jogabilidade geral.",
-      "faqs": [
+      "title": "Guia de PvP de Slime Seas",
+      "displayType": "cardList",
+      "eyebrow": "Meta de PvP de Slime Seas",
+      "subtitle": "Builds de PvP, combinações de raças e fluxo de duelo em Slime Seas",
+      "intro": "Comece cada duelo em Slime Seas com disciplina de movimento: Q para Dash, F para Bloqueio, Shift para Mouse Lock e 1-4 para habilidades de arma. Dados atuais de builds apontam para a Foice como uma opção estável de controle de PvP, Katana como a escolha de duelista de alto dano explosivo e Espadão ou Berserker como o caminho de brutamontes de alta pressão.",
+      "items": [
         {
-          "question": "Lucid Blocks funciona no Steam Deck?",
-          "answer": "Sim. O Proton 9.0 funciona bem, e o Proton 9.0.4 é uma correção comumente compartilhada para problemas no Steam Deck."
+          "cardTitle": "Básico de Duelos",
+          "summary": "Use o espaçamento de dash e o tempo de bloqueio para forçar erros antes de se comprometer com uma sequência completa de habilidades.",
+          "recommendedRaces": [
+            "Qualquer raça que combine com a maestria"
+          ],
+          "coreInputs": [
+            "Q: Dash",
+            "F: Bloqueio",
+            "Shift: Mouse Lock",
+            "1-4: Habilidades de Arma"
+          ],
+          "keyNumbers": [
+            "Abra com disciplina de movimento antes de comprometer as habilidades",
+            "Mantenha sequências de curto alcance dentro do Mouse Lock"
+          ],
+          "duelTips": [
+            "Abra com movimento primeiro, depois ataque assim que o oponente gastar a mobilidade.",
+            "Permaneça no Mouse Lock durante trocas próximas para que os ataques de curto alcance permaneçam no alvo.",
+            "Bloqueie golpes iniciais e responda com sua habilidade de controle ou explosão de maior valor."
+          ]
         },
         {
-          "question": "O que devo fazer se os controles do Steam Deck não estiverem funcionando?",
-          "answer": "Force a compatibilidade e mude o jogo para o Proton 9.0.4. A configuração padrão pode não aceitar a entrada do controle corretamente."
+          "cardTitle": "Configuração de Controle de Foice",
+          "summary": "Melhor maestria de PvP atual para jogadores que desejam confirmações estáveis e forte pressão de perseguição.",
+          "recommendedRaces": [
+            "Djinn",
+            "Dragonborn"
+          ],
+          "coreSkills": [
+            "Aperto da Morte",
+            "Golpe Giratório",
+            "Surto do Vazio"
+          ],
+          "keyNumbers": [
+            "Referência de limite PvP: 10.000 HP / 325 Melee",
+            "Combo de 3 acertos PvP: 700 + 1.300 + 1.200 = 3.200 total"
+          ],
+          "duelTips": [
+            "Use o Aperto da Morte para iniciar a troca e forçar um acompanhamento garantido.",
+            "Djinn combina bem com a Foice através da velocidade de recarga, +20% de dano de Foice e +25% de distância de dash.",
+            "Dragonborn é uma escolha premium mais segura quando você quer dano de Foice e flexibilidade de Espadão."
+          ]
         },
         {
-          "question": "Lucid Blocks suporta controles?",
-          "answer": "Sim, mas jogar no controle não é recomendado porque os menus do jogo não foram projetados para isso."
+          "cardTitle": "Configuração de Explosão de Katana",
+          "summary": "Ideal para duelistas que querem sequências rápidas, forte desempenho contra chefes e janelas de punição nítidas.",
+          "recommendedRaces": [
+            "Shadowborn",
+            "Lunarian",
+            "Elf",
+            "Skypiean"
+          ],
+          "coreSkills": [
+            "Surto de Lâmina Relâmpago",
+            "Onda de Surto",
+            "Mil Cortes"
+          ],
+          "keyNumbers": [
+            "Explosão de Maestria 5: Mil Cortes = 2.700 de dano PvP",
+            "Bônus de Shadowborn: +35% Katana, +40% distância de dash, +15% velocidade"
+          ],
+          "duelTips": [
+            "Shadowborn tem o maior teto para Katana, mas troca vida e dano de outras armas.",
+            "Lunarian é uma escolha de Katana mais equilibrada, com escalonamento de velocidade, vida e fogo.",
+            "Jogue para punir erros e janelas curtas de abate em vez de trocas longas de resistência."
+          ]
         },
         {
-          "question": "O suporte para Linux é possível?",
-          "answer": "Sim. Relatos indicam que o Proton 9.0 funciona bem para Linux e Steam Deck."
-        },
-        {
-          "question": "Qual é a melhor configuração de entrada?",
-          "answer": "Teclado e mouse são a opção mais fluida para navegação em menus e jogabilidade geral momento a momento."
+          "cardTitle": "Configuração de Pressão de Espadão e Berserker",
+          "summary": "Escolha este caminho se desejar golpes mais amplos, limpeza de ondas mais fácil e pressão corpo a corpo mais robusta.",
+          "recommendedRaces": [
+            "Oni",
+            "Fishman",
+            "Dragonborn"
+          ],
+          "coreSkills": [
+            "Quebrador de Terra",
+            "Pancada Ampla",
+            "Corte Espiral",
+            "Estocada Empaladora"
+          ],
+          "keyNumbers": [
+            "Maestria 5 de Espadão: Corte Espiral = 1.700 de dano PvP",
+            "Abertura de Berserker: Estocada Empaladora = 1.200 de dano"
+          ],
+          "duelTips": [
+            "O Espadão é o melhor polivalente gratuito, com forte dano em área e valor de progressão suave.",
+            "Oni é a melhor combinação Rara para Espadão com +15% de vida e +20% de dano de Espadão.",
+            "Berserker é uma postura premium de Espadão para jogadores que já gostam do ritmo do Espadão."
+          ]
         }
       ]
     },
     "lucidBlocksSettingsAndAccessibility": {
-      "title": "Configurações e Acessibilidade de Lucid Blocks",
-      "displayType": "settingCards",
-      "intro": "Lucid Blocks já possui algumas configurações práticas e notas de compatibilidade que importam imediatamente quando os jogadores iniciam o jogo pela primeira vez.",
-      "settings": [
+      "title": "Itens e Materiais de Slime Seas",
+      "displayType": "table",
+      "eyebrow": "Tabela de Saques de Slime Seas",
+      "subtitle": "Itens principais, materiais e primeiros drops de busca em Slime Seas",
+      "intro": "Use este módulo de Slime Seas como uma planilha de consulta rápida para armas iniciais, materiais de chefes e primeiros alvos reais de melhoria. A rota indexada atual cobre os pontos de verificação de progressão da Floresta Inicial, Demon Lord Rima, Ogre Lord e Estátua do Monarca.",
+      "items": [
         {
-          "name": "Configurações de Exibição",
-          "type": "Opção de Conforto",
-          "description": "As Configurações de Exibição incluem uma opção que permite aos jogadores ocultar as mãos na tela."
+          "item": "Katana de Madeira",
+          "type": "Arma",
+          "rarity": "Comum",
+          "source": "Floresta Inicial",
+          "levelOrZone": "Zona de Spawn",
+          "obtainMethod": "Obter na Floresta Inicial",
+          "stats": "ATK 5 • Teto de melhoria 10",
+          "tradeable": "Sim",
+          "whyItMatters": "Arma básica inicial e o ponto de referência mais simples para verificações de dano."
         },
         {
-          "name": "Compatibilidade Gráfica",
-          "type": "Requisito do Sistema",
-          "description": "O suporte a __PROTECTED_38625270__ é necessário para que os gráficos sejam renderizados corretamente. Sistemas sem __PROTECTED_38625270__ podem sofrer falhas e erros gráficos graves."
+          "item": "Resíduo de Slime",
+          "type": "Material",
+          "rarity": "Comum",
+          "source": "Slime Básico / Slime Lobo",
+          "levelOrZone": "Floresta Inicial",
+          "obtainMethod": "Drop de inimigo",
+          "stats": "Sem atributos de combate",
+          "tradeable": "Não",
+          "whyItMatters": "Material inicial essencial que aparece no primeiro ciclo de farm."
         },
         {
-          "name": "Preferência de Entrada",
-          "type": "Configuração de Controle",
-          "description": "O suporte a controle existe, mas o teclado e o mouse proporcionam uma experiência mais fluida porque os menus não foram construídos para o uso de controle."
+          "item": "Abas de Asa",
+          "type": "Material de Chefe",
+          "rarity": "Drop de Chefe",
+          "source": "Demon Lord Rima",
+          "levelOrZone": "Nível 65 • Pináculo de Rima",
+          "obtainMethod": "35.5%",
+          "stats": "Drop de material",
+          "tradeable": "—",
+          "whyItMatters": "Drop mais comum da Rima e parte do primeiro farm sério de chefe."
         },
         {
-          "name": "Suporte de Idioma",
-          "type": "Localização",
-          "description": "A configuração atual é apenas em inglês, e nenhuma tradução está planejada no momento."
+          "item": "Katana de Slime Lendária",
+          "type": "Arma",
+          "rarity": "Lendária",
+          "source": "Demon Lord Rima",
+          "levelOrZone": "Nível 65 • Pináculo de Rima",
+          "obtainMethod": "1.77%",
+          "stats": "ATK 100 • Teto de melhoria 20",
+          "tradeable": "Sim",
+          "whyItMatters": "O primeiro salto notável de arma de chefe para progressão focada em Katana."
+        },
+        {
+          "item": "Chifres de Ogro",
+          "type": "Material de Chefe",
+          "rarity": "Drop de Chefe",
+          "source": "Ogre Lord",
+          "levelOrZone": "Nível 255 • Bastião do Lorde Ogro",
+          "obtainMethod": "41.58%",
+          "stats": "Drop de material",
+          "tradeable": "—",
+          "whyItMatters": "Melhor farm de material de meio de jogo e um alvo de criação de alto valor."
+        },
+        {
+          "item": "Fragmento de Sigilo",
+          "type": "Material de Chefe",
+          "rarity": "Drop de Chefe",
+          "source": "Monarch Statue",
+          "levelOrZone": "Nível 360+ • Mundo das Sombras",
+          "obtainMethod": "42.02%",
+          "stats": "Drop de material",
+          "tradeable": "—",
+          "whyItMatters": "Material de progressão de endgame vinculado ao ciclo de chefe de nível mais alto atual."
         }
       ]
     },
     "lucidBlocksUpdatesAndPatchNotes": {
-      "title": "Atualizações e Notas de Patch de Lucid Blocks",
-      "displayType": "timeline",
-      "intro": "Lucid Blocks já está recebendo correções rápidas pós-lançamento e pequenas atualizações de usabilidade.",
-      "entries": [
+      "title": "Calculadora de Dano de Slime Seas",
+      "displayType": "calculatorPanel",
+      "eyebrow": "Ferramentas de Dano de Slime Seas",
+      "subtitle": "Verificações rápidas de dano e comparações de itens de Slime Seas",
+      "intro": "O hub de ferramentas ao vivo de Slime Seas apresenta uma calculadora de dano, visualização de comparação de itens, simulador de melhorias e planejador de builds. Este módulo foca na seleção de raça, seleção de arma, nível de encantamento e variações rápidas de estatísticas entre o equipamento inicial e o do primeiro chefe.",
+      "calculator": {
+        "raceOptions": [
+          {
+            "name": "Humano Padrão",
+            "multiplier": 1,
+            "tag": "Padrão",
+            "statProfile": "1x PV • 1x ATQ • 1x DEF • 1x VEL • 1x Sorte"
+          },
+          {
+            "name": "Berserker (Pacote Inicial)",
+            "multiplier": 1.15,
+            "tag": "DPS / PvP",
+            "statProfile": "Kit agressivo exclusivo para Premium"
+          },
+          {
+            "name": "Sorte (Impulso)",
+            "multiplier": 1,
+            "tag": "Farm",
+            "statProfile": "1.05x Sorte"
+          }
+        ],
+        "weaponOptions": [
+          {
+            "name": "Katana de Madeira",
+            "rarity": "Comum",
+            "atk": 5,
+            "upgradeCeiling": 10,
+            "source": "Floresta Inicial"
+          },
+          {
+            "name": "Katana de Slime Lendária",
+            "rarity": "Lendária",
+            "atk": 100,
+            "upgradeCeiling": 20,
+            "source": "Lorde Demônio Rima"
+          }
+        ],
+        "enchantRange": {
+          "min": 0,
+          "max": 20,
+          "default": 0,
+          "step": 1
+        },
+        "multiplierPerEnchant": 0.05
+      },
+      "presets": [
         {
-          "title": "Atualização 2.8.2",
-          "type": "Atualização de UI",
-          "description": "Renomeado \"awaken\" para \"exit\" no menu principal."
+          "panelTitle": "Predefinições de Raça Atuais",
+          "rows": [
+            {
+              "name": "Humano Padrão",
+              "tag": "Padrão",
+              "statProfile": "1x PV • 1x ATQ • 1x DEF • 1x VEL • 1x Sorte"
+            },
+            {
+              "name": "Berserker (Pacote Inicial)",
+              "tag": "DPS / PvP",
+              "statProfile": "Kit agressivo exclusivo para Premium"
+            },
+            {
+              "name": "Sorte (Impulso)",
+              "tag": "Farm",
+              "statProfile": "1.05x Sorte"
+            }
+          ]
         },
         {
-          "title": "Pequeno Patch para Falhas na Inicialização",
-          "type": "Hotfix",
-          "description": "Um patch dedicado foi lançado para jogadores cujo jogo estava travando ao iniciar."
+          "panelTitle": "Predefinições de Arma Atuais",
+          "rows": [
+            {
+              "item": "Katana de Madeira",
+              "rarity": "Comum",
+              "atk": 5,
+              "upgradeCeiling": 10,
+              "source": "Floresta Inicial"
+            },
+            {
+              "item": "Katana de Slime Lendária",
+              "rarity": "Lendária",
+              "atk": 100,
+              "upgradeCeiling": 20,
+              "source": "Lorde Demônio Rima"
+            }
+          ]
         },
         {
-          "title": "Suporte de Conteúdo Pós-Lançamento",
-          "type": "Nota do Roteiro",
-          "description": "Algumas atualizações de conteúdo estão planejadas após o lançamento, mas não pretendem continuar em um cronograma regular indefinido."
+          "panelTitle": "Resumo de Comparação Rápida",
+          "rows": [
+            {
+              "comparison": "Katana de Madeira vs Resíduo de Slime",
+              "atkDelta": "+5",
+              "note": "A visualização de comparação destaca a arma inicial em relação a um material bruto."
+            },
+            {
+              "comparison": "Katana de Slime Lendária vs Katana de Madeira",
+              "atkDelta": "+95",
+              "note": "Este é o primeiro grande salto de arma que a maioria dos jogadores de farm de chefes iniciais acompanha."
+            }
+          ]
         }
       ]
     },
     "lucidBlocksCrashFixAndTroubleshooting": {
-      "title": "Correção de Falhas e Solução de Problemas de Lucid Blocks",
-      "displayType": "steps",
-      "intro": "A maioria dos problemas imediatos de inicialização e falhas deve ser verificada em uma ordem simples: nível do patch, suporte gráfico, compatibilidade de plataforma e logs.",
-      "steps": [
+      "title": "Probabilidade de Reroll de Slime Seas",
+      "displayType": "calculatorPanel",
+      "eyebrow": "Chances de Reroll de Slime Seas",
+      "subtitle": "Chances de raça-alvo de Slime Seas para rerolls e estoques de códigos",
+      "intro": "O conjunto atual de raças de Slime Seas tem 9 raças, com Humano a 48%, alvos Fabulosos a 2% cada, e Nascido do Dragão e Nascido das Sombras a 0,25% cada. A chance de acerto segue 1 - (1 - p)^n, então pequenos estoques de reroll se comportam de forma muito diferente de sessões de caça longas.",
+      "formula": "Chance de acerto = 1 - (1 - p)^n",
+      "targets": [
         {
-          "title": "Instale o Hotfix de Falhas Mais Recente",
-          "description": "Se o jogo estiver travando ao iniciar, atualize primeiro e teste novamente com o patch de falha de inicialização mais recente."
+          "target": "Nascido do Dragão",
+          "rarity": "Lendária",
+          "rollRate": 0.0025,
+          "rollRateLabel": "0,25%",
+          "expectedRollsToSuccess": 400,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "1,24%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "6,07%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "11,76%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "22,14%"
+            }
+          ]
         },
         {
-          "title": "Verifique o Suporte a __PROTECTED_38625270__",
-          "description": "Lucid Blocks requer suporte a __PROTECTED_38625270__. Sistemas sem __PROTECTED_38625270__ podem sofrer falhas ou grandes problemas de renderização."
+          "target": "Nascido das Sombras",
+          "rarity": "Lendária",
+          "rollRate": 0.0025,
+          "rollRateLabel": "0,25%",
+          "expectedRollsToSuccess": 400,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "1,24%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "6,07%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "11,76%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "22,14%"
+            }
+          ]
         },
         {
-          "title": "Use o Proton 9.0.4 no Steam Deck",
-          "description": "Se o comportamento de entrada ou inicialização do Steam Deck estiver quebrado, force a compatibilidade e mude para o Proton 9.0.4."
+          "target": "Djinn",
+          "rarity": "Fabulosa",
+          "rollRate": 0.02,
+          "rollRateLabel": "2%",
+          "expectedRollsToSuccess": 50,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "9,61%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "39,65%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "63,58%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "86,74%"
+            }
+          ]
         },
         {
-          "title": "Colete Logs de Falhas",
-          "description": "Abra o Executar do Windows, cole %APPDATA%, vá para lucid blocks/logs e reúna os arquivos .txt para solução de problemas."
+          "target": "Lunariano",
+          "rarity": "Fabulosa",
+          "rollRate": 0.02,
+          "rollRateLabel": "2%",
+          "expectedRollsToSuccess": 50,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "9,61%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "39,65%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "63,58%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "86,74%"
+            }
+          ]
         },
         {
-          "title": "Relate o Problema Corretamente",
-          "description": "Compartilhe os logs e detalhes do dispositivo através do fórum oficial de bug-reports no Discord ou na página da comunidade do Steam."
+          "target": "Qualquer Lendária",
+          "rarity": "Grupo Lendário",
+          "rollRate": 0.005,
+          "rollRateLabel": "0,50%",
+          "expectedRollsToSuccess": 200,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "2,48%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "11,78%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "22,17%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "39,42%"
+            }
+          ]
         }
-      ]
+      ],
+      "starterCodeBundle": {
+        "title": "Pacote de Códigos Iniciais de Slime Seas",
+        "summary": "HUBISLAND concede 3 Rerolls de Raça e SLIMEPIECE concede 2 Rerolls de Raça, totalizando um estoque inicial de 5 rerolls.",
+        "snapshots": [
+          {
+            "label": "Nascido do Dragão",
+            "chance": "1,24%"
+          },
+          {
+            "label": "Nascido das Sombras",
+            "chance": "1,24%"
+          },
+          {
+            "label": "Qualquer Lendária",
+            "chance": "2,48%"
+          },
+          {
+            "label": "Djinn ou Lunariano",
+            "chance": "9,61%"
+          }
+        ]
+      }
     }
   },
   "faq": {
-    "title": "Perguntas",
-    "titleHighlight": "Frequentes",
-    "subtitle": "Tudo o que você precisa saber sobre Lucid Blocks",
+    "title": "Slime Seas: Perguntas Frequentes",
+    "titleHighlight": "Questões",
+    "subtitle": "Tudo o que você precisa saber sobre Slime Seas",
     "questions": [
       {
-        "question": "O Lucid Blocks é um jogo singleplayer?",
-        "answer": "Sim. Lucid Blocks é um jogo exclusivamente singleplayer, sem planos para multiplayer ou co-op."
+        "question": "Slime Seas é um RPG de anime do Roblox?",
+        "answer": "Sim. Slime Seas é um RPG de anime do Roblox focado em progressão de mundo, maestria de armas, rotas de chefes e builds prontas para PvP."
       },
       {
-        "question": "O que é o sistema Apotheosis em Lucid Blocks?",
-        "answer": "Apotheosis é o sistema de criação por fusão de forma livre do Lucid Blocks. Em vez de seguir receitas fixas, você combina materiais e descobre seus próprios caminhos de criação."
+        "question": "Como os códigos de Slime Seas ajudam na progressão?",
+        "answer": "Os códigos de Slime Seas fornecem rerolls, boosts de poções e chaves que aceleram o planejamento de raças e a progressão do início ao meio do jogo."
       },
       {
-        "question": "Onde posso jogar Lucid Blocks?",
-        "answer": "Lucid Blocks está disponível atualmente no Steam para Windows. O suporte para Linux e Steam Deck está disponível através do Proton 9.0."
+        "question": "Onde posso encontrar as atualizações oficiais de Slime Seas?",
+        "answer": "Use o Discord, conta no X, quadro do Trello e Grupo no Roblox oficiais de Slime Seas para anúncios e notas de roadmap."
       },
       {
-        "question": "Quanto custa o Lucid Blocks?",
-        "answer": "O Lucid Blocks custa US$ 9,99 no Steam."
+        "question": "No que os novos jogadores devem focar primeiro em Slime Seas?",
+        "answer": "Novos jogadores de Slime Seas devem dominar os controles básicos, focar em uma rota de maestria de arma e seguir os checkpoints do mundo com a configuração de waypoints."
       },
       {
-        "question": "O Lucid Blocks tem suporte para controles?",
-        "answer": "Sim, mas jogar no controle não é recomendado porque os menus não foram projetados para isso. Teclado e mouse são a opção mais fluida."
+        "question": "Como devo planejar os rerolls de raça em Slime Seas?",
+        "answer": "Planeje os rerolls de Slime Seas com base na probabilidade, utilidade atual da raça e estoque de rerolls disponível, em vez de buscar resultados aleatórios."
       },
       {
-        "question": "O Lucid Blocks receberá atualizações?",
-        "answer": "Sim. Algumas atualizações de conteúdo estão planejadas após o lançamento, mas não há a intenção de mantê-las em um cronograma regular indefinido."
+        "question": "Slime Seas inclui progressão de PvP?",
+        "answer": "Sim. Slime Seas inclui PvP, e o ajuste da build em torno de passivas de raça, habilidades de maestria e disciplina de espaçamento melhora a consistência."
       }
     ]
   },
   "cta": {
-    "title": "Pronto para explorar Lucid Blocks?",
-    "description": "Junte-se à comunidade de Lucid Blocks no Discord para guias, atualizações e discussões!",
-    "joinCommunity": "Entrar no Discord",
-    "joinGame": "Jogue no Steam"
+    "title": "Pronto para dominar Slime Seas?",
+    "description": "Junte-se à comunidade Slime Seas para códigos novos, dicas de raças, rotas de armas e atualizações oficiais.",
+    "joinCommunity": "Junte-se ao Discord de Slime Seas",
+    "joinGame": "Jogue Slime Seas no Roblox"
   },
   "footer": {
-    "title": "Wiki de Lucid Blocks",
-    "description": "Seu centro de recursos completo para crafting, biomas, criaturas, conquistas e guias de sobrevivência de Lucid Blocks.",
+    "title": "Slime Seas Wiki",
+    "description": "Seu hub de recursos completo para códigos, raças, armas, chefes, ilhas e guias de progressão de Slime Seas.",
     "resources": "Recursos",
     "community": "Comunidade",
     "legal": "Legal",
-    "discord": "Discord",
-    "twitter": "X / Twitter",
-    "steamCommunity": "Comunidade Steam",
-    "steamStore": "Loja Steam",
+    "discord": "Discord Oficial",
+    "twitter": "X Oficial",
+    "steamCommunity": "YouTube Oficial",
+    "steamStore": "Jogue no Roblox",
     "about": "Sobre",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "copyrightNotice": "Copyright",
-    "copyright": "© 2026 Wiki de Lucid Blocks. Não afiliada aos desenvolvedores de Lucid Blocks.",
-    "disclaimer": "Site de recursos não oficial feito por fãs."
+    "copyrightNotice": "Direitos Autorais",
+    "copyright": "© 2026 Slime Seas Wiki. Não afiliado à Roblox Corporation ou aos desenvolvedores de Slime Seas.",
+    "disclaimer": "Site de recursos não oficial de Slime Seas feito por fãs."
   },
   "pages": {
-    "guides": {
-      "title": "Guias de Lucid Blocks",
-      "description": "Guias de jogabilidade completos, desde o básico para iniciantes até estratégias avançadas de Apotheosis. Domine a sobrevivência e a criação.",
-      "metaTitle": "Guias de Lucid Blocks - Estratégias do Iniciante ao Avançado",
-      "metaDescription": "Guias completos de Lucid Blocks abrangendo dicas para iniciantes, sistema Apotheosis, estratégias de sobrevivência e táticas de especialistas para dominar o sandbox surreal.",
-      "categoryLabel": "GUIAS DE JOGO",
-      "whatIs": "O que são Guias?",
-      "whatIsDescription": "Guias abrangentes que cobrem mecânicas de jogo, estratégias de sobrevivência e o sistema de criação Apotheosis. Aprenda tudo, desde os primeiros passos até técnicas avançadas.",
-      "why": "Por que ler os guias?",
+    "guide": {
+      "title": "Guia de Slime Seas",
+      "description": "Rotas passo a passo de Slime Seas para subir de nível, missões, status e progressão de ilhas.",
+      "metaTitle": "Guia de Slime Seas - Subir de Nível, Missões e Rotas de Progressão",
+      "metaDescription": "Leia a coleção de guias de Slime Seas para integração de iniciantes, loops de farming, ordem de missões, planejamento de status e rotas de progressão de endgame.",
+      "categoryLabel": "GUIA",
+      "whatIs": "O que é a categoria Guia de Slime Seas?",
+      "whatIsDescription": "A categoria Guia de Slime Seas é o principal hub de planejamento de rotas. Ela reúne artigos para iniciantes, subir de nível, farming, missões, PvP e status para que você possa ir do primeiro spawn ao endgame com uma ordem clara de ações.",
+      "why": "Por que ler os guias de Slime Seas?",
       "whySteps": {
-        "step1Title": "Aprenda as Mecânicas Principais",
-        "step1Description": "Entenda o sistema Apotheosis e evite erros comuns de iniciantes",
-        "step2Title": "Progressão Rápida",
-        "step2Description": "Siga caminhos comprovados para sobreviver e prosperar no mundo surreal",
-        "step3Title": "Domine as Estratégias",
-        "step3Description": "Desenvolva táticas avançadas para exploração e criação"
+        "step1Title": "Siga uma Rota Comprovada",
+        "step1Description": "Use uma ordem de ilhas e missões testada para evitar sessões de grind sem saída.",
+        "step2Title": "Suba de Nível com Menos Tempo de Inatividade",
+        "step2Description": "Combine loops de nível, ganhos de maestria e rastreamento de objetivos em um único caminho.",
+        "step3Title": "Desenvolva um Melhor Timing de Decisão",
+        "step3Description": "Saiba quando fazer reroll, trocar de equipamento, enfrentar chefes ou permanecer em rotas de farm."
       },
       "featured": "Destaques e Essenciais",
-      "all": "Todos os Guias"
+      "all": "Todos os Artigos do Guia de Slime Seas"
     },
-    "crafting": {
-      "title": "Criação em Lucid Blocks",
-      "description": "Domine o sistema de fusão Apotheosis com mecânicas de essência, receitas e estratégias de criação para itens poderosos.",
-      "metaTitle": "Criação em Lucid Blocks - Sistema Apotheosis e Receitas",
-      "metaDescription": "Domine o sistema de criação Apotheosis de Lucid Blocks. Aprenda mecânicas de essência, receitas de fusão e estratégias para criar ferramentas e armas poderosas.",
-      "categoryLabel": "SISTEMA DE CRIAÇÃO",
-      "whatIs": "O que é a Criação?",
-      "whatIsDescription": "O sistema Apotheosis é uma mecânica de fusão única baseada em essências, onde você combina até seis itens para descobrir novas receitas. Sem menus de criação fixos — a experimentação é a chave.",
-      "why": "Por que dominar a criação?",
+    "resources": {
+      "title": "Recursos de Slime Seas",
+      "description": "Links oficiais, rastreamento de patches, atualizações de lançamento e inteligência comunitária para Slime Seas.",
+      "metaTitle": "Recursos de Slime Seas - Trello, Notas de Patch e Atualizações da Comunidade",
+      "metaDescription": "Acompanhe os recursos de Slime Seas, incluindo Trello, notas de patch, horários de lançamento, logs de atualização e canais da comunidade para uma percepção mais rápida do meta.",
+      "categoryLabel": "RECURSOS",
+      "whatIs": "O que são Recursos de Slime Seas?",
+      "whatIsDescription": "A categoria Recursos de Slime Seas reúne referências externas de alta relevância e canais de atualização. Use-a para monitorar mudanças de patch, notícias de lançamento, hubs sociais e sinais de roadmap sem precisar pesquisar em várias plataformas.",
+      "why": "Por que monitorar os recursos de Slime Seas?",
       "whySteps": {
-        "step1Title": "Desbloqueie Itens Poderosos",
-        "step1Description": "Descubra ferramentas essenciais, armas e equipamentos de mobilidade através da fusão",
-        "step2Title": "Entenda as Essências",
-        "step2Description": "Saiba como as essências dos itens se combinam para criar resultados previsíveis",
-        "step3Title": "Otimize Recursos",
-        "step3Description": "Use mecânicas de diluição para maximizar o rendimento de materiais baratos"
+        "step1Title": "Identifique Mudanças de Meta Cedo",
+        "step1Description": "Leia artigos de patch e atualização antes de se comprometer com novos investimentos em builds.",
+        "step2Title": "Use Fontes Oficiais Mais Rápido",
+        "step2Description": "Vá direto para o Trello e canais confiáveis quando mecânicas ou drops mudarem.",
+        "step3Title": "Planeje com Base em Informações em Tempo Real",
+        "step3Description": "Coordene decisões de farming e reroll com base em eventos atuais e janelas de lançamento."
       },
       "featured": "Destaques e Essenciais",
-      "all": "Todos os Guias de Criação"
+      "all": "Todos os Artigos de Recursos de Slime Seas"
+    },
+    "races": {
+      "title": "Raças de Slime Seas",
+      "description": "Classificação de raças, análise de passivas e decisões de reroll para cada estilo de jogo em Slime Seas.",
+      "metaTitle": "Raças de Slime Seas - Melhores Escolhas de Raça, Passivas e Estratégia de Reroll",
+      "metaDescription": "Compare as raças de Slime Seas com tier lists, detalhamento de passivas e estratégia de reroll por estilo de arma, estágio de progressão e prioridades de PvP.",
+      "categoryLabel": "RAÇAS",
+      "whatIs": "O que é a categoria Raças de Slime Seas?",
+      "whatIsDescription": "A categoria Raças de Slime Seas foca no valor das raças. Ela abrange efeitos passivos, tiers de raridade, prioridades de reroll e sinergia de armas para que você possa escolher raças com eficiência de conta a longo prazo.",
+      "why": "Por que otimizar as escolhas de raça?",
+      "whySteps": {
+        "step1Title": "Evite Rerolls Desperdiçados",
+        "step1Description": "Use o contexto de tier para decidir quando manter um roll em vez de gastar mais rerolls.",
+        "step2Title": "Combine a Raça com a Arma",
+        "step2Description": "Escolha passivas que escalem com sua rota de katana, foice ou espada grande.",
+        "step3Title": "Evolua para o Endgame",
+        "step3Description": "Escolha raças que permaneçam fortes em chefes, farming e transições para PvP."
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Artigos de Raças de Slime Seas"
+    },
+    "weapons": {
+      "title": "Armas de Slime Seas",
+      "description": "Rankings de armas, marcos de maestria e rotas de aquisição para builds de combate em Slime Seas.",
+      "metaTitle": "Armas de Slime Seas - Melhores Armas, Localizações e Rotas de Maestria",
+      "metaDescription": "Encontre as melhores armas de Slime Seas, caminhos de desbloqueio, localizações de mercadores e conselhos de maestria para melhorar o dano ao subir de nível e enfrentar chefes.",
+      "categoryLabel": "ARMAS",
+      "whatIs": "O que é a categoria Armas de Slime Seas?",
+      "whatIsDescription": "A categoria Armas de Slime Seas é o seu roadmap de equipamentos de combate. Ela rastreia o valor do tier das armas, rotas de desbloqueio, guias de localização e decisões práticas de maestria para diferentes estágios de progressão.",
+      "why": "Por que ler os guias de armas de Slime Seas?",
+      "whySteps": {
+        "step1Title": "Priorize Desbloqueios de Alto Valor",
+        "step1Description": "Foque em armas com o melhor ganho de poder por tempo investido.",
+        "step2Title": "Aprenda Caminhos de Aquisição Exatos",
+        "step2Description": "Use guias de localização e requisitos para obter cada arma mais rápido.",
+        "step3Title": "Aumente o Dano Através da Maestria",
+        "step3Description": "Planeje marcos de maestria em torno de sua rotação de habilidades preferida e tipo de conteúdo."
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Artigos de Armas de Slime Seas"
+    },
+    "pets": {
+      "title": "Pets de Slime Seas",
+      "description": "Rotas de desbloqueio de pets, farm de ovos, fluxo de eclosão e valor de evolução em Slime Seas.",
+      "metaTitle": "Pets de Slime Seas - Farm de Ovos de Drake, Passos de Eclosão e Evolução",
+      "metaDescription": "Saiba como os pets de Slime Seas funcionam com rotas de ovos de drake, pré-requisitos de chefes, progressão de eclosão e prioridades de melhoria de pets para um crescimento de conta mais forte.",
+      "categoryLabel": "PETS",
+      "whatIs": "O que é a categoria de Pets de Slime Seas?",
+      "whatIsDescription": "A categoria de Pets de Slime Seas explica a progressão dos companheiros, desde a caça de drops até os resultados da eclosão. Ela foca em onde farmar ovos, como ativar sistemas de pets e quando as melhorias de pets valem o esforço.",
+      "why": "Por que focar nos pets de Slime Seas?",
+      "whySteps": {
+        "step1Title": "Encontre Fontes de Ovos com Confiabilidade",
+        "step1Description": "Use o roteamento de chefes e locais para farmar ovos de drake sem desperdiçar tentativas.",
+        "step2Title": "Melhore o Tempo de Atividade do Companheiro",
+        "step2Description": "Entenda o fluxo de eclosão e evolução para que os pets continuem relevantes conforme o poder aumenta.",
+        "step3Title": "Suporte para Sessões Longas",
+        "step3Description": "Aproveite a progressão dos pets para ganhos constantes em combate durante loops de chefes e farm."
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Artigos de Pets de Slime Seas"
+    },
+    "bosses": {
+      "title": "Chefes de Slime Seas",
+      "description": "Mecânicas de chefes, tabelas de drops e planos de farm eficientes para loops de endgame em Slime Seas.",
+      "metaTitle": "Chefes de Slime Seas - Guias de Chefes, Drops e Estratégia de Farm",
+      "metaDescription": "Domine os chefes de Slime Seas com mecânicas de encontro, tempo de fases, prioridades de drop, sistemas de pity e planos de farm repetíveis para recompensas raras.",
+      "categoryLabel": "CHEFES",
+      "whatIs": "O que é a categoria de Chefes de Slime Seas?",
+      "whatIsDescription": "A categoria de Chefes de Slime Seas é dedicada à execução de encontros e planejamento de recompensas. Ela combina mecânicas de chefes, janelas de dano, estratégia de taxa de drop e loops de farm para ganhos de progressão consistentes.",
+      "why": "Por que focar nos chefes de Slime Seas?",
+      "whySteps": {
+        "step1Title": "Conclua Encontros com Consistência",
+        "step1Description": "Use guias de mecânicas e tempo para reduzir tentativas falhas e tempo de recuperação.",
+        "step2Title": "Busque Drops Raros com Eficiência",
+        "step2Description": "Priorize chefes e pools de saques que melhor se adaptem às melhorias da sua build atual.",
+        "step3Title": "Transforme o Farm em Progresso",
+        "step3Description": "Converta corridas repetidas de chefes em crescimento previsível de equipamentos e materiais."
+      },
+      "featured": "Destaques e Essenciais",
+      "all": "Todos os Artigos de Chefes de Slime Seas"
     },
     "items": {
-      "title": "Itens de Lucid Blocks",
-      "description": "Guias detalhados de itens abrangendo ferramentas, armas, equipamentos de mobilidade e soluções de armazenamento com receitas de criação e dicas de uso.",
-      "metaTitle": "Itens de Lucid Blocks - Guia de Ferramentas, Armas e Equipamentos",
-      "metaDescription": "Banco de dados completo de itens para Lucid Blocks, incluindo ferramentas, armas, equipamentos de mobilidade e armazenamento. Aprenda a criar e usar cada item de forma eficaz.",
-      "categoryLabel": "ITENS E EQUIPAMENTOS",
-      "whatIs": "O que são Itens?",
-      "whatIsDescription": "Guias abrangentes para ferramentas, armas, equipamentos de mobilidade e itens funcionais. Aprenda receitas de criação, estratégias de uso e combinações ideais.",
-      "why": "Por que consultar os guias de itens?",
+      "title": "Itens de Slime Seas",
+      "description": "Bancos de dados de itens, drops de materiais e componentes de fabricação para a progressão em Slime Seas.",
+      "metaTitle": "Itens de Slime Seas - Drops de Materiais, Locais e Insumos de Fabricação",
+      "metaDescription": "Navegue pelos itens de Slime Seas, guias de drop de materiais e referências de localização para planejar fabricação, melhorias e prioridades de farm eficientes.",
+      "categoryLabel": "ITENS",
+      "whatIs": "O que é a categoria de Itens de Slime Seas?",
+      "whatIsDescription": "A categoria de Itens de Slime Seas rastreia materiais, peças de equipamento e insumos de fabricação usados em todo o jogo. Ela foi criada para consulta rápida quando você precisa de fontes exatas, rotas e prioridades de uso.",
+      "why": "Por que usar as referências de itens de Slime Seas?",
       "whySteps": {
-        "step1Title": "Aprenda Receitas de Criação",
-        "step1Description": "Descubra como criar ferramentas e armas essenciais usando Apotheosis",
-        "step2Title": "Otimize seu Equipamento",
-        "step2Description": "Escolha os melhores itens para seu estilo de jogo e estágio de progressão",
-        "step3Title": "Melhore a Sobrevivência",
-        "step3Description": "Equipe-se com itens de mobilidade e armas para navegar pelo mundo perigoso"
+        "step1Title": "Localize Materiais Rapidamente",
+        "step1Description": "Encontre informações exatas de drop e localização para recursos de melhoria de alto impacto.",
+        "step2Title": "Planeje Dependências de Fabricação",
+        "step2Description": "Mapeie os itens necessários antes de iniciar longas sessões de farm ou loops de chefes.",
+        "step3Title": "Melhore com Melhor Prioridade",
+        "step3Description": "Gaste tempo em itens que desbloqueiam valor imediato de combate e progressão."
       },
       "featured": "Destaques e Essenciais",
-      "all": "Todos os Itens"
-    },
-    "biomes": {
-      "title": "Biomas de Lucid Blocks",
-      "description": "Explore as regiões do mundo, características ambientais, locais de recursos e dicas de sobrevivência para cada bioma.",
-      "metaTitle": "Biomas de Lucid Blocks - Regiões do Mundo e Exploração",
-      "metaDescription": "Explore os biomas de Lucid Blocks, incluindo as Linhas de Ley Tiamana, Fog Meadow e regiões surreais. Encontre recursos, evite perigos e navegue pelo mundo infinito.",
-      "categoryLabel": "REGIÕES DO MUNDO",
-      "whatIs": "O que são Biomas?",
-      "whatIsDescription": "Guias para as diferentes regiões do mundo, características ambientais, distribuição de recursos e zonas de perigo. Saiba o que esperar e como se preparar para cada área.",
-      "why": "Por que explorar os biomas?",
-      "whySteps": {
-        "step1Title": "Encontre Recursos",
-        "step1Description": "Localize materiais raros e essências específicas de cada região",
-        "step2Title": "Evite Perigos",
-        "step2Description": "Entenda os riscos ambientais e as criaturas hostis",
-        "step3Title": "Planeje a Exploração",
-        "step3Description": "Prepare as ferramentas e equipamentos certos para cada tipo de bioma"
-      },
-      "featured": "Destaques e Essenciais",
-      "all": "Todos os Biomas"
-    },
-    "building": {
-      "title": "Construção em Lucid Blocks",
-      "description": "Domine as dimensões pessoais Qualia, construção de bases, gerenciamento de armazenamento e técnicas de construção criativa.",
-      "metaTitle": "Construção em Lucid Blocks - Qualia e Construção de Bases",
-      "metaDescription": "Domine a construção em Lucid Blocks com dimensões pessoais Qualia, construção de bases, soluções de armazenamento e técnicas criativas de construção.",
-      "categoryLabel": "CONSTRUÇÃO E BASES",
-      "whatIs": "O que é a Construção?",
-      "whatIsDescription": "Guias para o sistema de dimensão pessoal Qualia, construção de bases, gerenciamento de armazenamento e construção criativa. Aprenda a criar seu refúgio seguro no mundo surreal.",
-      "why": "Por que construir bases?",
-      "whySteps": {
-        "step1Title": "Crie Espaços Seguros",
-        "step1Description": "Estabeleça bases seguras para operações de armazenamento e criação",
-        "step2Title": "Gerencie Recursos",
-        "step2Description": "Organize materiais de forma eficiente com soluções de armazenamento",
-        "step3Title": "Desbloqueie a Qualia",
-        "step3Description": "Acesse dimensões de bolso pessoais para o máximo de conveniência"
-      },
-      "featured": "Destaques e Essenciais",
-      "all": "Todos os Guias de Construção"
-    },
-    "support": {
-      "title": "Suporte de Lucid Blocks",
-      "description": "Suporte técnico, compatibilidade de plataforma, otimização de desempenho e solução de problemas comuns.",
-      "metaTitle": "Suporte de Lucid Blocks - Ajuda Técnica e Correções",
-      "metaDescription": "Obtenha suporte técnico para Lucid Blocks, incluindo configuração do Steam Deck, correções de falhas, otimização de desempenho e guias de compatibilidade de plataforma.",
-      "categoryLabel": "SUPORTE TÉCNICO",
-      "whatIs": "O que é o Suporte?",
-      "whatIsDescription": "Guias técnicos que cobrem compatibilidade de plataforma, otimização de desempenho, correções de falhas e problemas comuns. Obtenha ajuda com o Steam Deck, dúvidas sobre multijogador e configurações.",
-      "why": "Por que consultar o suporte?",
-      "whySteps": {
-        "step1Title": "Corrija Problemas Técnicos",
-        "step1Description": "Resolva falhas, problemas de desempenho e questões de compatibilidade",
-        "step2Title": "Otimize o Desempenho",
-        "step2Description": "Configure os ajustes para a melhor experiência em sua plataforma",
-        "step3Title": "Compatibilidade de Plataforma",
-        "step3Description": "Saiba mais sobre o Steam Deck, suporte a controles e requisitos de sistema"
-      },
-      "featured": "Destaques e Essenciais",
-      "all": "Todos os Artigos de Suporte"
+      "all": "Todos os Artigos de Itens de Slime Seas"
     }
   }
 }

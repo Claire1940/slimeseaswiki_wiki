@@ -135,6 +135,41 @@ def clean_json_response(text: str) -> str:
     text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', text)
     return text.strip()
 
+
+def parse_json_with_repair(text: str) -> Optional[dict]:
+    """尽量修复常见的 LLM JSON 输出问题（代码块包裹、注释、尾逗号）。"""
+    cleaned = clean_json_response(text)
+    candidates = [cleaned]
+
+    first = cleaned.find('{')
+    last = cleaned.rfind('}')
+    if first != -1 and last != -1 and last > first:
+        obj_text = cleaned[first:last + 1]
+        candidates.append(obj_text)
+
+        # 去注释
+        no_comments = re.sub(r'//.*?$|/\*.*?\*/', '', obj_text, flags=re.MULTILINE | re.DOTALL)
+        candidates.append(no_comments)
+
+        # 去尾逗号
+        candidates.append(re.sub(r',(\s*[}\]])', r'\1', obj_text))
+        candidates.append(re.sub(r',(\s*[}\]])', r'\1', no_comments))
+
+    seen = set()
+    for candidate in candidates:
+        if not candidate:
+            continue
+        key = candidate.strip()
+        if key in seen:
+            continue
+        seen.add(key)
+        try:
+            return json.loads(candidate)
+        except json.JSONDecodeError:
+            continue
+
+    return None
+
 # ─── chunk 拆分 ───────────────────────────────────────────────────────────────
 
 
@@ -212,20 +247,30 @@ def translate_chunk_task(idx: int, total: int, chunk: dict, lang_name: str, conf
     print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] 开始", flush=True)
 
     chunk_json = json.dumps(chunk, ensure_ascii=False, indent=2)
-    result = call_api(chunk_json, lang_name, config)
+    timeout = int(config.get('timeout', 120))
+    retries = int(config.get('retry_attempts', 3))
+    result = call_api(chunk_json, lang_name, config, timeout=timeout, retries=retries)
 
     if result:
-        cleaned = clean_json_response(result)
-        try:
-            parsed = json.loads(cleaned)
+        parsed = parse_json_with_repair(result)
+        if parsed is not None:
             print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ✓")
             return (idx, list(chunk.keys()), parsed)
-        except json.JSONDecodeError as e:
-            print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ✗ JSON解析失败({e})，英文兜底")
-            return (idx, list(chunk.keys()), chunk)
-    else:
-        print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ✗ API失败，英文兜底")
+
+        # 解析失败时，额外再请求一次，降低“非标准 JSON”导致的英文兜底概率
+        print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ! 首次响应 JSON 解析失败，发起一次补救重试")
+        retry_result = call_api(chunk_json, lang_name, config, timeout=timeout, retries=retries)
+        if retry_result:
+            parsed_retry = parse_json_with_repair(retry_result)
+            if parsed_retry is not None:
+                print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ✓ (补救重试成功)")
+                return (idx, list(chunk.keys()), parsed_retry)
+
+        print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ✗ JSON解析失败，英文兜底")
         return (idx, list(chunk.keys()), chunk)
+
+    print(f"    chunk {idx}/{total}: [{keys_preview}{suffix}] ✗ API失败，英文兜底")
+    return (idx, list(chunk.keys()), chunk)
 
 
 def translate_language(
