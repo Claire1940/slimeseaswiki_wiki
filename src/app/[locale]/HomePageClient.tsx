@@ -6,11 +6,9 @@ import {
   ArrowRight,
   BookOpen,
   Check,
-  ChevronDown,
   ClipboardCheck,
   Clock,
   Eye,
-  ExternalLink,
   Gamepad2,
   Hammer,
   Home,
@@ -153,10 +151,14 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
     ],
   }
 
-  // Module accordion state
-  const [deckExpanded, setDeckExpanded] = useState<number | null>(null)
+  // Interactive state for calculator modules
+  const [damageRaceIndex, setDamageRaceIndex] = useState(0)
+  const [damageWeaponIndex, setDamageWeaponIndex] = useState(0)
+  const [damageEnchantLevel, setDamageEnchantLevel] = useState(0)
+  const [rerollTargetIndex, setRerollTargetIndex] = useState(0)
+  const [rerollAttempts, setRerollAttempts] = useState(25)
 
-  // Locale-safe fallbacks for modules 9-12
+  // Locale-safe fallbacks for modules 9-16
   const module9Bosses =
     t.modules?.lucidBlocksFarmingAndGrowth?.bosses ||
     t.modules?.lucidBlocksFarmingAndGrowth?.sections ||
@@ -198,6 +200,115 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
     }))
   const module12TrainingNotes =
     t.modules?.lucidBlocksSingleplayerAndPlatformFAQ?.trainingNotes || []
+  const module13Cards =
+    t.modules?.lucidBlocksSteamDeckAndController?.items ||
+    (t.modules?.lucidBlocksSteamDeckAndController?.faqs || []).map((faq: any) => ({
+      cardTitle: faq.question || 'Slime Seas PvP Card',
+      summary: faq.answer || '',
+      recommendedRaces: ['Slime Seas Flexible Pick'],
+      coreInputs: ['Q: Dash', 'F: Block', 'Shift: Mouse Lock', '1-4: Weapon Skills'],
+      duelTips: [faq.answer || 'Use spacing and timing to control Slime Seas PvP exchanges.'],
+    }))
+  const module13Icons = [Gamepad2, Sparkles, Star, Hammer]
+
+  const module14Items =
+    t.modules?.lucidBlocksSettingsAndAccessibility?.items ||
+    (t.modules?.lucidBlocksSettingsAndAccessibility?.settings || []).map((setting: any) => ({
+      item: setting.name || 'Slime Seas Item Entry',
+      type: setting.type || 'Reference',
+      rarity: 'Reference',
+      source: 'Slime Seas Route',
+      levelOrZone: 'Progression Route',
+      obtainMethod: setting.description || '',
+      stats: '-',
+      tradeable: '-',
+      whyItMatters: setting.description || '',
+    }))
+
+  const module15Calculator = t.modules?.lucidBlocksUpdatesAndPatchNotes?.calculator || {}
+  const module15RaceOptions = module15Calculator.raceOptions || [
+    { name: 'Baseline Human', multiplier: 1, tag: 'Baseline', statProfile: '1x HP • 1x ATK • 1x DEF • 1x SPD • 1x Luck' },
+    { name: 'Berserker (Starterpack)', multiplier: 1.15, tag: 'DPS / PvP', statProfile: 'Premium-locked aggressive kit' },
+    { name: 'Lucky (Boost)', multiplier: 1, tag: 'Farm', statProfile: '1.05x Luck' },
+  ]
+  const module15WeaponOptions = module15Calculator.weaponOptions || [
+    { name: 'Wooden Katana', atk: 5, rarity: 'Common', source: 'Starting Forest', upgradeCeiling: 10 },
+    { name: 'Legendary Slime Katana', atk: 100, rarity: 'Legendary', source: 'Demon Lord Rima', upgradeCeiling: 20 },
+  ]
+  const module15EnchantRange = module15Calculator.enchantRange || { min: 0, max: 20, default: 0, step: 1 }
+  const module15Presets = t.modules?.lucidBlocksUpdatesAndPatchNotes?.presets || [
+    {
+      panelTitle: 'Slime Seas Damage Workflow',
+      rows: (t.modules?.lucidBlocksUpdatesAndPatchNotes?.entries || []).map((entry: any) => ({
+        name: entry.title || 'Slime Seas Damage Step',
+        tag: entry.type || 'Step',
+        detail: entry.description || '',
+      })),
+    },
+  ]
+
+  const safeDamageRaceIndex = module15RaceOptions.length > 0
+    ? Math.min(damageRaceIndex, module15RaceOptions.length - 1)
+    : 0
+  const safeDamageWeaponIndex = module15WeaponOptions.length > 0
+    ? Math.min(damageWeaponIndex, module15WeaponOptions.length - 1)
+    : 0
+  const module15SelectedRace =
+    module15RaceOptions[safeDamageRaceIndex] ||
+    { name: 'Baseline Human', multiplier: 1, tag: 'Baseline', statProfile: '1x stats' }
+  const module15SelectedWeapon =
+    module15WeaponOptions[safeDamageWeaponIndex] ||
+    { name: 'Wooden Katana', atk: 5, rarity: 'Common', source: 'Starting Forest', upgradeCeiling: 10 }
+  const module15MinEnchant = Number(module15EnchantRange.min ?? 0)
+  const module15MaxEnchant = Number(module15EnchantRange.max ?? 20)
+  const module15DefaultEnchant = Number(module15EnchantRange.default ?? 0)
+  const module15SafeEnchant = Math.max(
+    module15MinEnchant,
+    Math.min(module15MaxEnchant, Number.isFinite(damageEnchantLevel) ? damageEnchantLevel : module15DefaultEnchant)
+  )
+  const module15EnchantScale = Number(module15Calculator.multiplierPerEnchant ?? 0.05)
+  const module15EstimatedDamage = Math.round(
+    Number(module15SelectedWeapon.atk || 0) *
+    Number(module15SelectedRace.multiplier || 1) *
+    (1 + module15SafeEnchant * module15EnchantScale)
+  )
+  const module15BaselineAtk = Number(module15WeaponOptions[0]?.atk || 0)
+  const module15CompareDelta = Number(module15SelectedWeapon.atk || 0) - module15BaselineAtk
+
+  const module16Targets =
+    t.modules?.lucidBlocksCrashFixAndTroubleshooting?.targets ||
+    (t.modules?.lucidBlocksCrashFixAndTroubleshooting?.steps || []).map((step: any) => ({
+      target: step.title || 'Slime Seas Target Race',
+      rarity: 'Reference',
+      rollRate: 0.02,
+      rollRateLabel: '2.00%',
+      expectedRollsToSuccess: 50,
+      snapshots: [
+        { rerolls: 5, chance: '9.61%' },
+        { rerolls: 25, chance: '39.65%' },
+        { rerolls: 50, chance: '63.58%' },
+      ],
+      note: step.description || '',
+    }))
+  const module16StarterBundle = t.modules?.lucidBlocksCrashFixAndTroubleshooting?.starterCodeBundle || {
+    title: 'Slime Seas Starter Code Bundle',
+    summary: 'HUBISLAND gives 3 Race Rerolls and SLIMEPIECE gives 2 Race Rerolls.',
+    snapshots: [
+      { label: 'Dragonborn', chance: '1.24%' },
+      { label: 'Shadowborn', chance: '1.24%' },
+      { label: 'Any Legendary', chance: '2.48%' },
+      { label: 'Djinn or Lunarian', chance: '9.61%' },
+    ],
+  }
+  const safeRerollTargetIndex = module16Targets.length > 0
+    ? Math.min(rerollTargetIndex, module16Targets.length - 1)
+    : 0
+  const module16SelectedTarget =
+    module16Targets[safeRerollTargetIndex] ||
+    { target: 'Dragonborn', rarity: 'Legendary', rollRate: 0.0025, rollRateLabel: '0.25%', expectedRollsToSuccess: 400 }
+  const module16RollRate = Number(module16SelectedTarget.rollRate || 0.0025)
+  const module16SafeAttempts = Math.max(1, Number.isFinite(rerollAttempts) ? rerollAttempts : 1)
+  const module16HitChance = (1 - Math.pow(1 - module16RollRate, module16SafeAttempts)) * 100
 
   // Scroll reveal animation
   useEffect(() => {
@@ -1212,129 +1323,425 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
         </div>
       </section>
 
-      {/* Module 13: Steam Deck and Controller */}
+      {/* Module 13: Slime Seas PvP Guide */}
       <section id="slime-seas-pvp-guide" className="scroll-mt-24 px-4 py-20">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12 scroll-reveal">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Gamepad2 className="w-8 h-8 text-[hsl(var(--nav-theme-light))]" />
-              <h2 className="text-4xl md:text-5xl font-bold"><LinkedTitle linkData={moduleLinkMap['lucidBlocksSteamDeckAndController']} locale={locale}>{t.modules.lucidBlocksSteamDeckAndController.title}</LinkedTitle></h2>
-            </div>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSteamDeckAndController.intro}</p>
+            <span className="inline-flex items-center gap-2 rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)] px-4 py-1 text-sm font-medium text-[hsl(var(--nav-theme-light))]">
+              {t.modules.lucidBlocksSteamDeckAndController.eyebrow || 'Slime Seas PvP Meta'}
+            </span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold">
+              {t.modules.lucidBlocksSteamDeckAndController.title}
+            </h2>
+            <p className="mt-3 text-lg text-muted-foreground max-w-4xl mx-auto">
+              {t.modules.lucidBlocksSteamDeckAndController.subtitle || 'Slime Seas PvP builds, race pairings, and duel flow'}
+            </p>
+            <p className="mt-4 text-muted-foreground max-w-4xl mx-auto">
+              {t.modules.lucidBlocksSteamDeckAndController.intro}
+            </p>
           </div>
-          <div className="scroll-reveal space-y-2">
-            {t.modules.lucidBlocksSteamDeckAndController.faqs.map((faq: any, index: number) => (
-              <div key={index} className="border border-border rounded-xl overflow-hidden">
-                <button
-                  onClick={() => setDeckExpanded(deckExpanded === index ? null : index)}
-                  className="w-full flex items-center justify-between p-5 text-left hover:bg-white/5 transition-colors"
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {module13Cards.map((card: any, index: number) => {
+              const CardIcon = module13Icons[index % module13Icons.length]
+              const recommendedRaces = card.recommendedRaces || card.recommended_races || []
+              const coreInputs = card.coreInputs || card.core_inputs || []
+              const coreSkills = card.coreSkills || card.core_skills || []
+              const tacticalCore = coreInputs.length > 0 ? coreInputs : coreSkills
+              const keyNumbers = card.keyNumbers || card.key_numbers || []
+              const duelTips = card.duelTips || card.duel_tips || []
+
+              return (
+                <article
+                  key={index}
+                  className="scroll-reveal p-6 rounded-2xl border border-border bg-white/[0.03] hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors"
                 >
-                  <span className="font-semibold">{faq.question}</span>
-                  <ChevronDown className={`w-5 h-5 flex-shrink-0 transition-transform ${deckExpanded === index ? "rotate-180" : ""}`} />
-                </button>
-                {deckExpanded === index && (
-                  <div className="px-5 pb-5 text-muted-foreground text-sm">{faq.answer}</div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Module 14: Settings and Accessibility */}
-      <section id="slime-seas-items-and-materials" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksSettingsAndAccessibility']} locale={locale}>{t.modules.lucidBlocksSettingsAndAccessibility.title}</LinkedTitle></h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSettingsAndAccessibility.intro}</p>
-          </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4">
-            {t.modules.lucidBlocksSettingsAndAccessibility.settings.map((s: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex items-center gap-3 mb-3">
-                  <Settings className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <h3 className="font-bold">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksSettingsAndAccessibility::settings::${index}`]} locale={locale}>
-                      {s.name}
-                    </LinkedTitle>
-                  </h3>
-                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{s.type}</span>
-                </div>
-                <p className="text-muted-foreground text-sm">{s.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Module 15: Updates and Patch Notes */}
-      <section id="slime-seas-damage-calculator" className="scroll-mt-24 px-4 py-20">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksUpdatesAndPatchNotes']} locale={locale}>{t.modules.lucidBlocksUpdatesAndPatchNotes.title}</LinkedTitle></h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksUpdatesAndPatchNotes.intro}</p>
-          </div>
-          <div className="scroll-reveal relative pl-6 border-l-2 border-[hsl(var(--nav-theme)/0.3)] space-y-8">
-            {t.modules.lucidBlocksUpdatesAndPatchNotes.entries.map((entry: any, index: number) => (
-              <div key={index} className="relative">
-                <div className="absolute -left-[1.4rem] w-4 h-4 rounded-full bg-[hsl(var(--nav-theme))] border-2 border-background" />
-                <div className="p-5 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{entry.type}</span>
-                    <Clock className="w-4 h-4 text-muted-foreground" />
+                  <div className="flex items-start gap-3 mb-4">
+                    <div className="w-11 h-11 rounded-xl bg-[hsl(var(--nav-theme)/0.14)] border border-[hsl(var(--nav-theme)/0.35)] flex items-center justify-center">
+                      <CardIcon className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold">
+                        {card.cardTitle || card.card_title || `Slime Seas PvP Card ${index + 1}`}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1">{card.summary || '-'}</p>
+                    </div>
                   </div>
-                  <h3 className="font-bold mb-1">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksUpdatesAndPatchNotes::entries::${index}`]} locale={locale}>
-                      {entry.title}
-                    </LinkedTitle>
-                  </h3>
-                  <p className="text-muted-foreground text-sm">{entry.description}</p>
+
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Recommended Races</p>
+                      <div className="flex flex-wrap gap-2">
+                        {recommendedRaces.map((race: string, raceIndex: number) => (
+                          <span
+                            key={raceIndex}
+                            className="rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)] px-3 py-1 text-xs"
+                          >
+                            {race}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Core Inputs and Skills</p>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        {tacticalCore.map((entry: string, entryIndex: number) => (
+                          <p key={entryIndex} className="text-sm rounded-lg bg-white/5 border border-border px-3 py-2">
+                            {entry}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Key Numbers</p>
+                      <div className="space-y-2">
+                        {keyNumbers.map((item: string, itemIndex: number) => (
+                          <p key={itemIndex} className="text-sm rounded-lg bg-white/5 border border-border px-3 py-2">
+                            {item}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Duel Tips</p>
+                      <div className="space-y-2">
+                        {duelTips.map((tip: string, tipIndex: number) => (
+                          <p key={tipIndex} className="text-sm flex items-start gap-2">
+                            <Check className="w-4 h-4 mt-0.5 text-[hsl(var(--nav-theme-light))] flex-shrink-0" />
+                            <span>{tip}</span>
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Module 14: Slime Seas Items and Materials */}
+      <section id="slime-seas-items-and-materials" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)] px-4 py-1 text-sm font-medium text-[hsl(var(--nav-theme-light))]">
+              <Settings className="w-4 h-4" />
+              {t.modules.lucidBlocksSettingsAndAccessibility.eyebrow || 'Slime Seas Loot Table'}
+            </span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold">
+              {t.modules.lucidBlocksSettingsAndAccessibility.title}
+            </h2>
+            <p className="mt-3 text-lg text-muted-foreground max-w-4xl mx-auto">
+              {t.modules.lucidBlocksSettingsAndAccessibility.subtitle || 'Slime Seas key items, materials, and first chase drops'}
+            </p>
+            <p className="mt-4 text-muted-foreground max-w-4xl mx-auto">
+              {t.modules.lucidBlocksSettingsAndAccessibility.intro}
+            </p>
+          </div>
+
+          <div className="scroll-reveal hidden lg:block rounded-2xl border border-border bg-white/[0.03] overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead className="bg-[hsl(var(--nav-theme)/0.12)] border-b border-border">
+                  <tr>
+                    <th className="px-4 py-3 text-left font-semibold">Item</th>
+                    <th className="px-4 py-3 text-left font-semibold">Type</th>
+                    <th className="px-4 py-3 text-left font-semibold">Rarity</th>
+                    <th className="px-4 py-3 text-left font-semibold">Source</th>
+                    <th className="px-4 py-3 text-left font-semibold">Level or Zone</th>
+                    <th className="px-4 py-3 text-left font-semibold">Drop or Obtain</th>
+                    <th className="px-4 py-3 text-left font-semibold">Stats</th>
+                    <th className="px-4 py-3 text-left font-semibold">Tradeable</th>
+                    <th className="px-4 py-3 text-left font-semibold">Why It Matters</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {module14Items.map((row: any, index: number) => (
+                    <tr key={index} className="border-b border-border/60 align-top">
+                      <td className="px-4 py-4 font-semibold">{row.item || '-'}</td>
+                      <td className="px-4 py-4">{row.type || '-'}</td>
+                      <td className="px-4 py-4">{row.rarity || '-'}</td>
+                      <td className="px-4 py-4">{row.source || '-'}</td>
+                      <td className="px-4 py-4">{row.levelOrZone || row.level_or_zone || '-'}</td>
+                      <td className="px-4 py-4">{row.obtainMethod || row.dropRateOrObtain || row.drop_rate_or_obtain || '-'}</td>
+                      <td className="px-4 py-4">{row.stats || '-'}</td>
+                      <td className="px-4 py-4">{row.tradeable || '-'}</td>
+                      <td className="px-4 py-4">{row.whyItMatters || row.why_it_matters || '-'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="scroll-reveal lg:hidden space-y-4">
+            {module14Items.map((row: any, index: number) => (
+              <article key={index} className="rounded-2xl border border-border bg-white/[0.03] p-5">
+                <div className="flex items-center justify-between gap-3 mb-3">
+                  <h3 className="font-bold text-lg">{row.item || '-'}</h3>
+                  <span className="text-xs px-2 py-1 rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)]">
+                    {row.rarity || '-'}
+                  </span>
                 </div>
-              </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+                  <p><span className="text-muted-foreground">Type: </span>{row.type || '-'}</p>
+                  <p><span className="text-muted-foreground">Source: </span>{row.source || '-'}</p>
+                  <p><span className="text-muted-foreground">Level or Zone: </span>{row.levelOrZone || row.level_or_zone || '-'}</p>
+                  <p><span className="text-muted-foreground">Drop or Obtain: </span>{row.obtainMethod || row.dropRateOrObtain || row.drop_rate_or_obtain || '-'}</p>
+                  <p><span className="text-muted-foreground">Stats: </span>{row.stats || '-'}</p>
+                  <p><span className="text-muted-foreground">Tradeable: </span>{row.tradeable || '-'}</p>
+                </div>
+                <p className="text-sm text-muted-foreground mt-3">
+                  <span className="text-foreground font-medium">Why It Matters: </span>
+                  {row.whyItMatters || row.why_it_matters || '-'}
+                </p>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Module 16: Crash Fix and Troubleshooting */}
-      <section id="slime-seas-reroll-probability" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-5xl">
+      {/* Module 15: Slime Seas Damage Calculator */}
+      <section id="slime-seas-damage-calculator" className="scroll-mt-24 px-4 py-20">
+        <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksCrashFixAndTroubleshooting']} locale={locale}>{t.modules.lucidBlocksCrashFixAndTroubleshooting.title}</LinkedTitle></h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksCrashFixAndTroubleshooting.intro}</p>
+            <span className="inline-flex items-center gap-2 rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)] px-4 py-1 text-sm font-medium text-[hsl(var(--nav-theme-light))]">
+              {t.modules.lucidBlocksUpdatesAndPatchNotes.eyebrow || 'Slime Seas Damage Tools'}
+            </span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold">
+              {t.modules.lucidBlocksUpdatesAndPatchNotes.title}
+            </h2>
+            <p className="mt-3 text-lg text-muted-foreground max-w-4xl mx-auto">
+              {t.modules.lucidBlocksUpdatesAndPatchNotes.subtitle || 'Slime Seas quick damage checks and item comparisons'}
+            </p>
+            <p className="mt-4 text-muted-foreground max-w-4xl mx-auto">
+              {t.modules.lucidBlocksUpdatesAndPatchNotes.intro}
+            </p>
           </div>
-          <div className="scroll-reveal space-y-4 mb-8">
-            {t.modules.lucidBlocksCrashFixAndTroubleshooting.steps.map((step: any, index: number) => (
-              <div key={index} className="flex gap-4 p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[hsl(var(--nav-theme)/0.2)] border-2 border-[hsl(var(--nav-theme)/0.5)] flex items-center justify-center">
-                  <span className="text-xl font-bold text-[hsl(var(--nav-theme-light))]">{index + 1}</span>
+
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+            <div className="scroll-reveal rounded-2xl border border-border bg-white/[0.03] p-6 space-y-6">
+              <h3 className="text-2xl font-bold">Slime Seas Damage Live Estimate</h3>
+
+              <div className="space-y-4">
+                <label className="block">
+                  <span className="text-sm font-medium text-muted-foreground">Race Preset</span>
+                  <select
+                    value={safeDamageRaceIndex}
+                    onChange={(event) => setDamageRaceIndex(Number(event.target.value))}
+                    className="mt-2 w-full rounded-lg border border-border bg-background px-3 py-2 text-sm"
+                  >
+                    {module15RaceOptions.map((race: any, index: number) => (
+                      <option key={index} value={index}>{race.name || `Slime Seas Race ${index + 1}`}</option>
+                    ))}
+                  </select>
+                </label>
+
+                <label className="block">
+                  <span className="text-sm font-medium text-muted-foreground">Weapon Preset</span>
+                  <select
+                    value={safeDamageWeaponIndex}
+                    onChange={(event) => setDamageWeaponIndex(Number(event.target.value))}
+                    className="mt-2 w-full rounded-lg border border-border bg-background px-3 py-2 text-sm"
+                  >
+                    {module15WeaponOptions.map((weapon: any, index: number) => (
+                      <option key={index} value={index}>{weapon.name || `Slime Seas Weapon ${index + 1}`}</option>
+                    ))}
+                  </select>
+                </label>
+
+                <label className="block">
+                  <span className="text-sm font-medium text-muted-foreground">Enchant Level: {module15SafeEnchant}</span>
+                  <input
+                    type="range"
+                    min={module15MinEnchant}
+                    max={module15MaxEnchant}
+                    step={Number(module15EnchantRange.step ?? 1)}
+                    value={module15SafeEnchant}
+                    onChange={(event) => setDamageEnchantLevel(Number(event.target.value))}
+                    className="mt-2 w-full accent-[hsl(var(--nav-theme-light))]"
+                  />
+                </label>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="rounded-xl border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.1)] p-4">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground">Estimated Single-Hit Damage</p>
+                  <p className="text-3xl font-bold text-[hsl(var(--nav-theme-light))] mt-1">{module15EstimatedDamage}</p>
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksCrashFixAndTroubleshooting::steps::${index}`]} locale={locale}>
-                      {step.title}
-                    </LinkedTitle>
-                  </h3>
-                  <p className="text-muted-foreground">{step.description}</p>
+                <div className="rounded-xl border border-border bg-white/5 p-4">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground">ATK Delta vs First Weapon</p>
+                  <p className="text-3xl font-bold mt-1">{module15CompareDelta >= 0 ? '+' : ''}{module15CompareDelta}</p>
                 </div>
               </div>
-            ))}
+
+              <div className="space-y-2 text-sm text-muted-foreground">
+                <p><span className="text-foreground font-medium">Race Tag: </span>{module15SelectedRace.tag || module15SelectedRace.playstyleTag || module15SelectedRace.playstyle_tag || 'Baseline'}</p>
+                <p><span className="text-foreground font-medium">Race Profile: </span>{module15SelectedRace.statProfile || module15SelectedRace.stat_profile || '-'}</p>
+                <p><span className="text-foreground font-medium">Weapon Rarity: </span>{module15SelectedWeapon.rarity || '-'}</p>
+                <p><span className="text-foreground font-medium">Weapon Source: </span>{module15SelectedWeapon.source || '-'}</p>
+                <p><span className="text-foreground font-medium">Formula: </span>ATK x race multiplier x (1 + enchant x {module15EnchantScale})</p>
+              </div>
+            </div>
+
+            <div className="scroll-reveal space-y-4">
+              {module15Presets.map((panel: any, index: number) => {
+                const rows = panel.rows || panel.options || []
+
+                return (
+                  <article key={index} className="rounded-2xl border border-border bg-white/[0.03] p-5">
+                    <h3 className="text-xl font-bold mb-4">{panel.panelTitle || panel.panel_title || `Slime Seas Preset ${index + 1}`}</h3>
+                    <div className="space-y-3">
+                      {rows.map((row: any, rowIndex: number) => (
+                        <div key={rowIndex} className="rounded-xl border border-border bg-white/5 p-3">
+                          <div className="flex items-start justify-between gap-3">
+                            <p className="font-semibold">{row.name || row.item || row.comparison || row.race || `Preset ${rowIndex + 1}`}</p>
+                            <span className="text-xs rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)] px-2 py-1">
+                              {row.tag || row.playstyleTag || row.playstyle_tag || row.rarity || row.type || 'Slime Seas'}
+                            </span>
+                          </div>
+                          <p className="text-sm text-muted-foreground mt-2">
+                            {row.detail || row.profile || row.statProfile || row.stat_profile || row.note || row.source || '-'}
+                          </p>
+                          {(row.atk || row.upgradeCeiling || row.upgrade_ceiling || row.atkDelta || row.atk_delta) && (
+                            <p className="text-xs text-muted-foreground mt-2 flex items-center gap-2">
+                              <Clock className="w-3.5 h-3.5" />
+                              ATK {row.atk || row.atkDelta || row.atk_delta || '-'} | Upgrade {row.upgradeCeiling || row.upgrade_ceiling || '-'}
+                            </p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
           </div>
-          <div className="scroll-reveal p-6 bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.3)] rounded-xl">
+        </div>
+      </section>
+
+      {/* Module 16: Slime Seas Reroll Probability */}
+      <section id="slime-seas-reroll-probability" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)] px-4 py-1 text-sm font-medium text-[hsl(var(--nav-theme-light))]">
+              {t.modules.lucidBlocksCrashFixAndTroubleshooting.eyebrow || 'Slime Seas Reroll Odds'}
+            </span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold">
+              {t.modules.lucidBlocksCrashFixAndTroubleshooting.title}
+            </h2>
+            <p className="mt-3 text-lg text-muted-foreground max-w-4xl mx-auto">
+              {t.modules.lucidBlocksCrashFixAndTroubleshooting.subtitle || 'Slime Seas target-race odds for rerolls and code stockpiles'}
+            </p>
+            <p className="mt-4 text-muted-foreground max-w-4xl mx-auto">
+              {t.modules.lucidBlocksCrashFixAndTroubleshooting.intro}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+            <div className="scroll-reveal rounded-2xl border border-border bg-white/[0.03] p-6 space-y-6">
+              <h3 className="text-2xl font-bold">Slime Seas Reroll Odds Calculator</h3>
+
+              <div className="space-y-4">
+                <label className="block">
+                  <span className="text-sm font-medium text-muted-foreground">Target Race</span>
+                  <select
+                    value={safeRerollTargetIndex}
+                    onChange={(event) => setRerollTargetIndex(Number(event.target.value))}
+                    className="mt-2 w-full rounded-lg border border-border bg-background px-3 py-2 text-sm"
+                  >
+                    {module16Targets.map((target: any, index: number) => (
+                      <option key={index} value={index}>
+                        {target.target || target.name || `Slime Seas Target ${index + 1}`}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+
+                <label className="block">
+                  <span className="text-sm font-medium text-muted-foreground">Reroll Attempts</span>
+                  <input
+                    type="number"
+                    min={1}
+                    value={module16SafeAttempts}
+                    onChange={(event) => setRerollAttempts(Number(event.target.value))}
+                    className="mt-2 w-full rounded-lg border border-border bg-background px-3 py-2 text-sm"
+                  />
+                </label>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="rounded-xl border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.1)] p-4">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground">Calculated Hit Chance</p>
+                  <p className="text-3xl font-bold text-[hsl(var(--nav-theme-light))] mt-1">{module16HitChance.toFixed(2)}%</p>
+                </div>
+                <div className="rounded-xl border border-border bg-white/5 p-4">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground">Expected Rolls to Success</p>
+                  <p className="text-3xl font-bold mt-1">{module16SelectedTarget.expectedRollsToSuccess || '-'}</p>
+                </div>
+              </div>
+
+              <div className="space-y-2 text-sm text-muted-foreground">
+                <p><span className="text-foreground font-medium">Selected Rarity: </span>{module16SelectedTarget.rarity || '-'}</p>
+                <p><span className="text-foreground font-medium">Roll Rate: </span>{module16SelectedTarget.rollRateLabel || `${(module16RollRate * 100).toFixed(2)}%`}</p>
+                <p><span className="text-foreground font-medium">Formula: </span>{t.modules.lucidBlocksCrashFixAndTroubleshooting.formula || 'Hit chance = 1 - (1 - p)^n'}</p>
+              </div>
+            </div>
+
+            <div className="scroll-reveal space-y-4">
+              {module16Targets.map((target: any, index: number) => (
+                <article
+                  key={index}
+                  className={`rounded-2xl border bg-white/[0.03] p-4 transition-colors ${
+                    index === safeRerollTargetIndex
+                      ? 'border-[hsl(var(--nav-theme)/0.6)]'
+                      : 'border-border'
+                  }`}
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <h3 className="font-bold text-lg">{target.target || target.name || `Slime Seas Target ${index + 1}`}</h3>
+                    <span className="text-xs px-2 py-1 rounded-full border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.12)]">
+                      {target.rarity || '-'}
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Roll Rate: {target.rollRateLabel || `${(Number(target.rollRate || 0) * 100).toFixed(2)}%`} | Expected Rolls: {target.expectedRollsToSuccess || '-'}
+                  </p>
+                  <div className="grid grid-cols-2 gap-2 mt-3">
+                    {(target.snapshots || []).map((snapshot: any, snapshotIndex: number) => (
+                      <div key={snapshotIndex} className="rounded-lg border border-border bg-white/5 p-2">
+                        <p className="text-xs text-muted-foreground">{snapshot.rerolls ? `${snapshot.rerolls} rerolls` : snapshot.label || '-'}</p>
+                        <p className="text-sm font-semibold">{snapshot.chance || '-'}</p>
+                      </div>
+                    ))}
+                  </div>
+                  {target.note && <p className="text-xs text-muted-foreground mt-3">{target.note}</p>}
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="scroll-reveal mt-6 rounded-2xl border border-[hsl(var(--nav-theme)/0.35)] bg-[hsl(var(--nav-theme)/0.1)] p-6">
             <div className="flex items-start gap-3">
               <AlertTriangle className="w-6 h-6 text-[hsl(var(--nav-theme-light))] flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-[hsl(var(--nav-theme-light))] mb-2">Still having issues?</h3>
-                <p className="text-sm text-muted-foreground mb-3">Report bugs with your logs through the official channels:</p>
-                <div className="flex flex-wrap gap-3">
-                  <a href="https://discord.gg/t2Huv8M5re" target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
-                    <MessageCircle className="w-4 h-4" /> Discord <ExternalLink className="w-3 h-3" />
-                  </a>
-                  <a href="https://www.roblox.com/communities/33326928/Slime-Slaying-Online" target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
-                    Roblox Group <ExternalLink className="w-3 h-3" />
-                  </a>
+                <h3 className="font-bold text-[hsl(var(--nav-theme-light))] mb-2">
+                  {module16StarterBundle.title || 'Slime Seas Starter Code Bundle'}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  {module16StarterBundle.summary || 'HUBISLAND gives 3 Race Rerolls and SLIMEPIECE gives 2 Race Rerolls.'}
+                </p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                  {(module16StarterBundle.snapshots || []).map((snapshot: any, index: number) => (
+                    <div key={index} className="rounded-lg border border-border bg-white/5 p-3">
+                      <p className="text-xs text-muted-foreground">{snapshot.label || '-'}</p>
+                      <p className="text-sm font-semibold">{snapshot.chance || '-'}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

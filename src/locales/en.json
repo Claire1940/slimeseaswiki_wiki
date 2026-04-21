@@ -122,22 +122,22 @@
       {
         "icon": "Gamepad2",
         "title": "Slime Seas PvP Guide",
-        "description": "PvP combos, matchup notes, and build tradeoffs"
+        "description": "Duel builds, race pairings, and matchup flow for Slime Seas PvP"
       },
       {
         "icon": "Settings",
         "title": "Slime Seas Items and Materials",
-        "description": "Item source lookup and material farming references"
+        "description": "Starter-to-endgame drop table for key Slime Seas weapons and materials"
       },
       {
         "icon": "TrendingUp",
         "title": "Slime Seas Damage Calculator",
-        "description": "Damage estimate inputs for race, weapon, and upgrades"
+        "description": "Live-style race, weapon, and enchant damage estimates for Slime Seas"
       },
       {
         "icon": "Clock",
         "title": "Slime Seas Reroll Probability",
-        "description": "Reroll odds, expected attempts, and planning snapshots"
+        "description": "Target-race reroll odds, expected attempts, and stockpile hit rates"
       }
     ]
   },
@@ -186,19 +186,19 @@
       "cards": [
         {
           "name": "Official Trello",
-          "description": "Reference board for mastery systems, worlds, bosses, crafting notes, and progression checkpoints. https://trello.com/b/4jTUDPGn/slay-a-slime"
+          "description": "Reference board for mastery systems, worlds, bosses, crafting notes, and progression checkpoints."
         },
         {
           "name": "Official Discord",
-          "description": "Main hub for announcements, code drops, guild recruitment, and live Q&A. https://discord.com/invite/sxQQeTq7k4"
+          "description": "Main hub for announcements, code drops, guild recruitment, and live Q&A."
         },
         {
           "name": "Official Roblox Group",
-          "description": "Official developer group for game ownership and high-signal updates. https://www.roblox.com/communities/33326928/Slime-Slaying-Online"
+          "description": "Official developer group for game ownership and high-signal updates."
         },
         {
           "name": "Official X Feed",
-          "description": "Social update stream for milestones, teaser clips, and patch callouts. https://x.com/SlayASlimeRBX"
+          "description": "Social update stream for milestones, teaser clips, and patch callouts."
         }
       ],
       "milestones": [
@@ -216,32 +216,32 @@
         {
           "name": "Slime Seas Wiki Races",
           "type": "Database Entry",
-          "description": "Race overview, passive value, and reroll planning. https://www.slimeseas.wiki/wiki/races"
+          "description": "Race overview, passive value, and reroll planning."
         },
         {
           "name": "Slime Seas Wiki Worlds",
           "type": "Database Entry",
-          "description": "World order and progression checkpoints. https://www.slimeseas.wiki/wiki/worlds"
+          "description": "World order and progression checkpoints."
         },
         {
           "name": "Slime Seas Wiki Bosses",
           "type": "Database Entry",
-          "description": "Boss routes and key encounter pages. https://www.slimeseas.wiki/wiki/bosses"
+          "description": "Boss routes and key encounter pages."
         },
         {
           "name": "Slime Seas Wiki Items",
           "type": "Database Entry",
-          "description": "Weapons, materials, and source references. https://www.slimeseas.wiki/wiki/items"
+          "description": "Weapons, materials, and source references."
         },
         {
           "name": "Slime Seas Wiki Slimes",
           "type": "Database Entry",
-          "description": "Enemy and farming reference pages. https://www.slimeseas.wiki/wiki/slimes"
+          "description": "Enemy and farming reference pages."
         },
         {
           "name": "Slime Seas Wiki Skills and Mastery",
           "type": "Database Entry",
-          "description": "Skill unlock progression by stance and mastery level. https://www.slimeseas.wiki/wiki/skills"
+          "description": "Skill unlock progression by stance and mastery level."
         }
       ]
     },
@@ -1025,115 +1025,448 @@
     },
     "lucidBlocksSteamDeckAndController": {
       "title": "Slime Seas PvP Guide",
-      "displayType": "accordion",
-      "intro": "Slime Seas PvP performance comes from matchup awareness, spacing control, and disciplined skill sequencing.",
-      "faqs": [
+      "displayType": "cardList",
+      "eyebrow": "Slime Seas PvP Meta",
+      "subtitle": "Slime Seas PvP builds, race pairings, and duel flow",
+      "intro": "Start every Slime Seas duel with movement discipline: Q for Dash, F for Block, Shift for Mouse Lock, and 1-4 for weapon skills. Current build data points to Scythe as a stable PvP control option, Katana as the high-burst duelist choice, and Greatsword or Berserker as the pressure-heavy bruiser path.",
+      "items": [
         {
-          "question": "What is a strong Slime Seas PvP opener?",
-          "answer": "Open with fast gap control, force a defensive reaction, then convert with your highest-confidence combo starter."
+          "cardTitle": "Duel Basics",
+          "summary": "Use dash spacing and block timing to force whiffs before committing to a full skill chain.",
+          "recommendedRaces": [
+            "Any mastery-matching race"
+          ],
+          "coreInputs": [
+            "Q: Dash",
+            "F: Block",
+            "Shift: Mouse Lock",
+            "1-4: Weapon Skills"
+          ],
+          "keyNumbers": [
+            "Open with movement discipline before skill commitment",
+            "Keep close-range strings inside Mouse Lock"
+          ],
+          "duelTips": [
+            "Open with movement first, then commit once the opponent spends mobility.",
+            "Stay in Mouse Lock during close trades so short-range follow-ups stay on target.",
+            "Block front-loaded swings, then answer with your highest-value control or burst skill."
+          ]
         },
         {
-          "question": "How important is race choice in Slime Seas PvP?",
-          "answer": "Race passives heavily influence Slime Seas PvP pressure windows, sustain, and punish potential."
+          "cardTitle": "Scythe Control Setup",
+          "summary": "Best current PvP mastery for players who want stable confirms and strong chase pressure.",
+          "recommendedRaces": [
+            "Djinn",
+            "Dragonborn"
+          ],
+          "coreSkills": [
+            "Death's Grasp",
+            "Spinning Strike",
+            "Void Surge"
+          ],
+          "keyNumbers": [
+            "PvP cap reference: 10,000 HP / 325 Melee",
+            "3-hit PvP chain: 700 + 1,300 + 1,200 = 3,200 total"
+          ],
+          "duelTips": [
+            "Use Death's Grasp to start the exchange and force a guaranteed follow-up.",
+            "Djinn pairs cleanly with Scythe through cooldown speed, +20% Scythe damage, and +25% dash distance.",
+            "Dragonborn is a safer premium pick when you want Scythe damage and Greatsword flexibility."
+          ]
         },
         {
-          "question": "Should I build Slime Seas PvP differently from PvE?",
-          "answer": "Yes. Slime Seas PvP builds usually favor burst timing, mobility resets, and anti-pressure tools over pure farm speed."
+          "cardTitle": "Katana Burst Setup",
+          "summary": "Best for duelists who want fast strings, strong boss carryover, and sharp punish windows.",
+          "recommendedRaces": [
+            "Shadowborn",
+            "Lunarian",
+            "Elf",
+            "Skypiean"
+          ],
+          "coreSkills": [
+            "Flashblade Surge",
+            "Surge Wave",
+            "Thousand Slashes"
+          ],
+          "keyNumbers": [
+            "Mastery 5 burst: Thousand Slashes = 2,700 PvP damage",
+            "Shadowborn bonuses: +35% Katana, +40% dash distance, +15% speed"
+          ],
+          "duelTips": [
+            "Shadowborn has the highest Katana ceiling but trades away health and off-weapon damage.",
+            "Lunarian is a cleaner all-around Katana pick with speed, health, and fire scaling together.",
+            "Play for whiff punishes and short kill windows over long face-tank trades."
+          ]
         },
         {
-          "question": "How do I improve Slime Seas PvP consistency?",
-          "answer": "Review losses by matchup, tighten defensive timing, and keep your combo plan short enough to execute reliably."
-        },
-        {
-          "question": "Which Slime Seas PvP habit gives fastest improvement?",
-          "answer": "Track spacing errors first, then fix overcommit patterns that expose you after missed burst attempts."
+          "cardTitle": "Greatsword and Berserker Pressure Setup",
+          "summary": "Pick this path if you want wider swings, easier wave clear, and sturdier melee pressure.",
+          "recommendedRaces": [
+            "Oni",
+            "Fishman",
+            "Dragonborn"
+          ],
+          "coreSkills": [
+            "Earth Breaker",
+            "Sweeping Slam",
+            "Spiraling Slash",
+            "Impaling Thrust"
+          ],
+          "keyNumbers": [
+            "Greatsword Mastery 5: Spiraling Slash = 1,700 PvP damage",
+            "Berserker opener: Impaling Thrust = 1,200 damage"
+          ],
+          "duelTips": [
+            "Greatsword is the best free all-rounder with strong AoE and smooth progression value.",
+            "Oni is the best Rare pairing for Greatsword with +15% health and +20% Greatsword damage.",
+            "Berserker is a premium Greatsword stance for players who already like the Greatsword rhythm."
+          ]
         }
       ]
     },
     "lucidBlocksSettingsAndAccessibility": {
       "title": "Slime Seas Items and Materials",
-      "displayType": "settingCards",
-      "intro": "Use this Slime Seas item reference framework to track drops, material usage, and gear upgrade planning.",
-      "settings": [
+      "displayType": "table",
+      "eyebrow": "Slime Seas Loot Table",
+      "subtitle": "Slime Seas key items, materials, and first chase drops",
+      "intro": "Use this Slime Seas module as a quick lookup sheet for starter weapons, boss materials, and first real upgrade targets. The current indexed route covers Starting Forest, Demon Lord Rima, Ogre Lord, and Monarch Statue progression checkpoints.",
+      "items": [
         {
-          "name": "Weapons and Gear Materials",
-          "type": "Upgrade Core",
-          "description": "Track weapon and gear materials by island so each farming session has a clear upgrade target."
+          "item": "Wooden Katana",
+          "type": "Weapon",
+          "rarity": "Common",
+          "source": "Starting Forest",
+          "levelOrZone": "Spawn zone",
+          "obtainMethod": "Obtain from Starting Forest",
+          "stats": "ATK 5 • Upgrade ceiling 10",
+          "tradeable": "Yes",
+          "whyItMatters": "Baseline early weapon and the simplest reference point for damage checks."
         },
         {
-          "name": "Potion Ingredients",
-          "type": "Sustain Core",
-          "description": "Build potion ingredient routes around your active boss or quest loop for stable session throughput."
+          "item": "Slime Residue",
+          "type": "Material",
+          "rarity": "Common",
+          "source": "Basic Slime / Wolf Slime",
+          "levelOrZone": "Starting Forest",
+          "obtainMethod": "Enemy drop",
+          "stats": "No combat stats",
+          "tradeable": "No",
+          "whyItMatters": "Core early material that appears in the first farm loop."
         },
         {
-          "name": "Rare Drop Routing",
-          "type": "Efficiency Core",
-          "description": "Prioritize rare material routes only after your baseline progression path is already stable."
+          "item": "Wing Flaps",
+          "type": "Boss Material",
+          "rarity": "Boss Drop",
+          "source": "Demon Lord Rima",
+          "levelOrZone": "Level 65 • Rima's Spire",
+          "obtainMethod": "35.5%",
+          "stats": "Material drop",
+          "tradeable": "—",
+          "whyItMatters": "Most common Rima drop and part of the first serious boss farm."
         },
         {
-          "name": "Inventory Sorting Rules",
-          "type": "Management Core",
-          "description": "Separate high-frequency materials, upgrade-only drops, and marketable items to reduce downtime."
+          "item": "Legendary Slime Katana",
+          "type": "Weapon",
+          "rarity": "Legendary",
+          "source": "Demon Lord Rima",
+          "levelOrZone": "Level 65 • Rima's Spire",
+          "obtainMethod": "1.77%",
+          "stats": "ATK 100 • Upgrade ceiling 20",
+          "tradeable": "Yes",
+          "whyItMatters": "The first standout boss weapon jump for Katana-focused progression."
+        },
+        {
+          "item": "Ogre Horns",
+          "type": "Boss Material",
+          "rarity": "Boss Drop",
+          "source": "Ogre Lord",
+          "levelOrZone": "Level 255 • Ogre Lord's Bastion",
+          "obtainMethod": "41.58%",
+          "stats": "Material drop",
+          "tradeable": "—",
+          "whyItMatters": "Top mid-game material farm and a high-value crafting target."
+        },
+        {
+          "item": "Sigil Fragment",
+          "type": "Boss Material",
+          "rarity": "Boss Drop",
+          "source": "Monarch Statue",
+          "levelOrZone": "Level 360+ • Shadow World",
+          "obtainMethod": "42.02%",
+          "stats": "Material drop",
+          "tradeable": "—",
+          "whyItMatters": "Endgame progression material tied to the current highest-tier boss loop."
         }
       ]
     },
     "lucidBlocksUpdatesAndPatchNotes": {
       "title": "Slime Seas Damage Calculator",
-      "displayType": "timeline",
-      "intro": "Use a Slime Seas damage calculator workflow to compare builds before spending rerolls or upgrade materials.",
-      "entries": [
+      "displayType": "calculatorPanel",
+      "eyebrow": "Slime Seas Damage Tools",
+      "subtitle": "Slime Seas quick damage checks and item comparisons",
+      "intro": "The live Slime Seas tool hub exposes a damage calculator, item compare view, upgrade simulator, and build planner. This module focuses on race selection, weapon selection, enchant level, and quick stat deltas between starter and first-boss gear.",
+      "calculator": {
+        "raceOptions": [
+          {
+            "name": "Baseline Human",
+            "multiplier": 1,
+            "tag": "Baseline",
+            "statProfile": "1x HP • 1x ATK • 1x DEF • 1x SPD • 1x Luck"
+          },
+          {
+            "name": "Berserker (Starterpack)",
+            "multiplier": 1.15,
+            "tag": "DPS / PvP",
+            "statProfile": "Premium-locked aggressive kit"
+          },
+          {
+            "name": "Lucky (Boost)",
+            "multiplier": 1,
+            "tag": "Farm",
+            "statProfile": "1.05x Luck"
+          }
+        ],
+        "weaponOptions": [
+          {
+            "name": "Wooden Katana",
+            "rarity": "Common",
+            "atk": 5,
+            "upgradeCeiling": 10,
+            "source": "Starting Forest"
+          },
+          {
+            "name": "Legendary Slime Katana",
+            "rarity": "Legendary",
+            "atk": 100,
+            "upgradeCeiling": 20,
+            "source": "Demon Lord Rima"
+          }
+        ],
+        "enchantRange": {
+          "min": 0,
+          "max": 20,
+          "default": 0,
+          "step": 1
+        },
+        "multiplierPerEnchant": 0.05
+      },
+      "presets": [
         {
-          "title": "Input Race and Passive Multipliers",
-          "type": "Step 1",
-          "description": "Start with race-based modifiers so your baseline output reflects real build conditions."
+          "panelTitle": "Current Race Presets",
+          "rows": [
+            {
+              "name": "Baseline Human",
+              "tag": "Baseline",
+              "statProfile": "1x HP • 1x ATK • 1x DEF • 1x SPD • 1x Luck"
+            },
+            {
+              "name": "Berserker (Starterpack)",
+              "tag": "DPS / PvP",
+              "statProfile": "Premium-locked aggressive kit"
+            },
+            {
+              "name": "Lucky (Boost)",
+              "tag": "Farm",
+              "statProfile": "1.05x Luck"
+            }
+          ]
         },
         {
-          "title": "Add Weapon and Mastery Skill Values",
-          "type": "Step 2",
-          "description": "Include weapon scaling and mastery skill coefficients to estimate burst and sustained output."
+          "panelTitle": "Current Weapon Presets",
+          "rows": [
+            {
+              "item": "Wooden Katana",
+              "rarity": "Common",
+              "atk": 5,
+              "upgradeCeiling": 10,
+              "source": "Starting Forest"
+            },
+            {
+              "item": "Legendary Slime Katana",
+              "rarity": "Legendary",
+              "atk": 100,
+              "upgradeCeiling": 20,
+              "source": "Demon Lord Rima"
+            }
+          ]
         },
         {
-          "title": "Compare Boss and PvP Profiles",
-          "type": "Step 3",
-          "description": "Run side-by-side damage checks for boss routes and PvP matchups before finalizing your build."
-        },
-        {
-          "title": "Validate with Live Combat Logs",
-          "type": "Step 4",
-          "description": "Cross-check calculator outputs with actual fight sessions and adjust assumptions when needed."
+          "panelTitle": "Quick Compare Snapshot",
+          "rows": [
+            {
+              "comparison": "Wooden Katana vs Slime Residue",
+              "atkDelta": "+5",
+              "note": "The compare view highlights the starter weapon over a raw material."
+            },
+            {
+              "comparison": "Legendary Slime Katana vs Wooden Katana",
+              "atkDelta": "+95",
+              "note": "This is the first major weapon jump most early boss farmers track."
+            }
+          ]
         }
       ]
     },
     "lucidBlocksCrashFixAndTroubleshooting": {
       "title": "Slime Seas Reroll Probability",
-      "displayType": "steps",
-      "intro": "Plan Slime Seas rerolls by probability so race targeting decisions stay efficient and resource-aware.",
-      "steps": [
+      "displayType": "calculatorPanel",
+      "eyebrow": "Slime Seas Reroll Odds",
+      "subtitle": "Slime Seas target-race odds for rerolls and code stockpiles",
+      "intro": "The current Slime Seas race pool has 9 races, with Human at 48%, Fabled targets at 2% each, and Dragonborn and Shadowborn at 0.25% each. Hit chance follows 1 - (1 - p)^n, so small reroll stockpiles behave very differently from long-hunt sessions.",
+      "formula": "Hit chance = 1 - (1 - p)^n",
+      "targets": [
         {
-          "title": "Set Target Race and Odds",
-          "description": "Define your target race and expected chance before spending rerolls to avoid impulse decisions."
+          "target": "Dragonborn",
+          "rarity": "Legendary",
+          "rollRate": 0.0025,
+          "rollRateLabel": "0.25%",
+          "expectedRollsToSuccess": 400,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "1.24%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "6.07%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "11.76%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "22.14%"
+            }
+          ]
         },
         {
-          "title": "Estimate Expected Attempts",
-          "description": "Calculate approximate rerolls needed at your target odds to set practical farming goals."
+          "target": "Shadowborn",
+          "rarity": "Legendary",
+          "rollRate": 0.0025,
+          "rollRateLabel": "0.25%",
+          "expectedRollsToSuccess": 400,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "1.24%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "6.07%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "11.76%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "22.14%"
+            }
+          ]
         },
         {
-          "title": "Evaluate Success by Budget",
-          "description": "Check hit probability at multiple reroll stock levels to decide whether to commit now or save."
+          "target": "Djinn",
+          "rarity": "Fabled",
+          "rollRate": 0.02,
+          "rollRateLabel": "2%",
+          "expectedRollsToSuccess": 50,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "9.61%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "39.65%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "63.58%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "86.74%"
+            }
+          ]
         },
         {
-          "title": "Compare Keep vs Reroll Value",
-          "description": "Measure current race utility against expected gain from rerolling before locking a decision."
+          "target": "Lunarian",
+          "rarity": "Fabled",
+          "rollRate": 0.02,
+          "rollRateLabel": "2%",
+          "expectedRollsToSuccess": 50,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "9.61%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "39.65%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "63.58%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "86.74%"
+            }
+          ]
         },
         {
-          "title": "Recalculate After New Codes",
-          "description": "Update probability plans whenever new Slime Seas codes add rerolls to your inventory."
+          "target": "Any Legendary",
+          "rarity": "Legendary Bucket",
+          "rollRate": 0.005,
+          "rollRateLabel": "0.50%",
+          "expectedRollsToSuccess": 200,
+          "snapshots": [
+            {
+              "rerolls": 5,
+              "chance": "2.48%"
+            },
+            {
+              "rerolls": 25,
+              "chance": "11.78%"
+            },
+            {
+              "rerolls": 50,
+              "chance": "22.17%"
+            },
+            {
+              "rerolls": 100,
+              "chance": "39.42%"
+            }
+          ]
         }
-      ]
+      ],
+      "starterCodeBundle": {
+        "title": "Slime Seas Starter Code Bundle",
+        "summary": "HUBISLAND gives 3 Race Rerolls and SLIMEPIECE gives 2 Race Rerolls, for a 5-reroll starter stockpile.",
+        "snapshots": [
+          {
+            "label": "Dragonborn",
+            "chance": "1.24%"
+          },
+          {
+            "label": "Shadowborn",
+            "chance": "1.24%"
+          },
+          {
+            "label": "Any Legendary",
+            "chance": "2.48%"
+          },
+          {
+            "label": "Djinn or Lunarian",
+            "chance": "9.61%"
+          }
+        ]
+      }
     }
   },
   "faq": {
-    "title": "Frequently Asked",
+    "title": "Slime Seas Frequently Asked",
     "titleHighlight": "Questions",
     "subtitle": "Everything you need to know about Slime Seas",
     "questions": [
